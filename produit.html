@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Horizon</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="brandLogo">
+            <a href=""><img src="ICONES/NIGHT/LOGO.svg" alt="Go Home"></a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="">Overview</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Our product</a></li>
+                <li><a href="">Cart</a></li>
+            </ul>
+            <div class="burgerMenu">
+                <button class="menu"
+                    onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                    aria-label="Main Menu">
+                    <svg width="50" height="50" viewBox="0 0 50 100">
+                        <path class="line line1"
+                            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3"
+                            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="headerHome">
+        <img src="IMG/team.jpg" class="backgroundHome" alt="">
+        <div class="titleHome">
+            <h1>team suite</h1>
+            <a href="">
+                <div class="button">
+                    <h4>book now</h4>
+                </div>
+            </a>
+        </div>
+        <img src="ICONES/NIGHT/SCROLL.svg" alt="SCROLL" class="scroll">
+    </header>
+
+    <section class="sub">
+        <h2>subscription</h2>
+        <div class="offer">
+            <div class="offerContent">
+                <h3>per hour</h3>
+                <p>25$</p>
+            </div>
+            <span class="vertical-line"></span>
+            <div class="offerContent">
+                <h3>per day</h3>
+                <p>500$</p>
+            </div>
+            <span class="vertical-line"></span>
+            <div class="offerContent">
+                <h3>per week</h3>
+                <p>3000$</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="productInformation">
+        <h2>information</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel dignissim nibh. Ut
+            quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor tempor ullamcorper. Nulla pharetra
+            diam ac neque tristique aliquet. Curabitur leo orci, tincidunt vel magna ac, rutrum blandit massa. Nam ut
+            turpis pulvinar, aliquet odio etLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies
+            porta nisi, vel dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
+            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci, tincidunt vel magna
+            ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio etLorem ipsum dolor sit amet, consectetur
+            adipiscing elit. </p>
+    </section>
+
+    <script defer type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
+
