@@ -1,0 +1,708 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    background-image: url(ICONES/NIGHT/topography.svg);
+    /* mix-blend-mode: difference; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    color: var(--color-text);
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: "Satoshi";
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ================================================= FONT ================================================= */
+
+@font-face {
+    font-family: "Eveleth";
+    src: url("FONT/Eveleth\ Clean\ Regular.otf") format("otf"),
+        url("FONT/Eveleth\ Clean\ Regular.woff") format("woff"),
+        url("FONT/Eveleth\ Clean\ Regular.woff2") format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("FONT/Satoshi-Medium.otf") format("otf"),
+        url("FONT/Satoshi-Medium.woff") format("woff"),
+        url("FONT/Satoshi-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Eveleth";
+    color: var(--color-text);
+}
+
+p {
+    font-family: "Satoshi";
+    color: var(--color-text);
+}
+
+/* ===================================================== COLOR ============================================= */
+
+:root {
+    --color-background: #0E0E0E;
+    --color-secondbackground: #3A3A3A;
+    --color-text: #FFF;
+    --color-secondtext: #CBF7B0;
+    ;
+    --color-button: #84A98C;
+}
+
+/* ================================================ ANIMATION ================================================== */
+
+@keyframes floater {
+    0% {
+        transform: translateY(-10%);
+        transition: ease 0.5s;
+    }
+
+    50% {
+        transform: translateY(10%);
+        transition: ease 0.5s;
+    }
+}
+
+/* ==================================================== NAVBAR ============================================== */
+
+nav {
+    height: 7.5vh;
+    width: 100%;
+    background-color: var(--color-background);
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 100%;
+    width: 15%;
+}
+
+.brandLogo {
+    margin-left: 2rem;
+    mix-blend-mode: difference;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 2rem;
+}
+
+nav li {
+    font-family: 'Satoshi';
+    list-style-type: none;
+    margin: 1rem;
+    color: var(--color-text);
+    transition: all ease 1s;
+}
+
+nav li a {
+    opacity: 0.5;
+    transition: all ease 1s;
+}
+
+nav li a:hover {
+    opacity: 1;
+}
+
+nav li>a:after {
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: var(--color-text);
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+nav li>a:hover:after {
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+
+.burgerMenu {
+    margin-right: 2rem;
+    display: none;
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+}
+
+.line {
+    fill: none;
+    stroke: white;
+    stroke-width: 3;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+        stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 3;
+}
+
+.line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 3;
+}
+
+.line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 3;
+}
+
+.opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 3;
+}
+
+.opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 3;
+}
+
+.opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 3;
+}
+
+/* ==================================================== HEADER ============================================== */
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+.titleHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+}
+
+.titleHome h1 {
+    color: white;
+}
+
+.titleHome img {
+    height: 4rem;
+}
+
+.scroll {
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    bottom: 4rem;
+    margin: 0 auto;
+    transform: translateY(-10%);
+    animation: floater 2s infinite;
+    transition: all ease 2s;
+}
+
+.backgroundHome {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    filter: blur(0.3rem);
+}
+
+/* ==================================================== About Us ============================================== */
+
+.aboutUs {
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.aboutUs p {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+/* ==================================================== Our service ============================================== */
+
+.service {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serviceContent {
+    background-color: var(--color-secondbackground);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 2rem;
+    width: 18%;
+}
+
+.serviceContent h3 {
+    margin-top: 1.5rem;
+}
+
+.serviceContent p {
+    margin-top: 0.75rem;
+    text-align: center;
+    width: 80%;
+}
+
+/* ==================================================== Our Product ============================================== */
+
+.productPresentation {
+    gap: 6rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100vh;
+}
+
+.productText {
+    width: 40%;
+}
+
+.productText p {
+    text-align: left;
+}
+
+
+.productTextTitle {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: baseline;
+}
+
+.productTextLink {
+    margin-top: 1rem;
+}
+
+.productTextLink a p {
+    color: var(--color-secondtext);
+    transition: all ease 1s;
+}
+
+.productTextLink a p:hover {
+    color: white;
+}
+
+.product {
+    height: 60%;
+    width: 50%;
+}
+
+.product img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.seeMore {
+    font-size: 1.25rem;
+}
+
+/* ==================================================== Our Product ============================================== */
+
+footer {
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 1rem;
+}
+
+footer p {
+    color: var(--color-text);
+    transition: all ease 1s;
+}
+
+footer p {
+    opacity: 0.5;
+    transition: all ease 1s;
+}
+
+footer p:hover {
+    opacity: 1;
+}
+
+
+
+.bottomBrandLogo {
+    height: 100%;
+    width: 3rem;
+}
+
+.bottomBrandLogo img {
+    height: 100%;
+    width: 100%;
+}
+
+/* ================================================================================================================ */
+/* ==================================================== PRODUCT PAGE ============================================== */
+/* ================================================================================================================ */
+
+
+
+/* ==================================================== HEADER ============================================== */
+
+.button {
+    background-color: #84A98C;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: white;
+}
+
+/* ==================================================== SUBSCRIPTION ============================================== */
+
+.sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 6rem 0 6rem 0;
+}
+
+
+.offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10rem;
+    background-color: var(--color-secondbackground);
+    padding: 3rem;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.offerContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.offerContent p {
+    color: var(--color-secondtext);
+}
+
+.vertical-line {
+    border-left: 2px solid rgb(255, 255, 255);
+    display: inline-block;
+    height: 5rem;
+    mix-blend-mode: difference;
+}
+
+/* ==================================================== INFORMATION ============================================== */
+
+.productInformation {
+    width: 100%;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.productInformation p {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+
+/* ==================================================== CARROUSEL ============================================== */
+
+.gameCarrousel {
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.controls:hover {
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.cont {
+    position: absolute;
+    width: 100%;
+}
+
+.cont div img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.left {
+    float: left;
+    margin-left: 1rem;
+}
+
+.right {
+    float: right;
+    margin-right: 1rem;
+}
+
+.carrousel {
+    padding-top: 2rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.tapa {
+    width: 12000px;
+    /* 	change if the size is >     12000  :) */
+    transition: .9s all;
+}
+
+.item {
+    width: 3%;
+    height: 30rem;
+    float: left;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    transition: 1s all;
+    box-shadow: 0 9px 10px rgba(6, 6, 7, .3);
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.item:hover {
+    margin-top: -1.5rem;
+}
+
+/* ==================================================== Responsive ============================================== */
+
+@media screen and (max-width:1024px) {
+    .burgerMenu {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .service {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .serviceContent {
+        width: 50%;
+        margin: 1.5rem;
+        padding: 2rem;
+    }
+
+    .productPresentation {
+        flex-direction: column;
+        gap: 3rem;
+        height: 80vh;
+    }
+
+    .productText {
+        width: 100%;
+    }
+
+    .product {
+        width: 100%;
+        height: 40%;
+    }
+
+    .offer {
+        gap: 6rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .burgerMenu {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+
+    .titleHome img {
+        height: 2rem;
+    }
+
+    .aboutUs p {
+        width: 90%;
+    }
+
+    .line {
+        flex-direction: column;
+    }
+
+    .service {
+        margin-top: 3rem;
+    }
+
+    .serviceContent {
+        width: 80%;
+        margin: 1.5rem;
+        padding: 2rem;
+    }
+
+    .productPresentation {
+        flex-direction: column;
+        gap: 3rem;
+        height: 80vh;
+    }
+
+    .productText {
+        width: 100%;
+    }
+
+    .product {
+        width: 100%;
+        height: 30%;
+    }
+
+    footer {
+        gap: 1rem;
+    }
+
+    .bottomBrandLogo {
+        height: 100%;
+        width: 2rem;
+    }
+
+    .offer {
+        gap: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .offer h3 {
+        font-size: 0.7rem;
+    }
+
+}
