@@ -381,7 +381,7 @@ header {
     font-size: 1.25rem;
 }
 
-/* ==================================================== Our Product ============================================== */
+/* ==================================================== FOOTER ============================================== */
 
 footer {
     height: 7.5vh;
@@ -389,7 +389,8 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    margin: 1rem;
+    margin-top: 1rem;
+    background-color: var(--color-background);
 }
 
 footer p {
@@ -573,6 +574,48 @@ footer p:hover {
     padding: 0 15px;
 }
 
+/* ==================================================== CONFIGURATION ============================================== */
+
+.configuration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 6rem;
+}
+
+.componentsContent {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* height: 80vh; */
+    width: 100%;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-left: 3rem;
+    margin: 2rem 0 3rem 0;
+}
+
+.componentsButton {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--color-secondbackground);
+    margin-top: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    padding: 0.2rem;
+    border: none;
+}
+
+.componentsButton:hover {
+    opacity: 1;
+}
+
 /* ==================================================== Responsive ============================================== */
 
 @media screen and (max-width:1024px) {
@@ -596,6 +639,7 @@ footer p:hover {
         font-size: 0.8rem;
     }
 
+    /* SERVICE */
     .service {
         margin: 0 auto;
         width: 90%;
@@ -607,6 +651,7 @@ footer p:hover {
         padding: 2rem;
     }
 
+    /* PRODUCT */
     .productPresentation {
         flex-direction: column;
         gap: 3rem;
@@ -622,10 +667,16 @@ footer p:hover {
         height: 40%;
     }
 
+    /* SUBSCRIPTION */
     .offer {
         gap: 6rem;
         padding-left: 2rem;
         padding-right: 2rem;
+    }
+
+    /* CONFIGURATION */
+    .componentsContent {
+        background-size: 90%;
     }
 
 }
@@ -655,6 +706,8 @@ footer p:hover {
         font-size: 0.7rem;
     }
 
+    
+    /* HEADER */
     .titleHome img {
         height: 2rem;
     }
@@ -667,6 +720,7 @@ footer p:hover {
         flex-direction: column;
     }
 
+    /* SERVICE */
     .service {
         margin-top: 3rem;
     }
@@ -677,6 +731,7 @@ footer p:hover {
         padding: 2rem;
     }
 
+    /* PRODUCT */
     .productPresentation {
         flex-direction: column;
         gap: 3rem;
@@ -692,6 +747,7 @@ footer p:hover {
         height: 30%;
     }
 
+    /* FOOTER */
     footer {
         gap: 1rem;
     }
@@ -710,5 +766,30 @@ footer p:hover {
     .offer h3 {
         font-size: 0.7rem;
     }
+
+        /* CONFIGURATION */
+        .componentsContent {
+            background-size: 100%;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+
+        }
+
+        .componentsNav {
+            height: 40vh;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .componentsButton {
+            width: 2rem;
+            height: 2rem;
+            border-radius: 0.5rem;
+        }
 
 }
