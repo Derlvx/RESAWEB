@@ -533,6 +533,10 @@ footer p:hover {
     padding: 0 15px;
 }
 
+.owl-item img {
+    border-radius: 1rem;
+}
+
 /* ==================================================== Responsive ============================================== */
 
 @media screen and (max-width:1024px) {
