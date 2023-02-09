@@ -13,7 +13,7 @@ $(document).ready(function () {
 
         nav: true,
 
-        dots: true,
+        dots: false,
 
         responsive: {
 

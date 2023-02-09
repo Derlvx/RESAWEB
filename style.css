@@ -490,6 +490,19 @@ footer p:hover {
 
 /* ==================================================== CARROUSEL ============================================== */
 
+.carousel {
+    margin-top: 3rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel h2 {
+    margin-bottom: 1.5rem;
+}
+
 .owl-container {
     position: relative;
     margin: 0 auto;
@@ -516,25 +529,48 @@ footer p:hover {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 105%;
-    z-index: -500;
+    align-items: center;
+    gap: 98%;
+}
+
+.owl-theme .owl-nav {
+    margin-top: 0 !important;
+}
+
+
+.owl-next,
+.owl-prev {
+    background-color: none;
+    margin: 0 !important;
 }
 
 
 .owl-prev span,
 .owl-next span {
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: 200;
-    font-family: "league spartan";
+    font-family: "Sono";
 }
 
+.owl-theme .owl-nav [class*=owl-] {
+    color: rgba(255, 255, 255, 0.75) !important;
+    /* mix-blend-mode: color-dodge; */
+}
+
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent !important;
+    color: white !important;
+}
+
+.carousel_item {
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3rem;
+}
 
 .owl-item {
     padding: 0 15px;
-}
-
-.owl-item img {
-    border-radius: 1rem;
 }
 
 /* ==================================================== Responsive ============================================== */
