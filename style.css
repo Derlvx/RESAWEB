@@ -58,18 +58,17 @@ a:focus {
 
 @font-face {
     font-family: "Eveleth";
-    src: url("FONT/Eveleth\ Clean\ Regular.otf") format("otf"),
-        url("FONT/Eveleth\ Clean\ Regular.woff") format("woff"),
-        url("FONT/Eveleth\ Clean\ Regular.woff2") format("woff2");
+    src: url("FONT/Eveleth\ Clean\ Regular.woff2") format("woff2"),
+        url("FONT/Eveleth\ Clean\ Regular.woff") format("woff");
+
     font-weight: 900;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Satoshi";
-    src: url("FONT/Satoshi-Medium.otf") format("otf"),
-        url("FONT/Satoshi-Medium.woff") format("woff"),
-        url("FONT/Satoshi-Medium.woff2") format("woff2");
+    src: url("FONT/Satoshi-Medium.woff2") format("woff2"),
+    url("FONT/Satoshi-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
 }
@@ -473,6 +472,16 @@ footer p:hover {
     display: inline-block;
     height: 5rem;
     mix-blend-mode: difference;
+}
+
+.terms {
+    width: 100%;
+}
+
+.terms p {
+    opacity: 0.5;
+    padding: 0.5rem;
+    font-size: 1rem;
 }
 
 /* ==================================================== INFORMATION ============================================== */
