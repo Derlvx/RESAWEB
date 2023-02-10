@@ -68,7 +68,7 @@ a:focus {
 @font-face {
     font-family: "Satoshi";
     src: url("FONT/Satoshi-Medium.woff2") format("woff2"),
-    url("FONT/Satoshi-Medium.woff") format("woff");
+        url("FONT/Satoshi-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
 }
@@ -388,7 +388,6 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    margin-top: 1rem;
     background-color: var(--color-background);
 }
 
@@ -625,6 +624,43 @@ footer p:hover {
     opacity: 1;
 }
 
+/* ================================================================================================================ */
+/* ==================================================== OUR RODUCT PAGE ============================================== */
+/* ================================================================================================================ */
+
+.ourProduct {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.productDisplay {
+    height: 100vh;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productDisplay div {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    filter: brightness(50%);
+    transition: all 1s ease;
+}
+
+.productDisplay div:hover {
+    filter: brightness(100%);
+}
+
+.productDisplay h3 {
+    position: absolute;
+    z-index: 1;
+}
+
 /* ==================================================== Responsive ============================================== */
 
 @media screen and (max-width:1024px) {
@@ -688,6 +724,21 @@ footer p:hover {
         background-size: 90%;
     }
 
+    /* OUR PRODUCT */
+    .ourProduct {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .productDisplay {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .productDisplay h3 {
+        font-size: 2rem;
+    }
+
 }
 
 @media screen and (max-width:768px) {
@@ -715,7 +766,7 @@ footer p:hover {
         font-size: 0.7rem;
     }
 
-    
+
     /* HEADER */
     .titleHome img {
         height: 2rem;
@@ -776,29 +827,29 @@ footer p:hover {
         font-size: 0.7rem;
     }
 
-        /* CONFIGURATION */
-        .componentsContent {
-            background-size: 100%;
-            height: 40vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0;
+    /* CONFIGURATION */
+    .componentsContent {
+        background-size: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
 
-        }
+    }
 
-        .componentsNav {
-            height: 40vh;
-            display: flex;
-            align-items: start;
-            justify-content: center;
-            gap: 0.5rem;
-        }
+    .componentsNav {
+        height: 40vh;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        gap: 0.5rem;
+    }
 
-        .componentsButton {
-            width: 2rem;
-            height: 2rem;
-            border-radius: 0.5rem;
-        }
+    .componentsButton {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.5rem;
+    }
 
 }
