@@ -150,7 +150,7 @@ nav li {
 }
 
 nav li a {
-    opacity: 0.5;
+    opacity: 0.7;
     transition: all ease 1s;
 }
 
@@ -225,6 +225,10 @@ nav li>a:hover:after {
     stroke-dashoffset: -134;
     stroke-width: 3;
 }
+
+/* ================================================================================================================ */
+/* ==================================================== HOME PAGE ============================================== */
+/* ================================================================================================================ */
 
 /* ==================================================== HEADER ============================================== */
 
@@ -301,7 +305,7 @@ header {
 
 .slider::before,
 .slider::after {
-    background: linear-gradient(to right, rgb(30, 41, 59) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, var(--color-secondbackground) 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 100%;
     position: absolute;
@@ -334,7 +338,7 @@ header {
 
 .slider .slide {
     padding: 1.5rem;
-    background-color: rgb(51, 65, 85);
+    background-color: var(--color-secondbackground);
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -356,8 +360,22 @@ header {
     border-radius: 50%;
 }
 
+.lineOne div {
+    display: flex;
+    flex-direction: column;
+}
+
+.lineOne div h5 {
+    opacity: 0.85;
+    font-family: 'satoshi';
+}
+
 .lineTwo {
     width: 25rem;
+}
+
+.lineTwo p {
+    font-size: 0.9rem;
 }
 
 @keyframes scroll {
@@ -418,7 +436,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 90%;
-    height: 100vh;
+    height: 85vh;
 }
 
 .productText {
@@ -479,10 +497,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 
@@ -559,7 +573,7 @@ header {
 /* ==================================================== FOOTER ============================================== */
 
 footer {
-    height: 7.5vh;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -579,6 +593,20 @@ footer p {
 
 footer p:hover {
     opacity: 1;
+}
+
+footer p>a:after {
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: var(--color-text);
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+footer p>a:hover:after {
+    transform: scaleX(1);
+    transition: transform .3s;
 }
 
 
