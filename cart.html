@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
     <title>Horizon</title>
 </head>
-
 <body>
     <nav class="navbar">
         <div class="brandLogo">
-            <a href=""><img src="ICONES/NIGHT/LOGO.svg" alt="Go Home"></a>
+            <a href="index.html"><img src="ICONES/NIGHT/LOGO.svg" alt="Go Home"></a>
         </div>
         <div>
             <ul>
@@ -37,46 +40,18 @@
         </div>
     </nav>
 
-    <section class="ourProduct">
-        <a href="" class="productDisplay">
-            <h3>lounge suite</h3>
-            <div style="background-image: url('IMG/lounge.jpg');">
-            </div>
-        </a>
-        <a href="" class="productDisplay">
-            <h3>stream suite</h3>
-            <div style="background-image: url('IMG/stream.jpg');">
-            </div>
-        </a>
-        <a href="" class="productDisplay">
-            <h3>team suite</h3>
-            <div style="background-image: url('IMG/team.jpg');">
-            </div>
-        </a>
-    </section>
-
-    <footer>
-
-        <p>
-            <a href="">Terms</a>
-        </p>
-        <p>
-            <a href="">Privacy</a>
-        </p>
-
-        <div class="bottomBrandLogo">
-            <a href=""><img src="ICONES/NIGHT/LOGO.svg" alt="Go Top"></a>
+    <section class="cartContainer">
+        <div class="cartBackground">
+            <section class="mapContainer">
+                <h3>CHOOSE A LOCATION</h3>
+                <div id="map"></div>
+            </section>
         </div>
-
-        <p>
-            <a href="">FAQ</a>
-        </p>
-        <p>
-            <a href="">Contact us</a>
-        </p>
-
-    </footer>
-
+    </section>
 </body>
 
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+crossorigin=""></script>
+<script src="JS/map.js"></script>
 </html>
