@@ -876,13 +876,13 @@ footer p>a:hover:after {
     justify-content: center;
 }
 
-.cartBackground {
+/* map */
+.mapBackground {
     background-color: var(--color-secondbackground);
     padding: 2rem;
     border-radius: 2rem;
 }
 
-/* map */
 .mapContainer {
     align-items: center;
     justify-content: center;
@@ -928,6 +928,7 @@ footer p>a:hover:after {
 .popupText div div p {
     margin: 0 auto 1rem 1rem;
     font-size: 0.8rem;
+    padding-right: 1rem;
 }
 
 .leaflet-popup-content img {
