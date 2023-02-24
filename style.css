@@ -656,7 +656,7 @@ footer p>a:hover:after {
     background-color: var(--color-secondbackground);
     padding: 3rem;
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .offerContent {
