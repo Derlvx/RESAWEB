@@ -95,7 +95,6 @@ p {
     --color-secondbackground: #3A3A3A;
     --color-text: #FFF;
     --color-secondtext: #CBF7B0;
-    ;
     --color-button: #84A98C;
 }
 
@@ -671,6 +670,10 @@ footer p>a:hover:after {
     color: var(--color-secondtext);
 }
 
+.offerContent p span {
+    font-size: 0.9rem;
+}
+
 .vertical-line {
     border-left: 2px solid var(--color-text);
     display: inline-block;
@@ -785,6 +788,7 @@ footer p>a:hover:after {
 
 .owl-item {
     padding: 0 15px;
+    background: none !important;
 }
 
 .owl-item:hover .overlay {
@@ -900,7 +904,7 @@ footer p>a:hover:after {
 }
 
 /* ================================================================================================================ */
-/* ==================================================== CART PAGE ============================================== */
+/* ==================================================== CHECKOUT PAGE ============================================== */
 /* ================================================================================================================ */
 
 .cartContainer {
@@ -1020,7 +1024,242 @@ footer p>a:hover:after {
 }
 
 /* ================================================================================================================ */
-/* ==================================================== CART PAGE ============================================== */
+/* ==================================================== EXTRA PAGE ============================================== */
+/* ================================================================================================================ */
+
+.extra {
+    margin-top: calc(7.5vh + 3rem);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.extra h2 {
+    text-align: center;
+}
+
+.cartButton {
+    width: 3rem;
+    z-index: 5;
+    position: fixed;
+    top: 4.5rem;
+    left: 1.5rem;
+}
+
+.cartButton a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.cartButton img {
+    height: 3rem;
+    width: 3rem;
+}
+
+.cartButton a sup {
+    font-family: 'Satoshi';
+    position: absolute;
+    padding: 0.25rem 0.55rem;
+    top: 0.5rem;
+    left: 2.5rem;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.cartButton a.cartCount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2rem;
+    padding: 1rem 2.5rem;
+    background: rgba(58, 58, 58, 0.75);
+    transition: all 1s ease;
+}
+
+.cartButton a.cartCount:hover {
+    background: rgba(58, 58, 58, 1);
+}
+
+/* AUTRES */
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2rem;
+}
+
+main .container .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-secondbackground);
+    position: relative;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    width: 15rem;
+    background: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main .container .card section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.itemPrice {
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.itemPrice span{
+    font-size: 1rem;
+    color: var(--color-secondtext);
+}
+
+main .container .card button.addToCart {
+    background: var(--color-button);
+    color: white;
+    border: 1px solid var(--color-button);
+    border-radius: 50%;
+    font-size: 2em;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    box-shadow: 0 0.3rem 1rem 0 rgba(8, 12, 8, .4);
+    transition: all .38s ease-in-out;
+}
+
+main .container .card button:hover {
+    background: var(--color-text);
+    color: var(--color-button);
+}
+
+/* Callout */
+
+main .callout {
+    position: fixed;
+    height: 100%;
+    right: -100%;
+    top: 7.5vh;
+    background: var(--color-secondbackground);
+    box-shadow: 0 10px 20px 0 rgba(8, 12, 8);
+    transition: all 2s ease;
+    z-index: 1;
+    opacity: 0.95;
+}
+
+main .callout .row:first-child {
+    height: calc(100vh - 6.25rem - 7.5vh);
+    overflow-y: auto;
+}
+
+main .callout .row:first-child .card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    margin: 1rem;
+}
+
+main .callout .row:last-child {
+    background: #222;
+    color: white;
+    height: 6.25rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3rem;
+    padding: 0.6rem 1.3rem;
+}
+
+main .callout .row:last-child section:first-child {
+    display: grid;
+}
+
+main .callout .row:last-child section:last-child {
+    display: grid;
+    gap: 0.6rem;
+}
+
+main .callout .row:last-child section:last-child button.resetCart {
+    background: red;
+    color: var(--color-text);
+    border: none;
+}
+
+main .callout .row:last-child section:last-child button.Checkout {
+    background: rgb(30, 122, 30);
+    color: var(--color-text);
+    border: none;
+}
+
+main .callout .row:first-child .card section:first-child img {
+    width: 6.25rem;
+    height: 6.25rem;
+}
+
+main .callout .row:first-child .card section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+main .callout .row:first-child .card button.removeCartItem {
+    background: none;
+    color: var(--color-text);
+    border: none;
+    padding: 0 1.4rem;
+    font-size: 2rem;
+}
+
+main .callout .alert {
+    background: rgb(255, 60, 60);
+    color: white;
+    padding: 1.3rem;
+    text-align: center;
+}
+
+main .callout.open {
+    right: 0;
+}
+
+.calloutSubtext {
+    font-family: 'Satoshi';
+    font-size: 0.8rem;
+    color: var(--color-text);
+    opacity: 0.7;
+}
+
+.billAmount {
+    font-size: 2rem;
+}
+
+/* ================================================================================================================ */
+/* ==================================================== FAQ PAGE ============================================== */
 /* ================================================================================================================ */
 
 .navbarSpace {
@@ -1043,8 +1282,9 @@ footer p>a:hover:after {
 }
 
 .questions {
-    margin: 0 3rem 0 3rem;
+    margin: 0 10rem 0 10rem;
 }
+
 /* Style the buttons that are used to open and close the accordion panel */
 .accordion {
     font-size: 1.2rem;
@@ -1161,7 +1401,7 @@ footer p>a:hover:after {
         background-size: 90%;
     }
 
-    /* OUR PRODUCT */
+    /* CATALOG */
     .ourProduct {
         gap: 1rem;
         flex-direction: column;
@@ -1174,6 +1414,18 @@ footer p>a:hover:after {
 
     .productDisplay h3 {
         font-size: 2rem;
+    }
+
+    /* FAQ */
+
+    .questions {
+        margin: 0 3rem 0 3rem;
+    }
+
+    /* EXTRA */
+
+    main .container {
+        grid-template-columns: repeat(2, auto);
     }
 
 }
@@ -1230,7 +1482,7 @@ footer p>a:hover:after {
         padding: 2rem;
     }
 
-    /* PRODUCT */
+    /* ROOM */
     .productPresentation {
         flex-direction: column;
         gap: 3rem;
@@ -1302,4 +1554,39 @@ footer p>a:hover:after {
         width: 150px;
     }
 
+    /* EXTRA*/
+
+    main .container {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    main .callout .row:first-child .card { 
+        gap: 2rem;
+        margin: 1rem;
+    }
+
+    main .callout .row:first-child .card section:first-child img {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    main .callout .card h4 {
+        font-size: 0.7rem;
+    }
+
+    .calloutSubtext {
+        display: none;
+    }
+
+    main .callout .row:first-child .card section {
+        gap: 0rem;
+    }
+
+    .callout .card section:first-child span {
+        width: 50%;
+    }
+
+    main .callout .row:first-child .card button.removeCartItem {
+        padding: 0.5rem;
+    }
 }
