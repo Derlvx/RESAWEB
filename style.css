@@ -95,7 +95,8 @@ p {
     --color-secondbackground: #3A3A3A;
     --color-text: #FFF;
     --color-secondtext: #CBF7B0;
-    --color-button: #84A98C;
+    --color-button: #5B7561;
+    --color-deny: #a90202;
 }
 
 /* ================================================ ANIMATION ================================================== */
@@ -110,6 +111,43 @@ p {
         transform: translateY(10%);
         transition: ease 0.5s;
     }
+}
+
+.button {
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+    border: none;
+    background: var(--color-button);
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+.button .border {
+    position: absolute;
+    border: 0.2em solid var(--color-button);
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+}
+
+.button:hover .border {
+    display: block;
+    width: 110%;
+    height: 125%;
+}
+
+.full-rounded {
+    border-radius: 2em;
 }
 
 /* ==================================================== NAVBAR ============================================== */
@@ -630,7 +668,6 @@ footer p>a:hover:after {
 /* ==================================================== HEADER ============================================== */
 
 .button {
-    background-color: #84A98C;
     padding: 1rem;
     border-radius: 2rem;
     color: white;
@@ -1073,14 +1110,48 @@ footer p>a:hover:after {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     padding: 1rem 2.5rem;
-    background: rgba(58, 58, 58, 0.75);
-    transition: all 1s ease;
+    background: rgba(58, 58, 58, 1);
+    transition: all 0.2s ease;
 }
 
-.cartButton a.cartCount:hover {
-    background: rgba(58, 58, 58, 1);
+.cartButton .button {
+    font-size: 16px;
+    position: relative;
+    margin: auto;
+    padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+    border: none;
+    background: var(--color-button);
+    transition: all 0.1s linear;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.cartButton .button:active {
+    transform: scale(0.95);
+}
+
+.cartButton .button .border {
+    z-index: -1;
+    position: absolute;
+    border: 0.2em solid rgba(58, 58, 58, 1);
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%, -50%);
+}
+
+.cartButton .button:hover .border {
+    display: block;
+    width: 115%;
+    height: 115%;
+}
+
+.cartButton .full-rounded {
+    border-radius: 2rem;
 }
 
 /* AUTRES */
@@ -1109,7 +1180,7 @@ main .container .card {
     padding: 1rem;
     border-radius: 2rem;
     box-shadow: 5px 5px 15px 5px #000000;
-    
+
 }
 
 .imgContainer {
@@ -1137,7 +1208,7 @@ main .container .card section {
     padding: 1rem;
 }
 
-.itemPrice span{
+.itemPrice span {
     font-size: 1rem;
     color: var(--color-secondtext);
 }
@@ -1176,7 +1247,7 @@ main .callout {
 }
 
 main .callout .row:first-child {
-    height: calc(100vh - 6.25rem - 7.5vh);
+    height: calc(100vh - 9rem - 7.5vh);
     overflow-y: auto;
 }
 
@@ -1191,11 +1262,11 @@ main .callout .row:first-child .card {
 main .callout .row:last-child {
     background: #222;
     color: white;
-    height: 6.25rem;
+    height: 9rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.3rem;
-    padding: 0.6rem 1.3rem;
+    padding: 1.3rem;
 }
 
 main .callout .row:last-child section:first-child {
@@ -1208,15 +1279,31 @@ main .callout .row:last-child section:last-child {
 }
 
 main .callout .row:last-child section:last-child button.resetCart {
-    background: red;
+    border: solid 0.1rem var(--color-deny) !important;
+    background: var(--color-deny);
     color: var(--color-text);
     border: none;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+    padding: 0.5rem;
+}
+
+main .callout .row:last-child section:last-child button.resetCart:hover{
+    background: none;
 }
 
 main .callout .row:last-child section:last-child button.Checkout {
-    background: rgb(30, 122, 30);
+    border: solid 0.1rem var(--color-button) !important;
+    background: var(--color-button);
     color: var(--color-text);
     border: none;
+    border-radius: 0.5rem;
+    transition: all 0.5s ease;
+    padding: 0.5rem;
+}
+
+main .callout .row:last-child section:last-child button.Checkout:hover { 
+    background: none;
 }
 
 main .callout .row:first-child .card section:first-child img {
@@ -1237,6 +1324,11 @@ main .callout .row:first-child .card button.removeCartItem {
     border: none;
     padding: 0 1.4rem;
     font-size: 2rem;
+    transition: all 0.5s ease;
+}
+
+main .callout .row:first-child .card button.removeCartItem:hover {
+    color: var(--color-deny);
 }
 
 main .callout .alert {
@@ -1254,7 +1346,7 @@ main .callout.open {
     font-family: 'Satoshi';
     font-size: 0.8rem;
     color: var(--color-text);
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .billAmount {
@@ -1563,7 +1655,7 @@ main .callout.open {
         grid-template-columns: repeat(1, auto);
     }
 
-    main .callout .row:first-child .card { 
+    main .callout .row:first-child .card {
         gap: 2rem;
         margin: 1rem;
     }

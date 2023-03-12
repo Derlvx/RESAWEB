@@ -118,8 +118,8 @@ const popCart = () => {
                     <p class="billAmount">${cart.reduce((accu, item, i) => accu += item.qty * product[item.id - 1].rate, 0)}$</p>
             </section>
             <section>
-                <button class="resetCart" onclick="resetCart()">Clear</button>
-                <button class="Checkout" onclick="Checkout()">Checkout</button>
+                <button class="resetCart" onclick="resetCart()"><p>Clear</p></button>
+                <button class="Checkout" onclick="Checkout()"><p>Checkout</p></button>
             </section>
         </div>
     `);
@@ -132,7 +132,7 @@ const popCart = () => {
     </div>
 `);
     }
-    cart.reduce((accu, item) => accu += item.qty, 0) < 1 ? $(".cartCount sup").css('background', '#A54141').text(cart.reduce((accu, item) => accu += item.qty, 0)) : $(".cartCount sup").css('background', '#84A98C').text(cart.reduce((accu, item) => accu += item.qty, 0));
+    cart.reduce((accu, item) => accu += item.qty, 0) < 1 ? $(".cartCount sup").css('background', '#a90202').text(cart.reduce((accu, item) => accu += item.qty, 0)) : $(".cartCount sup").css('background', '#5B7561').text(cart.reduce((accu, item) => accu += item.qty, 0));
 }
 popCart();
 
