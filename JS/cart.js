@@ -1,59 +1,59 @@
 let product = [
     {
         id: 1,
-        name: 'Pizza Margherita ',
+        name: 'Pizza Pepperoni ',
         description: 'with tomato',
-        rate: '77.5',
-        photo: 'IMG/extra_food1.png'
+        rate: '13.5',
+        photo: 'IMG/EXTRA_1.png'
     },
     {
         id: 2,
         name: 'Pizza Margherita ',
         description: 'with tomato',
-        rate: '40.5',
-        photo: 'IMG/extra_food1.png'
+        rate: '10.5',
+        photo: 'IMG/EXTRA_2.png'
     },
     {
         id: 3,
-        name: 'Pizza Margherita ',
-        description: 'with tomato',
-        rate: '20.4',
-        photo: 'IMG/extra_food1.png'
+        name: 'Pizza Buffalo ',
+        description: 'with pepper',
+        rate: '13.5',
+        photo: 'IMG/EXTRA_3.png'
     },
     {
         id: 4,
-        name: 'Pizza Margherita ',
-        description: 'with tomato',
-        rate: '90',
-        photo: 'IMG/extra_food1.png'
+        name: 'Pizza Vegan',
+        description: 'with salad',
+        rate: '13.5',
+        photo: 'IMG/EXTRA_4.png'
     },
     {
         id: 5,
-        name: 'Pizza Margherita ',
-        description: 'with tomato',
-        rate: '77.5',
-        photo: 'IMG/extra_food1.png'
+        name: 'Burger',
+        description: 'with french fries',
+        rate: '12',
+        photo: 'IMG/EXTRA_5.png'
     },
     {
         id: 6,
-        name: 'Pizza Margherita ',
-        description: 'with tomato',
-        rate: '40.2',
-        photo: 'IMG/extra_food1.png'
+        name: 'Bubble Tea',
+        description: 'with tapioca',
+        rate: '6',
+        photo: 'IMG/EXTRA_6.png'
     },
     {
         id: 7,
-        name: 'Pizza Margherita ',
-        description: 'with tomato',
-        rate: '20.5',
-        photo: 'IMG/extra_food1.png'
+        name: 'Chicken Wrap',
+        description: 'with raw vegetables',
+        rate: '7.5',
+        photo: 'IMG/EXTRA_7.png'
     },
     {
         id: 8,
-        name: 'Pizza Margherita ',
-        description: 'with tomato',
-        rate: '90',
-        photo: 'IMG/extra_food1.png'
+        name: 'PokeBowl',
+        description: 'with vegetables & rice',
+        rate: '15',
+        photo: 'IMG/EXTRA_8.png'
     },
 ];
 
@@ -115,7 +115,7 @@ const popCart = () => {
         <div class="row">
             <section>
                     <h4>Total Bill :</h4>
-                    <p class="billAmount">${cart.reduce((accu, item, i) => accu += item.qty * product[i].rate, 0)}$</p>
+                    <p class="billAmount">${cart.reduce((accu, item, i) => accu += item.qty * product[item.id - 1].rate, 0)}$</p>
             </section>
             <section>
                 <button class="resetCart" onclick="resetCart()">Clear</button>

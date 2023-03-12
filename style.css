@@ -1108,14 +1108,17 @@ main .container .card {
     position: relative;
     padding: 1rem;
     border-radius: 2rem;
+    box-shadow: 5px 5px 15px 5px #000000;
+    
 }
 
 .imgContainer {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15rem;
-    width: 15rem;
+    height: 14rem;
+    width: 14rem;
+    margin: 1rem;
     background: center;
     background-size: contain;
     background-repeat: no-repeat;
