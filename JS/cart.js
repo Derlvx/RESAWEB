@@ -119,7 +119,7 @@ const popCart = () => {
             </section>
             <section>
                 <button class="resetCart" onclick="resetCart()"><p>Clear</p></button>
-                <button class="Checkout" onclick="Checkout()"><p>Checkout</p></button>
+                <button class="Checkout button--success" data-for="js_success-popup" onclick="Checkout()"><p>Checkout</p></button>
             </section>
         </div>
     `);
@@ -164,3 +164,13 @@ const resetCart = () => {
 const Checkout = () => {
     return;
 }
+
+const addButtonTrigger = el => {
+    el.addEventListener('click', () => {
+        const popupEl = document.querySelector(`.${el.dataset.for}`);
+        popupEl.classList.toggle('popup--visible');
+    });
+};
+
+Array.from(document.querySelectorAll('button[data-for]')).
+    forEach(addButtonTrigger);

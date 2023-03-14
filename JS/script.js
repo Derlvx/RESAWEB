@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+
     var acc = document.getElementsByClassName("accordion");
     var i;
 
@@ -13,4 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
+
+    $('.menu-toggle').click(function () {
+        $(".nav").toggleClass("mobile-nav");
+        $(this).toggleClass("is-active");
+    });
+
 })
