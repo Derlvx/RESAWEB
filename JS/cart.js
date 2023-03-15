@@ -1,3 +1,12 @@
+// Button hide popup
+document.querySelector('.popup__content .button--success').addEventListener('click', () => {
+    cart.splice(0, cart.length);
+    localStorage.setItem('cart', JSON.stringify(cart));
+    popCart();
+    location.reload();
+})
+
+// Cart function
 let product = [
     {
         id: 1,
@@ -162,15 +171,20 @@ const resetCart = () => {
 }
 
 const Checkout = () => {
-    return;
+    const popupEl = document.querySelector(`.js_success-popup`);
+    popupEl.classList.toggle('popup--visible');
+    console.log('test')
 }
 
-const addButtonTrigger = el => {
-    el.addEventListener('click', () => {
-        const popupEl = document.querySelector(`.${el.dataset.for}`);
-        popupEl.classList.toggle('popup--visible');
-    });
-};
+// Function pour button de popup
+// const addButtonTrigger = el => {
+//     el.addEventListener('click', () => {
+//             const popupEl = document.querySelector(`.${el.dataset.for}`);
+//             popupEl.classList.toggle('popup--visible');
+//             console.log('test')
+//     });
+// };
 
-Array.from(document.querySelectorAll('button[data-for]')).
-    forEach(addButtonTrigger);
+// Array.from(document.querySelectorAll('button[data-for]')).
+//     forEach(addButtonTrigger);
+
