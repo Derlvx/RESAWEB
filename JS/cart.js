@@ -7,64 +7,11 @@ document.querySelector('.popup__content .button--success').addEventListener('cli
 })
 
 // Cart function
-let product = [
-    {
-        id: 1,
-        name: 'Pizza Pepperoni ',
-        description: 'with tomato',
-        rate: '13.5',
-        photo: 'IMG/EXTRA_1.png'
-    },
-    {
-        id: 2,
-        name: 'Pizza Margherita ',
-        description: 'with tomato',
-        rate: '10.5',
-        photo: 'IMG/EXTRA_2.png'
-    },
-    {
-        id: 3,
-        name: 'Pizza Buffalo ',
-        description: 'with pepper',
-        rate: '13.5',
-        photo: 'IMG/EXTRA_3.png'
-    },
-    {
-        id: 4,
-        name: 'Pizza Vegan',
-        description: 'with salad',
-        rate: '13.5',
-        photo: 'IMG/EXTRA_4.png'
-    },
-    {
-        id: 5,
-        name: 'Burger',
-        description: 'with french fries',
-        rate: '12',
-        photo: 'IMG/EXTRA_5.png'
-    },
-    {
-        id: 6,
-        name: 'Bubble Tea',
-        description: 'with tapioca',
-        rate: '6',
-        photo: 'IMG/EXTRA_6.png'
-    },
-    {
-        id: 7,
-        name: 'Chicken Wrap',
-        description: 'with raw vegetables',
-        rate: '7.5',
-        photo: 'IMG/EXTRA_7.png'
-    },
-    {
-        id: 8,
-        name: 'PokeBowl',
-        description: 'with vegetables & rice',
-        rate: '15',
-        photo: 'IMG/EXTRA_8.png'
-    },
-];
+
+let request = new XMLHttpRequest();
+request.open("GET", "JS/data.json", false);
+request.send(null)
+var product = JSON.parse(request.responseText);
 
 product.forEach((item, i) => {
     $('main .container').append(`
