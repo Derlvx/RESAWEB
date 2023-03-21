@@ -9,8 +9,8 @@ document.querySelector('.popup__content .button--success').addEventListener('cli
 // Cart function
 
 let request = new XMLHttpRequest();
-request.open("GET", "./data.json", false);
-request.send(null)
+request.open("GET", "./JS/data.json", false);
+request.send(null);
 var product = JSON.parse(request.responseText);
 
 product.forEach((item, i) => {
@@ -39,29 +39,34 @@ const popCart = () => {
         cart.forEach((item, i) => {
             $("main .callout .row").append(`
             <div class="card">
-                    <section>
+
+                    <section class="card_left">
                     <img src="${product[item.id - 1].photo}" alt="${product[item.id - 1].name}">
                         <span>
                             <h4>${product[item.id - 1].name}</h4>
                             <p>${product[item.id - 1].rate}$</p>
                         </span>
                     </section>
-                    <section>
+
+                    <section class="card_right">
+                        <section>
+                            <p class="calloutSubtext">
+                                QTY
+                            </p>
+                            <p>
+                            ${item.qty}
+                            </p>
+                        </section>
+                        <section>
                         <p class="calloutSubtext">
-                            QTY
+                        TOTAL
                         </p>
                         <p>
-                        ${item.qty}
+                        ${item.qty * product[item.id - 1].rate}$
                         </p>
+                        </section>
                     </section>
-                    <section>
-                    <p class="calloutSubtext">
-                    TOTAL
-                    </p>
-                    <p>
-                    ${item.qty * product[item.id - 1].rate}$
-                    </p>
-                    </section>
+
                 <button class="removeCartItem" onclick="removeCartItem(${item.id})">&times</button>
             </div>
             `);
