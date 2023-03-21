@@ -9,7 +9,7 @@ document.querySelector('.popup__content .button--success').addEventListener('cli
 // Cart function
 
 let request = new XMLHttpRequest();
-request.open("GET", "JS/data.json", false);
+request.open("GET", "./data.json", false);
 request.send(null)
 var product = JSON.parse(request.responseText);
 

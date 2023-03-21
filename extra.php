@@ -1,3 +1,25 @@
+
+<?php
+    // Connection à la base de donnée
+    $connection = mysqli_connect("localhost","root","root","resaweb") or die("Error " . mysqli_error($connection));
+
+    //Récupération des données
+    $sql = "select * from food";
+    $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
+
+    //Création d'un array()
+    $emparray = array();
+    while($row =mysqli_fetch_assoc($result))
+    {
+        $emparray[] = $row;
+    }
+    //Création du fichier JSON servant pour le panier
+    $fp = fopen('JS/data.json', 'w');
+    fwrite($fp, json_encode($emparray));
+    fclose($fp);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +51,7 @@
                 <li class="nav-item"><a href="index.html#aboutUs">Overview</a></li>
                 <li class="nav-item"><a href="#">About us</a></li>
                 <li class="nav-item"><a href="catalog.html">Our product</a></li>
-                <li class="nav-item"><a href="extra.html">Extra</a></li>
+                <li class="nav-item"><a href="extra.php">Extra</a></li>
             </ul>
         </nav>
     </div>
@@ -93,7 +115,7 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script type="text/javascript" src="JS/data.json"></script>
-    <script defer type="text/javascript" src="JS/script.js"></script>
+    <script defer type="text/javascript" src="data.json"></script>
 
 </body>
 
