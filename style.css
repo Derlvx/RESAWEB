@@ -566,6 +566,80 @@ header {
     color: var(--color-secondtext);
 }
 
+.decoration {
+    z-index: -1;
+    position: absolute;
+    /* margin-top: 25%; */
+    left: 1%;
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Khula", sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 6px;
+    line-height: 1.2;
+    opacity: 0.1;
+}
+
+.animate-me span {
+    display: inline-block;
+}
+
+.animation-wrapper {
+    z-index: -1;
+    width: 80%;
+    padding-bottom: 40%;
+    position: absolute;
+    opacity: 0.05;
+}
+
+.stagger-visualizer {
+    position: absolute;
+    width: 1100px;
+    height: 550px;
+    transform-origin: left top;
+}
+
+.stagger-visualizer .dots-wrapper {
+    transform: translateZ(0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.stagger-visualizer .dot {
+    position: relative;
+    z-index: 1;
+    width: 23px;
+    height: 23px;
+    margin: 16px;
+    border-radius: 50%;
+    background-color: transparent;
+    background-color: var(--color-text);
+} 
+
+.stagger-visualizer .cursor {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 37px;
+    height: 37px;
+    margin: 9px;
+    background-color: var(--color-secondtext);
+    border-radius: 50%;
+}
+
 /* ==================================================== COMING SOON ============================================== */
 
 .diapo-title {
@@ -1321,7 +1395,7 @@ main .callout .row:first-child .card .card_right {
     margin-left: auto;
 }
 
-main .callout .row:first-child .card .card_right section{
+main .callout .row:first-child .card .card_right section {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1783,6 +1857,14 @@ main .callout.open {
         height: 40%;
     }
 
+    .decoration {
+        display: none;
+    }
+
+    .animation-wrapper {
+        display: none;
+    }
+
     /* SUBSCRIPTION */
     .offer {
         gap: 6rem;
@@ -2025,11 +2107,11 @@ main .callout.open {
         gap: 0rem;
     }
 
-    main .callout .row:first-child .card  {
+    main .callout .row:first-child .card {
         gap: 0rem;
     }
 
-    main .callout .row:first-child .card .card_right section{
+    main .callout .row:first-child .card .card_right section {
         width: 2rem;
     }
 
