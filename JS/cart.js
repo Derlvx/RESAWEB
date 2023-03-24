@@ -1,18 +1,18 @@
-// Button hide popup
+// Button de réussite après Checkout
 document.querySelector('.popup__content .button--success').addEventListener('click', () => {
-    cart.splice(0, cart.length);
+    cart.splice(0, cart.length); 
     localStorage.setItem('cart', JSON.stringify(cart));
-    popCart();
+    popCart(); // Remise a 0 du panier ( avec les deux lignes au dessus)
     location.reload();
 })
 
-// Cart function
-
+// Connexion du JSON pour le panier
 let request = new XMLHttpRequest();
 request.open("GET", "./JS/data.json", false);
 request.send(null);
 var product = JSON.parse(request.responseText);
 
+// Affichage des produits contenu dans le JSON sous la forme HTML
 product.forEach((item, i) => {
     $('main .container').append(`
     <div class="card">
@@ -31,6 +31,7 @@ let cart = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart'
 
 const getIndex = id => cart.indexOf(cart.find(item => item.id === id));
 
+// Style du pop up panier
 const popCart = () => {
     if (cart.length > 0) {
         $("main .callout").html(`
@@ -39,7 +40,6 @@ const popCart = () => {
         cart.forEach((item, i) => {
             $("main .callout .row").append(`
             <div class="card">
-
                     <section class="card_left">
                     <img src="${product[item.id - 1].photo}" alt="${product[item.id - 1].name}">
                         <span>
@@ -62,15 +62,15 @@ const popCart = () => {
                         TOTAL
                         </p>
                         <p>
-                        ${item.qty * product[item.id - 1].rate}$
+                        ${item.qty * product[item.id - 1].rate}$ // Intégration des données du JSON
                         </p>
                         </section>
                     </section>
-
                 <button class="removeCartItem" onclick="removeCartItem(${item.id})">&times</button>
             </div>
             `);
         });
+        // Partie basse du panier
         $("main .callout").append(`
         </div>
         <div class="row">
@@ -85,7 +85,7 @@ const popCart = () => {
         </div>
     `);
     }
-    else {
+    else { // Sinon affichage d'un message d'erreur
         $("main .callout").html(`
     <div class="alert">
         <p>Ooooppsss..... </p>
@@ -93,10 +93,12 @@ const popCart = () => {
     </div>
 `);
     }
+    // Definition du "sup" indiquant le nombre d'objet dans le panier
     cart.reduce((accu, item) => accu += item.qty, 0) < 1 ? $(".cartCount sup").css('background', '#a90202').text(cart.reduce((accu, item) => accu += item.qty, 0)) : $(".cartCount sup").css('background', '#5B7561').text(cart.reduce((accu, item) => accu += item.qty, 0));
 }
 popCart();
 
+// Fonction pour ajouter dans le panier
 const addToCart = id => {
     if (cart.length > 0) {
         getIndex(id) > -1 ? cart[getIndex(id)].qty += 1 : cart.push({ id, qty: 1 });
@@ -108,12 +110,14 @@ const addToCart = id => {
     popCart();
 }
 
+// Fonction pour retirer du panier
 const removeCartItem = id => {
     getIndex(id) > -1 ? cart.splice(getIndex(id), 1) : '';
     localStorage.setItem('cart', JSON.stringify(cart));
     popCart();
 }
 
+// Fonction pour Vider le panier
 const resetCart = () => {
     if (confirm("Empty cart ?")) {
         cart.splice(0, cart.length);
@@ -122,6 +126,7 @@ const resetCart = () => {
     }
 }
 
+// Fonction pour sortir du panier
 const Checkout = () => {
     const popupEl = document.querySelector(`.js_success-popup`);
     popupEl.classList.toggle('popup--visible');

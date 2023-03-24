@@ -1,13 +1,16 @@
+// Document permettant au carrousel dans les page produit de focntionner
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
 
         loop: true,
+        // Paramètre loop
 
         autoplay: {
 
             delay: 4000,
 
         },
+        // Paramètre autoplay
 
         margin: 10,
 
@@ -40,6 +43,7 @@ $(document).ready(function () {
             }
 
         }
+        // Responsive
 
     })
 });
