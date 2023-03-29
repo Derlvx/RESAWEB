@@ -38,6 +38,7 @@ $('.selectGuest').click(function () {
 
     document.querySelector("#dotsActive3").classList.add("show");
     document.querySelector("#dotsActive3").classList.remove("hide");
+    document.getElementById("dots2").removeAttribute('disabled');
 });
 
 $('#dots2').click(function () {
@@ -58,6 +59,7 @@ $('#dots2').click(function () {
 
     document.querySelector("#dotsActive2").classList.add("show");
     document.querySelector("#dotsActive2").classList.remove("hide");
+    document.getElementById("dots2").setAttribute("disabled", "");
 });
 
 $('#dots3').click(function () {
@@ -98,6 +100,9 @@ $('#dots1').click(function () {
 
     document.querySelector("#dotsActive1").classList.add("show");
     document.querySelector("#dotsActive1").classList.remove("hide");
+    document.getElementById("dots1").setAttribute("disabled","");
+    document.getElementById("dots2").setAttribute("disabled","");
+    document.getElementById("dots3").setAttribute("disabled","");
 });
 
     // var el = document.getElementById('selectMap');

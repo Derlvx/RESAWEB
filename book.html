@@ -141,19 +141,19 @@
         </div>
 
         <li class="checkoutBar">
-            <button id="dots1">
+            <button id="dots1" disabled="true">
                 <ul class="progressDots">
                     <div id="dotsActive1" class="dotsActive show"></div>
                 </ul>
             </button>
-            <button id="dots2">
+            <button id="dots2" disabled="true">
                 <ul class="progressDots">
                     <div id="dotsActive2" class="dotsActive hide"></div>
                 </ul>
             </button>
-            <button id="dots3">
+            <button id="dots3" disabled="true">
                 <ul class="progressDots">
-                    <div id="dotsActive3" class="dotsActive hide"></div>
+                    <div id="dotsActive3" class="dotsActive hide" disabled></div>
                 </ul>
             </button>
         </li>
@@ -201,6 +201,7 @@
         document.querySelector("#dotsActive1").classList.remove("show");
         document.querySelector("#dotsActive2").classList.add("show");
         document.querySelector("#dotsActive2").classList.remove("hide");
+        document.getElementById("dots1").removeAttribute('disabled');
     }
 </script>
 

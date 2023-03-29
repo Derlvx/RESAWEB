@@ -1526,6 +1526,11 @@ footer p>a:hover:after {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.progressDots:hover {
+    scale: 1.2;
 }
 
 .dotsActive {
@@ -2495,11 +2500,16 @@ main .callout.open {
 
     .cartContainer {
         height: fit-content;
+        margin-bottom: 2rem;
     }
     
     .formBackground {
         padding: 1rem;
         width: 100%;
+    }
+
+    .checkoutBar {
+        bottom: 0;
     }
     
 }
