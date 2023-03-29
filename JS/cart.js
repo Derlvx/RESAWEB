@@ -1,6 +1,6 @@
 // Button de réussite après Checkout
 document.querySelector('.popup__content .button--success').addEventListener('click', () => {
-    cart.splice(0, cart.length); 
+    cart.splice(0, cart.length);
     localStorage.setItem('cart', JSON.stringify(cart));
     popCart(); // Remise a 0 du panier ( avec les deux lignes au dessus)
     location.reload();
@@ -133,15 +133,5 @@ const Checkout = () => {
     console.log('test')
 }
 
-// Function pour button de popup
-// const addButtonTrigger = el => {
-//     el.addEventListener('click', () => {
-//             const popupEl = document.querySelector(`.${el.dataset.for}`);
-//             popupEl.classList.toggle('popup--visible');
-//             console.log('test')
-//     });
-// };
 
-// Array.from(document.querySelectorAll('button[data-for]')).
-//     forEach(addButtonTrigger);
 

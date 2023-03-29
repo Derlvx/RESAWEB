@@ -21,109 +21,90 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+// LA MAGIE NOIRE ???!!!
+// $('.leaflet-marker-pane').click(function () {
+//     console.log('BONSOIR');
+// });
 
-    function fitElementToParent(el, padding) {
-        var timeout = null;
-        function resize() {
-            if (timeout) clearTimeout(timeout);
-            anime.set(el, { scale: 1 });
-            var pad = padding || 0;
-            var parentEl = el.parentNode;
-            var elOffsetWidth = el.offsetWidth - pad;
-            var parentOffsetWidth = parentEl.offsetWidth;
-            var ratio = parentOffsetWidth / elOffsetWidth;
-            timeout = setTimeout(anime.set(el, { scale: ratio }), 10);
-        }
-        resize();
-        window.addEventListener('resize', resize);
-    }
+$('.selectGuest').click(function () {
+    document.querySelector(".guestViewer").classList.add("hide");
+    document.querySelector(".guestViewer").classList.remove("show");
 
-    var advancedStaggeringAnimation = (function () {
+    document.querySelector(".formViewer").classList.add("show");
+    document.querySelector(".formViewer").classList.remove("hide");
 
-        var staggerVisualizerEl = document.querySelector('.stagger-visualizer');
-        var dotsWrapperEl = staggerVisualizerEl.querySelector('.dots-wrapper');
-        var dotsFragment = document.createDocumentFragment();
-        var grid = [20, 10];
-        var cell = 55;
-        var numberOfElements = grid[0] * grid[1];
-        var animation;
-        var paused = true;
+    document.querySelector("#dotsActive2").classList.add("hide");
+    document.querySelector("#dotsActive2").classList.remove("show");
 
-        fitElementToParent(staggerVisualizerEl, 0);
+    document.querySelector("#dotsActive3").classList.add("show");
+    document.querySelector("#dotsActive3").classList.remove("hide");
+});
 
-        for (var i = 0; i < numberOfElements; i++) {
-            var dotEl = document.createElement('div');
-            dotEl.classList.add('dot');
-            dotsFragment.appendChild(dotEl);
-        }
+$('#dots2').click(function () {
+    document.querySelector(".guestViewer").classList.add("show");
+    document.querySelector(".guestViewer").classList.remove("hide");
 
-        dotsWrapperEl.appendChild(dotsFragment);
+    document.querySelector(".formViewer").classList.add("hide");
+    document.querySelector(".formViewer").classList.remove("show");
 
-        var index = anime.random(0, numberOfElements - 1);
-        var nextIndex = 0;
+    document.querySelector(".mapViewer").classList.add("hide");
+    document.querySelector(".mapViewer").classList.remove("show");
 
-        anime.set('.stagger-visualizer .cursor', {
-            translateX: anime.stagger(-cell, { grid: grid, from: index, axis: 'x' }),
-            translateY: anime.stagger(-cell, { grid: grid, from: index, axis: 'y' }),
-            translateZ: 0,
-            scale: 1.5,
-        });
+    document.querySelector("#dotsActive1").classList.add("hide");
+    document.querySelector("#dotsActive1").classList.remove("show");
 
-        function play() {
+    document.querySelector("#dotsActive3").classList.add("hide");
+    document.querySelector("#dotsActive3").classList.remove("show");
 
-            paused = false;
-            if (animation) animation.pause();
+    document.querySelector("#dotsActive2").classList.add("show");
+    document.querySelector("#dotsActive2").classList.remove("hide");
+});
 
-            nextIndex = anime.random(0, numberOfElements - 1);
+$('#dots3').click(function () {
+    document.querySelector(".formViewer").classList.add("show");
+    document.querySelector(".formViewer").classList.remove("hide");
 
-            animation = anime.timeline({
-                easing: 'easeInOutQuad',
-                complete: play
-            })
-                .add({
-                    targets: '.stagger-visualizer .cursor',
-                    keyframes: [
-                        { scale: .75, duration: 120 },
-                        { scale: 2.5, duration: 220 },
-                        { scale: 1.5, duration: 450 },
-                    ],
-                    duration: 300
-                })
-                .add({
-                    targets: '.stagger-visualizer .dot',
-                    keyframes: [
-                        {
-                            translateX: anime.stagger('-2px', { grid: grid, from: index, axis: 'x' }),
-                            translateY: anime.stagger('-2px', { grid: grid, from: index, axis: 'y' }),
-                            duration: 100
-                        }, {
-                            translateX: anime.stagger('4px', { grid: grid, from: index, axis: 'x' }),
-                            translateY: anime.stagger('4px', { grid: grid, from: index, axis: 'y' }),
-                            scale: anime.stagger([2.6, 1], { grid: grid, from: index }),
-                            duration: 225
-                        }, {
-                            translateX: 0,
-                            translateY: 0,
-                            scale: 1,
-                            duration: 1200,
-                        }
-                    ],
-                    delay: anime.stagger(80, { grid: grid, from: index })
-                }, 30)
-                .add({
-                    targets: '.stagger-visualizer .cursor',
-                    translateX: { value: anime.stagger(-cell, { grid: grid, from: nextIndex, axis: 'x' }) },
-                    translateY: { value: anime.stagger(-cell, { grid: grid, from: nextIndex, axis: 'y' }) },
-                    scale: 1.5,
-                    easing: 'cubicBezier(.075, .2, .165, 1)'
-                }, '-=800')
+    document.querySelector(".guestViewer").classList.add("hide");
+    document.querySelector(".guestViewer").classList.remove("show");
 
-            index = nextIndex;
+    document.querySelector(".mapViewer").classList.add("hide");
+    document.querySelector(".mapViewer").classList.remove("show");
 
-        }
+    document.querySelector("#dotsActive1").classList.add("hide");
+    document.querySelector("#dotsActive1").classList.remove("show");
 
-        play();
+    document.querySelector("#dotsActive2").classList.add("hide");
+    document.querySelector("#dotsActive2").classList.remove("show");
 
-    })();
+    document.querySelector("#dotsActive3").classList.add("show");
+    document.querySelector("#dotsActive3").classList.remove("hide");
+});
+
+$('#dots1').click(function () {
+    document.querySelector(".mapViewer").classList.add("show");
+    document.querySelector(".mapViewer").classList.remove("hide");
+
+    document.querySelector(".guestViewer").classList.add("hide");
+    document.querySelector(".guestViewer").classList.remove("show");
+
+    document.querySelector(".formViewer").classList.add("hide");
+    document.querySelector(".formViewer").classList.remove("show");
+
+    document.querySelector("#dotsActive3").classList.add("hide");
+    document.querySelector("#dotsActive3").classList.remove("show");
+
+    document.querySelector("#dotsActive2").classList.add("hide");
+    document.querySelector("#dotsActive2").classList.remove("show");
+
+    document.querySelector("#dotsActive1").classList.add("show");
+    document.querySelector("#dotsActive1").classList.remove("hide");
+});
+
+    // var el = document.getElementById('selectMap');
+    // if (el) {
+    //     el.addEventListener("click", function visible(event) {
+    //         console.log('BONSOIR')
+    //     });
+    // }
 
 })
