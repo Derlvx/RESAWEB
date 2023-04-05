@@ -26,21 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
 //     console.log('BONSOIR');
 // });
 
-$('.selectGuest').click(function () {
-    document.querySelector(".guestViewer").classList.add("hide");
-    document.querySelector(".guestViewer").classList.remove("show");
-
-    document.querySelector(".formViewer").classList.add("show");
-    document.querySelector(".formViewer").classList.remove("hide");
-
-    document.querySelector("#dotsActive2").classList.add("hide");
-    document.querySelector("#dotsActive2").classList.remove("show");
-
-    document.querySelector("#dotsActive3").classList.add("show");
-    document.querySelector("#dotsActive3").classList.remove("hide");
-    document.getElementById("dots2").removeAttribute('disabled');
-});
-
 $('#dots2').click(function () {
     document.querySelector(".guestViewer").classList.add("show");
     document.querySelector(".guestViewer").classList.remove("hide");
