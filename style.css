@@ -113,6 +113,14 @@ p {
     opacity: 0;
 }
 
+.dnone {
+    display: none !important;
+}
+
+.dblock {
+    display: inline-block !important;
+}
+
 /* ================================================ ANIMATION ================================================== */
 
 /* SCROLL SVG */
@@ -132,8 +140,33 @@ p {
 /* BUTTON */
 
 .full-rounded {
+    position: relative;
     border-radius: 2em;
     cursor: pointer;
+    background-color: var(--color-button);
+    border: none;
+}
+
+.button .border {
+    border-radius: 3em;
+    visibility: hidden;
+    z-index: 0;
+    position: absolute;
+    border: 0.25em solid var(--color-button);
+    transition: all 0.3s 0.08s linear;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 80%;
+    transform: translate(-50%, -50%);
+    background: none;
+}
+
+.button:hover .border {
+    visibility: visible;
+    display: block;
+    width: 110%;
+    height: 125%;
 }
 
 .radio {
@@ -169,6 +202,8 @@ p {
 }
 
 .selectButton .border {
+    border-radius: 3em;
+    background: none;
     visibility: hidden;
     z-index: 0;
     position: absolute;
@@ -1068,6 +1103,142 @@ footer p>a:hover:after {
 .componentsButton:hover {
     opacity: 1;
 }
+
+html.modal-active,
+body.modal-active {
+    overflow: hidden;
+}
+
+#modal-container {
+    position: fixed;
+    display: table;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    z-index: 1;
+}
+
+#modal-container.unfold {
+    transform: scaleY(0.01) scaleX(0);
+    animation: unfoldIn 1s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.unfold .modal-background .modal {
+    transform: scale(0);
+    animation: zoomIn 0.5s 0.8s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.unfold.out {
+    transform: scale(1);
+    animation: unfoldOut 1s 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container.unfold.out .modal-background .modal {
+    animation: zoomOut 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
+}
+
+#modal-container .modal-background {
+    display: table-cell;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    vertical-align: middle;
+}
+
+#modal-container .modal-background .modal {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(IMG/modal-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 2rem;
+}
+
+.modal-content div img {
+    transform: translateX(-25%) translateY(25%);
+}
+
+.modal-content div:first-child {
+    border-radius: 2rem;    
+    width: 25rem;
+}
+
+.modal-text {
+    padding: 7rem 5rem;
+    width: 35rem;
+    text-align: left;
+}
+
+.modal-text h2 {
+    margin-bottom: 0.5rem;
+}
+
+.modal-close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+
+
+
+@keyframes unfoldIn {
+    0% {
+        transform: scaleY(0.005) scaleX(0);
+    }
+
+    50% {
+        transform: scaleY(0.005) scaleX(1);
+    }
+
+    100% {
+        transform: scaleY(1) scaleX(1);
+    }
+}
+
+@keyframes unfoldOut {
+    0% {
+        transform: scaleY(1) scaleX(1);
+    }
+
+    50% {
+        transform: scaleY(0.005) scaleX(1);
+    }
+
+    100% {
+        transform: scaleY(0.005) scaleX(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
 
 /* ================================================================================================================ */
 /* ==================================================== CATALOG PAGE ============================================== */
@@ -2297,6 +2468,20 @@ main .callout.open {
         gap: 2rem;
     }
 
+    .modal-content {
+        flex-wrap: wrap;
+    }
+
+    .modal-content div img {
+        transform: none;
+    }
+
+    .modal-content div:first-child {
+        margin-top: 50px;
+        border-radius: 2rem;    
+        width: fit-content;
+    }
+
 }
 
 
@@ -2529,7 +2714,7 @@ main .callout.open {
         height: fit-content;
         margin-bottom: 2rem;
     }
-    
+
     .formBackground {
         padding: 1rem;
         width: 100%;
@@ -2538,5 +2723,13 @@ main .callout.open {
     .checkoutBar {
         bottom: 0;
     }
-    
+
+    .modal-text {
+        width: fit-content;
+    }
+
+    .modal-content div img {
+        width: 50%;
+    }
+
 }

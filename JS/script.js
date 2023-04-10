@@ -1,3 +1,5 @@
+var buttonId = "test";
+
 document.addEventListener("DOMContentLoaded", function () {
 
     var acc = document.getElementsByClassName("accordion");
@@ -21,80 +23,93 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-// LA MAGIE NOIRE ???!!!
-// $('.leaflet-marker-pane').click(function () {
-//     console.log('BONSOIR');
-// });
+    // LA MAGIE NOIRE ???!!!
+    // $('.leaflet-marker-pane').click(function () {
+    //     console.log('BONSOIR');
+    // });
 
-$('#dots2').click(function () {
-    document.querySelector(".guestViewer").classList.add("show");
-    document.querySelector(".guestViewer").classList.remove("hide");
+    // Partie "dots" servant au contrôle des points sur la page de réservation
+    $('#dots2').click(function () {
+        document.querySelector(".guestViewer").classList.add("show");
+        document.querySelector(".guestViewer").classList.remove("hide");
 
-    document.querySelector(".formViewer").classList.add("hide");
-    document.querySelector(".formViewer").classList.remove("show");
+        document.querySelector(".formViewer").classList.add("hide");
+        document.querySelector(".formViewer").classList.remove("show");
 
-    document.querySelector(".mapViewer").classList.add("hide");
-    document.querySelector(".mapViewer").classList.remove("show");
+        document.querySelector(".mapViewer").classList.add("hide");
+        document.querySelector(".mapViewer").classList.remove("show");
 
-    document.querySelector("#dotsActive1").classList.add("hide");
-    document.querySelector("#dotsActive1").classList.remove("show");
+        document.querySelector("#dotsActive1").classList.add("hide");
+        document.querySelector("#dotsActive1").classList.remove("show");
 
-    document.querySelector("#dotsActive3").classList.add("hide");
-    document.querySelector("#dotsActive3").classList.remove("show");
+        document.querySelector("#dotsActive3").classList.add("hide");
+        document.querySelector("#dotsActive3").classList.remove("show");
 
-    document.querySelector("#dotsActive2").classList.add("show");
-    document.querySelector("#dotsActive2").classList.remove("hide");
-    document.getElementById("dots2").setAttribute("disabled", "");
-});
+        document.querySelector("#dotsActive2").classList.add("show");
+        document.querySelector("#dotsActive2").classList.remove("hide");
+        document.getElementById("dots2").setAttribute("disabled", "");
+    });
 
-$('#dots3').click(function () {
-    document.querySelector(".formViewer").classList.add("show");
-    document.querySelector(".formViewer").classList.remove("hide");
+    $('#dots3').click(function () {
+        document.querySelector(".formViewer").classList.add("show");
+        document.querySelector(".formViewer").classList.remove("hide");
 
-    document.querySelector(".guestViewer").classList.add("hide");
-    document.querySelector(".guestViewer").classList.remove("show");
+        document.querySelector(".guestViewer").classList.add("hide");
+        document.querySelector(".guestViewer").classList.remove("show");
 
-    document.querySelector(".mapViewer").classList.add("hide");
-    document.querySelector(".mapViewer").classList.remove("show");
+        document.querySelector(".mapViewer").classList.add("hide");
+        document.querySelector(".mapViewer").classList.remove("show");
 
-    document.querySelector("#dotsActive1").classList.add("hide");
-    document.querySelector("#dotsActive1").classList.remove("show");
+        document.querySelector("#dotsActive1").classList.add("hide");
+        document.querySelector("#dotsActive1").classList.remove("show");
 
-    document.querySelector("#dotsActive2").classList.add("hide");
-    document.querySelector("#dotsActive2").classList.remove("show");
+        document.querySelector("#dotsActive2").classList.add("hide");
+        document.querySelector("#dotsActive2").classList.remove("show");
 
-    document.querySelector("#dotsActive3").classList.add("show");
-    document.querySelector("#dotsActive3").classList.remove("hide");
-});
+        document.querySelector("#dotsActive3").classList.add("show");
+        document.querySelector("#dotsActive3").classList.remove("hide");
+    });
 
-$('#dots1').click(function () {
-    document.querySelector(".mapViewer").classList.add("show");
-    document.querySelector(".mapViewer").classList.remove("hide");
+    $('#dots1').click(function () {
+        document.querySelector(".mapViewer").classList.add("show");
+        document.querySelector(".mapViewer").classList.remove("hide");
 
-    document.querySelector(".guestViewer").classList.add("hide");
-    document.querySelector(".guestViewer").classList.remove("show");
+        document.querySelector(".guestViewer").classList.add("hide");
+        document.querySelector(".guestViewer").classList.remove("show");
 
-    document.querySelector(".formViewer").classList.add("hide");
-    document.querySelector(".formViewer").classList.remove("show");
+        document.querySelector(".formViewer").classList.add("hide");
+        document.querySelector(".formViewer").classList.remove("show");
 
-    document.querySelector("#dotsActive3").classList.add("hide");
-    document.querySelector("#dotsActive3").classList.remove("show");
+        // Permet d'afficher ou non le point vert pour indiquer sur quel slide on est
+        document.querySelector("#dotsActive3").classList.add("hide");
+        document.querySelector("#dotsActive3").classList.remove("show");
 
-    document.querySelector("#dotsActive2").classList.add("hide");
-    document.querySelector("#dotsActive2").classList.remove("show");
+        document.querySelector("#dotsActive2").classList.add("hide");
+        document.querySelector("#dotsActive2").classList.remove("show");
 
-    document.querySelector("#dotsActive1").classList.add("show");
-    document.querySelector("#dotsActive1").classList.remove("hide");
-    document.getElementById("dots1").setAttribute("disabled","");
-    document.getElementById("dots2").setAttribute("disabled","");
-    document.getElementById("dots3").setAttribute("disabled","");
-});
+        document.querySelector("#dotsActive1").classList.add("show");
+        document.querySelector("#dotsActive1").classList.remove("hide");
 
-    // var el = document.getElementById('selectMap');
-    // if (el) {
-    //     el.addEventListener("click", function visible(event) {
-    //         console.log('BONSOIR')
-    //     });
-    // }
+        // Permet de reset/désactiver les buttons 
+        document.getElementById("dots1").setAttribute("disabled", "");
+        document.getElementById("dots2").setAttribute("disabled", "");
+        document.getElementById("dots3").setAttribute("disabled", "");
+    });
+
+    // Affichage des fiches de composants selon l'id du button cliquer
+    $('.components').click(function () {
+        buttonId = $(this).attr('id');
+        // console.log(buttonId);
+        $('#modal-container').removeAttr('class').addClass("unfold");
+        $(".modal-" + buttonId).removeClass('dnone');
+        $('body').addClass('modal-active');
+    })
+
+    $('#modal-container').click(function () {
+        $(this).addClass('out');
+        // console.log(buttonId);
+        $(".modal-" + buttonId).addClass('dnone');
+        $('body').removeClass('modal-active');
+    });
 
 })

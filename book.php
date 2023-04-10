@@ -34,9 +34,7 @@
             </ul>
         </nav>
     </div>
-
-    <form action="">
-
+    <form action="insert_book.php" name="contact" class="contact-inform form" method="post">
         <section class="cartContainer">
 
             <div class="mapViewer">
@@ -56,7 +54,7 @@
                             <img src="ICONES/NIGHT/one.svg" alt="">
                             <div class="offerContent">
                                 <h3>4 guests</h3>
-                                <p>200$ <span>/ day</span></p>
+                                <p>400$ <span>/ day</span></p>
                             </div>
                             <div class="selectButton guestButton">
                                 <input class="radio" type="radio" name="number" id="radio2-1" value="4" onclick="selectGuest()" required>
@@ -67,8 +65,8 @@
                         <div class="guestCard">
                             <img src="ICONES/NIGHT/two.svg" alt="">
                             <div class="offerContent">
-                                <h3>4 guests</h3>
-                                <p>200$ <span>/ day</span></p>
+                                <h3>6 guests</h3>
+                                <p>500$ <span>/ day</span></p>
                             </div>
                             <div class="selectButton guestButton">
                                 <input class="radio" type="radio" name="number" id="radio2-2" value="6" onclick="selectGuest()" required>
@@ -95,7 +93,7 @@
                 <div class="formBackground">
                     <h3>Book a room</h3>
                     <div class="container contact-column">
-                        <form name="contact" class="contact-inform form">
+
                             <div class="formLine">
                                 <div class="form-control">
                                     <input type="text" name="first-name" class="form-input" placeholder="none" required>
@@ -112,11 +110,11 @@
                             </div>
                             <div class="formLine">
                                 <div class="form-control">
-                                    <input type="date" name="start-date" class="form-input" placeholder="none" required>
+                                    <input type="date" name="start-date" class="form-input" placeholder="none" min="<?= date('Y-m-d') ?>" required>
                                     <label for="start-date" class="form-label">Start Date<sup class="supRequired">*</sup></label>
                                 </div>
                                 <div class="form-control">
-                                    <input type="date" name="end-date" class="form-input" placeholder="none" required>
+                                    <input type="date" name="end-date" class="form-input" placeholder="none" min="<?= date('Y-m-d') ?>" required>
                                     <label for="end-date" class="form-label">End Date<sup class="supRequired">*</sup></label>
                                 </div>
                             </div>
@@ -132,7 +130,6 @@
                                 <span>Send</span>
                             </button>
                             <p class="calloutSubtext">Required Informations<sup class="supRequired">*</sup></p>
-                        </form>
                     </div>
                 </div>
             </div>
