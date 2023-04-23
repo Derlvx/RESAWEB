@@ -1,3 +1,14 @@
+<?php
+include("connexion.php");
+
+$requete = "SELECT * FROM room WHERE id_room = " . $_GET["id"];
+
+$stmt = $db->query($requete);
+
+$resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,10 +66,12 @@
         </nav>
     </div>
 
+
+
     <header class="headerHome">
-        <img src="IMG/team.jpg" class="backgroundHome" alt="">
+        <img src="<?php foreach ($resultat as $room) echo "{$room["photo_room"]}" ?>" class="backgroundHome" alt="">
         <div class="titleHome">
-            <h1>team suite</h1>
+            <h1><?php foreach ($resultat as $room) echo "{$room["nom_room"]}" ?></h1>
             <a href="book.php">
                 <button class="full-rounded button">
                     <h4>Book Now</h4>
@@ -74,17 +87,17 @@
         <div class="offer">
             <div class="offerContent">
                 <h3>4 guests</h3>
-                <p>200$ <span>/ day</span></p>
+                <p><?php foreach ($resultat as $room) echo "{$room["prix_4"]}" ?>$<span>/ day</span></p>
             </div>
             <span class="vertical-line"></span>
             <div class="offerContent">
                 <h3>6 guests</h3>
-                <p>300$ <span>/ day</span></p>
+                <p><?php foreach ($resultat as $room) echo "{$room["prix_6"]}" ?>$<span>/ day</span></p>
             </div>
             <span class="vertical-line"></span>
             <div class="offerContent">
                 <h3>8 guests</h3>
-                <p>350$ <span>/ day</span></p>
+                <p><?php foreach ($resultat as $room) echo "{$room["prix_8"]}" ?>$<span>/ day</span></p>
             </div>
         </div>
         <div class="terms">
@@ -94,65 +107,58 @@
 
     <section class="productInformation">
         <h2>information</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel dignissim nibh. Ut
-            quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor tempor ullamcorper. Nulla pharetra
-            diam ac neque tristique aliquet. Curabitur leo orci, tincidunt vel magna ac, rutrum blandit massa. Nam ut
-            turpis pulvinar, aliquet odio etLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies
-            porta nisi, vel dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
-            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci, tincidunt vel magna
-            ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio etLorem ipsum dolor sit amet, consectetur
-            adipiscing elit. </p>
+        <p><?php foreach ($resultat as $room) echo "{$room["description_room"]}" ?></p>
     </section>
 
     <section class="carousel">
         <h2>showcase games</h2>
         <div class="owl-carousel owl-theme">
             <div>
-                <div class="carousel_item" style="background-image: url('IMG/gamecover/AmongUs.jpeg');">
+                <div class="carousel_item" style="background-image: url('<?php foreach ($resultat as $room) echo "{$room["game_one"]}" ?>');">
                     <div class="overlay">
-                        <h3>AMONG US</h3>
+                        <h3><?php foreach ($resultat as $room) echo "{$room["nom_game_one"]}" ?></h3>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="carousel_item" style="background-image: url('IMG/gamecover/OuterWorlds.jpg');">
+                <div class="carousel_item" style="background-image: url('<?php foreach ($resultat as $room) echo "{$room["game_two"]}" ?>');">
                     <div class="overlay">
-                        <h3>OuterWorlds</h3>
+                        <h3><?php foreach ($resultat as $room) echo "{$room["nom_game_two"]}" ?></h3>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="carousel_item" style="background-image: url('IMG/gamecover/HogwartLegacy.jpg');">
+                <div class="carousel_item" style="background-image: url('<?php foreach ($resultat as $room) echo "{$room["game_three"]}" ?>');">
                     <div class="overlay">
-                        <h3>HogwartLegacy</h3>
+                        <h3><?php foreach ($resultat as $room) echo "{$room["nom_game_three"]}" ?></h3>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="carousel_item" style="background-image: url('IMG/gamecover/Overwatch2.jpg');">
+                <div class="carousel_item" style="background-image: url('<?php foreach ($resultat as $room) echo "{$room["game_four"]}" ?>');">
                     <div class="overlay">
-                        <h3>Overwatch 2</h3>
+                        <h3><?php foreach ($resultat as $room) echo "{$room["nom_game_four"]}" ?></h3>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="carousel_item" style="background-image: url('IMG/gamecover/SpongeBob.jpg');">
+                <div class="carousel_item" style="background-image: url('<?php foreach ($resultat as $room) echo "{$room["game_five"]}" ?>');">
                     <div class="overlay">
-                        <h3>SpongeBob</h3>
+                        <h3><?php foreach ($resultat as $room) echo "{$room["nom_game_five"]}" ?></h3>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="carousel_item" style="background-image: url('IMG/gamecover/Valorant.jpeg');">
+                <div class="carousel_item" style="background-image: url('<?php foreach ($resultat as $room) echo "{$room["game_six"]}" ?>');">
                     <div class="overlay">
-                        <h3>Valorant</h3>
+                        <h3><?php foreach ($resultat as $room) echo "{$room["nom_game_six"]}" ?></h3>
                     </div>
                 </div>
             </div>
             <div>
-                <div class="carousel_item" style="background-image: url('IMG/gamecover/Warzone2.jpg');">
+                <div class="carousel_item" style="background-image: url('<?php foreach ($resultat as $room) echo "{$room["game_seven"]}" ?>');">
                     <div class="overlay">
-                        <h3>Warzone 2</h3>
+                        <h3><?php foreach ($resultat as $room) echo "{$room["nom_game_seven"]}" ?></h3>
                     </div>
                 </div>
             </div>
@@ -164,7 +170,8 @@
 
             <div class="modal modal-one dnone" id="one">
                 <div class="modal-content">
-                    <div><img src="IMG/modal-processor-teamSuite.png" alt=""></div>
+                    <div class="modal-img" style="background-image: url(IMG/modal-processor-teamSuite.png);">
+                    </div>
                     <div class="modal-text">
                         <h2>INTEL CORE I7</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
@@ -178,9 +185,10 @@
 
             <div class="modal modal-two dnone" id="two"> 
                 <div class="modal-content">
-                    <div><img src="IMG/modal-processor-teamSuite.png" alt=""></div>
+                    <div class="modal-img" style="background-image: url(IMG/modal-cg-teamSuite.png);">
+                    </div>
                     <div class="modal-text">
-                        <h2>TWO</h2>
+                        <h2>RTX 3080 TI</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
                             dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
                             tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
@@ -192,7 +200,8 @@
 
             <div class="modal modal-three dnone" id="three"> 
                 <div class="modal-content">
-                    <div><img src="IMG/modal-processor-teamSuite.png" alt=""></div>
+                    <div class="modal-img" style="background-image: url(IMG/modal-ram-teamSuite.png);">
+                    </div>
                     <div class="modal-text">
                         <h2>THREE</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
@@ -206,7 +215,8 @@
 
             <div class="modal modal-four dnone" id="four"> 
                 <div class="modal-content">
-                    <div><img src="IMG/modal-processor-teamSuite.png" alt=""></div>
+                    <div class="modal-img" style="background-image: url(IMG/modal-gchair-teamSuite.png);">
+                    </div>
                     <div class="modal-text">
                         <h2>FOUR</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
@@ -220,7 +230,8 @@
 
             <div class="modal modal-five dnone" id="five"> 
                 <div class="modal-content">
-                    <div><img src="IMG/modal-processor-teamSuite.png" alt=""></div>
+                    <div class="modal-img" style="background-image: url(IMG/modal-kb-teamSuite.png);">
+                    </div>
                     <div class="modal-text">
                         <h2>FIVE</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
@@ -234,7 +245,8 @@
 
             <div class="modal modal-six dnone" id="six"> 
                 <div class="modal-content">
-                    <div><img src="IMG/modal-processor-teamSuite.png" alt=""></div>
+                    <div class="modal-img" style="background-image: url(IMG/modal-screen-teamSuite.png);">
+                    </div>
                     <div class="modal-text">
                         <h2>SIX</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
@@ -248,7 +260,9 @@
 
             <div class="modal modal-seven dnone" id="seven"> 
                 <div class="modal-content">
-                    <div><img src="IMG/modal-processor-teamSuite.png" alt=""></div>
+                    <div class="modal-img" style="background-image: url(IMG/modal-cam-teamSuite.png);">
+                        <!-- <img src="IMG/modal-processor-teamSuite.png" alt=""> -->
+                    </div>
                     <div class="modal-text">
                         <h2>SEVEN</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
@@ -262,7 +276,9 @@
 
             <div class="modal modal-eight dnone" id="eight"> 
                 <div class="modal-content">
-                    <div><img src="IMG/modal-processor-teamSuite.png" alt=""></div>
+                    <div class="modal-img" style="background-image: url(IMG/modal-controller-teamSuite.png);">
+                        <!-- <img src="IMG/modal-processor-teamSuite.png" alt=""> -->
+                    </div>
                     <div class="modal-text">
                         <h2>EIGHT</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel

@@ -62,7 +62,7 @@ const popCart = () => {
                         TOTAL
                         </p>
                         <p>
-                        ${item.qty * product[item.id - 1].rate}$ // Intégration des données du JSON
+                        ${item.qty * product[item.id - 1].rate}$
                         </p>
                         </section>
                     </section>

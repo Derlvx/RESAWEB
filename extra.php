@@ -1,21 +1,18 @@
 
 <?php
+
     // Connection à la base de donnée
     $connection = mysqli_connect("localhost","root","root","resaweb") or die("Error " . mysqli_error($connection));
+    include ("connexion.php");
 
     //Récupération des données
-    $sql = "select * from food";
-    $result = mysqli_query($connection, $sql) or die("Error in Selecting " . mysqli_error($connection));
+    $requete = ('SELECT * FROM food');
+    $stmt = $db->query($requete);
+    $result = $stmt->fetchall(PDO::FETCH_ASSOC);
 
-    //Création d'un array()
-    $emparray = array();
-    while($row =mysqli_fetch_assoc($result))
-    {
-        $emparray[] = $row;
-    }
     //Création du fichier JSON servant pour le panier
     $fp = fopen('JS/data.json', 'w');
-    fwrite($fp, json_encode($emparray));
+    fwrite($fp, json_encode($result));
     fclose($fp);
 
 ?>
