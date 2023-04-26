@@ -2,6 +2,7 @@
 *::after,
 *::before {
     box-sizing: border-box;
+    
 }
 
 body {
@@ -1842,8 +1843,77 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
+    flex-direction: column;
     padding: 1rem;
+}
+
+.filterbc {
+    width: 100%;
+    background-color: var(--color-secondbackground);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 3rem 0;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.filterbc form {
+    padding: 0 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.filter-checkbox {
+    position: relative;
+}
+
+.filter-checkbox label {
+    padding-left: 0.75rem;
+    cursor: pointer;
+    font-family: 'Satoshi';
+    color: var(--color-text);
+}
+
+.filter-checkbox label:before,
+.filter-checkbox label:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.filter-checkbox label:before {
+    width: 1.25em;
+    height: 1.25em;
+    background: #fff;
+    border-radius: 0.125em;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.filter-checkbox input[type=checkbox] {
+    outline: 0;
+    visibility: hidden;
+    width: 1.25em;
+    margin: 0;
+    display: block;
+    float: left;
+    font-size: inherit;
+}
+
+.filter-checkbox input[type=checkbox]:checked+label:before {
+    background: #5B7561;
+    border: none;
+}
+
+.filter-checkbox input[type=checkbox]:checked+label:after {
+    transform: translate(0.25em, 0.3365384615em) rotate(-45deg);
+    width: 0.75em;
+    height: 0.375em;
+    border: 0.125em solid #fff;
+    border-top-style: none;
+    border-right-style: none;
 }
 
 main .container {
@@ -2481,7 +2551,7 @@ main .callout.open {
 
     .modal-content div:first-child {
         margin-top: 50px;
-        border-radius: 2rem;    
+        border-radius: 2rem;
         width: fit-content;
     }
 
