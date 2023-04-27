@@ -1862,6 +1862,7 @@ main {
     display: flex;
     justify-content: space-around;
     gap: 2rem;
+    margin: 0;
 }
 
 .filter-checkbox {
@@ -1872,6 +1873,7 @@ main {
     padding-left: 0.75rem;
     cursor: pointer;
     font-family: 'Satoshi';
+    text-transform: capitalize;
     color: var(--color-text);
 }
 
