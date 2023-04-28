@@ -34,7 +34,7 @@
             </ul>
         </nav>
     </div>
-    <form action="insert_book.php" name="contact" class="contact-inform form" method="post">
+    <form action="insert_book.php?id=<?php echo $_GET["id"]?>" name="contact" class="contact-inform form" method="post">
         <section class="cartContainer">
 
             <div class="mapViewer">
@@ -89,6 +89,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="formViewer hide">
                 <div class="formBackground">
                     <h3>Book a room</h3>

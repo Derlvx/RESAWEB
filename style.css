@@ -114,6 +114,10 @@ p {
     opacity: 0;
 }
 
+.overflow {
+    overflow: hidden;
+}
+
 .dnone {
     display: none !important;
 }
@@ -1428,6 +1432,7 @@ body.modal-active {
 }
 
 .formBackground {
+    position: relative;
     padding: 2rem;
     display: flex;
     align-items: center;
@@ -1506,6 +1511,8 @@ body.modal-active {
 
 .form-input {
     position: absolute;
+    display: flex;
+    justify-content: space-around;
     font-family: "satoshi";
     font-size: 1rem;
     top: 0;
@@ -2234,6 +2241,38 @@ main .callout.open {
     font-size: 28px;
     font-weight: 100;
     color: #626262;
+}
+
+.popup .formViewer {
+    z-index: 100000;
+    top: 25%;
+}
+
+.recap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    gap: 0.5rem;
+}
+
+#popupBillAmount {
+    color: var(--color-secondtext);
+}
+
+.closeButton {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background: rgba(13, 13, 13, 0.5);
+    border: none;
+    color: var(--color-text);
+    border-radius: 50%;
+    padding: 0.5rem 0.75rem;
+}
+
+.closeButton:hover {
+    background-color: rgba(13, 13, 13, 0.75);
 }
 
 /**

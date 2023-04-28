@@ -8,20 +8,24 @@ include("connexion.php");
 $requete2 = ('SELECT * FROM Etype');
 $stmt2 = $db->query($requete2);
 $result2 = $stmt2->fetchall(PDO::FETCH_ASSOC);
-foreach ($result2 as $type) { 
-    if (isset($_GET["{$type["nom_type"]}"])){
+foreach ($result2 as $type) {
+    if (isset($_GET["{$type["nom_type"]}"])) {
         $clock = 1;
-        $condition = $condition . "ext_type = " . $type["id_type"] . " OR " ;
-    }  
+        $condition = $condition . "ext_type = " . $type["id_type"] . " OR ";
+    }
 }
-$condition = substr($condition,0,-3);
-echo "<script>console.log('$condition')</script>";
+if (isset($condition)) {
+    $condition = substr($condition, 0, -3);
+}
+// echo "<script>console.log('$condition')</script>";
 
 $requete = ('SELECT * FROM food');
-if (isset($clock)){
+
+if (isset($clock)) {
     $requete = $requete . " WHERE " . $condition;
-    echo "<script>console.log('$requete BONSOIR')</script>";
+    // echo "<script>console.log('$requete BONSOIR')</script>";
 }
+
 $stmt = $db->query($requete);
 $result = $stmt->fetchall(PDO::FETCH_ASSOC);
 
@@ -115,7 +119,48 @@ fclose($fp);
 
     <div class="popup popup--icon -success js_success-popup">
         <div class="popup__background"></div>
-        <div class="popup__content">
+
+        <div class="formViewer hide">
+            <div class="formBackground">
+                <button id="formClose" class="closeButton">x</button>
+                <h3>Checkout Information</h3>
+                <div class="container contact-column">
+
+                    <div class="formLine">
+                        <div class="form-control">
+                            <input type="text" name="first-name" class="form-input" placeholder="none" required>
+                            <label for="first-name" class="form-label">First Name<sup class="supRequired">*</sup></label>
+                        </div>
+                        <div class="form-control">
+                            <input type="text" name="last-name" class="form-input" placeholder="none" required>
+                            <label for="last-name" class="form-label">Last Name<sup class="supRequired">*</sup></label>
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" class="form-input" placeholder="none" required>
+                        <label for="email" class="form-label">Email<sup class="supRequired">*</sup></label>
+                    </div>
+                    <div class="recap">
+                        <p>Tour Total Order :</p>
+                        <p id="popupBillAmount"></p>
+                    </div>
+                    <button class="full-rounded">
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                                <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                    <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>Send</span>
+                    </button>
+                    <p class="calloutSubtext">Required Informations<sup class="supRequired">*</sup></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup__content hide">
             <h3 class="popup__content__title">
                 Success Popup
                 </h1>

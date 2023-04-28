@@ -72,7 +72,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
         <img src="<?php foreach ($resultat as $room) echo "{$room["photo_room"]}" ?>" class="backgroundHome" alt="">
         <div class="titleHome">
             <h1><?php foreach ($resultat as $room) echo "{$room["nom_room"]}" ?></h1>
-            <a href="book.php">
+            <a href="book.php?id=<?php echo $_GET["id"]?>">
                 <button class="full-rounded button">
                     <h4>Book Now</h4>
                     <div class="border full-rounded"></div>

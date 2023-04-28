@@ -71,6 +71,8 @@ const popCart = () => {
             `);
         });
         // Partie basse du panier
+        var popupBillAmount = cart.reduce((accu, item, i) => accu += item.qty * product[item.id - 1].rate, 0);
+        document.getElementById('popupBillAmount').innerHTML = popupBillAmount + "$";
         $("main .callout").append(`
         </div>
         <div class="row">
@@ -84,6 +86,7 @@ const popCart = () => {
             </section>
         </div>
     `);
+
     }
     else { // Sinon affichage d'un message d'erreur
         $("main .callout").html(`
@@ -130,7 +133,26 @@ const resetCart = () => {
 const Checkout = () => {
     const popupEl = document.querySelector(`.js_success-popup`);
     popupEl.classList.toggle('popup--visible');
-    console.log('test')
+    document.querySelector('.popup .formViewer').classList.toggle('hide')
+    document.querySelector('.popup .formViewer').classList.toggle('show')
+    document.querySelector('.callout').classList.toggle('open')
+    document.querySelector('body').classList.toggle('overflow')
+    // console.log('test')
 }
 
+$('#formClose').click(function () {
+    const popupEl = document.querySelector(`.js_success-popup`);
+    popupEl.classList.toggle('popup--visible');
+    document.querySelector('.popup .formViewer').classList.toggle('hide')
+    document.querySelector('.popup .formViewer').classList.toggle('show')
+    document.querySelector('.callout').classList.toggle('open')
+    document.querySelector('body').classList.toggle('overflow')
+});
+
+$('.container .full-rounded').click(function(){
+    document.querySelector('.popup .formViewer').classList.toggle('hide')
+    document.querySelector('.popup .formViewer').classList.toggle('show')
+    document.querySelector('.popup__content').classList.toggle('hide')
+    document.querySelector('.popup__content').classList.toggle('show')
+});
 
