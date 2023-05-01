@@ -1,5 +1,5 @@
 // Button de réussite après Checkout
-document.querySelector('.popup__content .button--success').addEventListener('click', () => {
+document.querySelector('#extra_form').addEventListener('submit', () => {
     cart.splice(0, cart.length);
     localStorage.setItem('cart', JSON.stringify(cart));
     popCart(); // Remise a 0 du panier ( avec les deux lignes au dessus)
@@ -131,6 +131,7 @@ const resetCart = () => {
 
 // Fonction pour sortir du panier
 const Checkout = () => {
+    $(window).scrollTop(0);
     const popupEl = document.querySelector(`.js_success-popup`);
     popupEl.classList.toggle('popup--visible');
     document.querySelector('.popup .formViewer').classList.toggle('hide')
@@ -149,10 +150,12 @@ $('#formClose').click(function () {
     document.querySelector('body').classList.toggle('overflow')
 });
 
-$('.container .full-rounded').click(function(){
-    document.querySelector('.popup .formViewer').classList.toggle('hide')
-    document.querySelector('.popup .formViewer').classList.toggle('show')
-    document.querySelector('.popup__content').classList.toggle('hide')
-    document.querySelector('.popup__content').classList.toggle('show')
+$('.container .full-rounded').click(function () {
+    var my_array = cart;
+    jsonString = JSON.stringify(my_array);
+    var url = "insert_extra.php?my_json=" + jsonString + "&clock=" + clock;
+    console.log(url);
+    document.querySelector('#extra_form').action = url;
 });
+
 

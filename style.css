@@ -2134,11 +2134,6 @@ main .callout.open {
 
 /* POPUP */
 
-.button--success {
-    border: 1px solid #71E6AB;
-    background: #4AD890;
-}
-
 .popup {
     visibility: hidden;
     transition: visibility 0ms linear 0.3s;
@@ -2163,84 +2158,6 @@ main .callout.open {
 
 .popup--visible .popup__background {
     opacity: 1;
-}
-
-.popup__content {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 10001;
-    min-width: 400px;
-    padding: 25px 50px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    text-align: center;
-    -webkit-animation: hide-popup 0.3s forwards;
-    animation: hide-popup 0.3s forwards;
-}
-
-.popup--visible .popup__content {
-    -webkit-animation: show-popup 0.3s forwards;
-    animation: show-popup 0.3s forwards;
-}
-
-.popup--icon .popup__content {
-    padding-top: 130px;
-
-}
-
-.popup--icon .popup__content:before,
-.popup--icon .popup__content:after {
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    height: 90px;
-    width: 90px;
-}
-
-.popup--icon .popup__content:before {
-    content: "";
-    border: 3px solid currentColor;
-    border-radius: 50%;
-    transform: translateX(-50%) scale(1, 0);
-    opacity: 0;
-}
-
-.popup--icon .popup__content:after {
-    content: "✓";
-    line-height: 90px;
-    font-size: 45px;
-    transform: translateX(-50%) scale(0);
-    opacity: 0;
-}
-
-.popup--visible.popup--icon .popup__content:before {
-    -webkit-animation: show-icon-cirlce 0.3s forwards 0.15s;
-    animation: show-icon-cirlce 0.3s forwards 0.15s;
-}
-
-.popup--visible.popup--icon .popup__content:after {
-    -webkit-animation: show-icon 0.3s forwards 0.3s;
-    animation: show-icon 0.3s forwards 0.3s;
-}
-
-.-success.popup--icon .popup__content:before {
-    border-color: #4AD890;
-}
-
-.-success.popup--icon .popup__content:after {
-    content: "✓";
-    color: #4AD890;
-}
-
-.popup__content__title {
-    margin-bottom: 10px;
-    font-size: 28px;
-    font-weight: 100;
-    color: #626262;
 }
 
 .popup .formViewer {
