@@ -1,9 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     
+    // définition des coordonnées de la map ainsi que de son zoom
     var map = L.map('map').setView([47, 2], 4);
 
+    // définition de la postion d'un marqueur
     var markerParis = L.marker([48.86, 2.3], { alt: 'Paris' }).addTo(map);
+    // définition de son popup avec sa position ainsi que sa forme HTML
     var popupParis = L.popup([48.86, 2.3], { content: '<img src="IMG/popupStore1.jpeg" alt=""><h3>Horizon Paris</h3><p>12 rue Halévy 75009 Paris</p><div class="selectButton"><input class="radio" type="radio" name="location" id="radio1" value="Paris" onclick="selectMap()" required><label for="radio1">select</label><div class="border full-rounded"></div></div>', className: 'popupText' });
+    // Lien entre le marqueur et le popup
     markerParis.bindPopup(popupParis);
 
     var markerLondon = L.marker([51.50, -0.12], { alt: 'London' }).addTo(map);
@@ -30,12 +34,14 @@ document.addEventListener("DOMContentLoaded", function () {
     var popupRome = L.popup([41.89, 12.48], { content: '<img src="IMG/popupStore7.jpeg" alt=""><h3>Horizon Rome</h3><p>Via del Corso, 181-188, 00186 Roma RM</p><div class="selectButton"><input class="radio" type="radio" name="location" id="radio7" value="Rome" onclick="selectMap()" required><label for="radio7">select</label><div class="border full-rounded"></div></div>', className: 'popupText' });
     markerRome.bindPopup(popupRome);
 
+    // Style de la map
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
 
+    // ajout de la fonction de recherche
     var geocoder = L.Control.geocoder({
         defaultMarkGeocode: false
     })

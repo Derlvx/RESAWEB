@@ -17,16 +17,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    // Navbar pour les versions téléphones
     $('.menu-toggle').click(function () {
         $(".nav").toggleClass("mobile-nav");
         $(this).toggleClass("is-active");
     });
 
-
-    // LA MAGIE NOIRE ???!!!
-    // $('.leaflet-marker-pane').click(function () {
-    //     console.log('BONSOIR');
-    // });
 
     // Partie "dots" servant au contrôle des points sur la page de réservation
     $('#dots2').click(function () {
@@ -96,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("dots3").setAttribute("disabled", "");
     });
 
+    
     // Affichage des fiches de composants selon l'id du button cliquer
     $('.components').click(function () {
         buttonId = $(this).attr('id');
@@ -105,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
         $('body').addClass('modal-active');
     })
 
+    // Fermetures des fiches de composants en question
     $('#modal-container').click(function () {
         $(this).addClass('out');
         // console.log(buttonId);

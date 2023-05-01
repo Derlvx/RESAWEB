@@ -1,6 +1,8 @@
 <?php
 include("connexion.php");
 
+// Ici le PHP sert a récupérer l'id dans l'url et afficher les bonnes informations liées à l'id de la chambre
+
 $requete = "SELECT * FROM room WHERE id_room = " . $_GET["id"];
 
 $stmt = $db->query($requete);
@@ -72,6 +74,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
         <img src="<?php foreach ($resultat as $room) echo "{$room["photo_room"]}" ?>" class="backgroundHome" alt="">
         <div class="titleHome">
             <h1><?php foreach ($resultat as $room) echo "{$room["nom_room"]}" ?></h1>
+            <!-- Le href avec du php sert a faire passer l'id de la chambre qui va être réservé -->
             <a href="book.php?id=<?php echo $_GET["id"]?>">
                 <button class="full-rounded button">
                     <h4>Book Now</h4>
@@ -87,6 +90,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
         <div class="offer">
             <div class="offerContent">
                 <h3>4 guests</h3>
+                <!-- Affichage du prix de la chambre en PHP -->
                 <p><?php foreach ($resultat as $room) echo "{$room["prix_4"]}" ?>$<span>/ day</span></p>
             </div>
             <span class="vertical-line"></span>
@@ -107,9 +111,11 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
 
     <section class="productInformation">
         <h2>information</h2>
+        <!-- Description de la chambre en PHP -->
         <p><?php foreach ($resultat as $room) echo "{$room["description_room"]}" ?></p>
     </section>
 
+    <!-- Les images et noms des jeux sont insérées dans le carousel -->
     <section class="carousel">
         <h2>showcase games</h2>
         <div class="owl-carousel owl-theme">

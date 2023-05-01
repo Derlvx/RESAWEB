@@ -34,6 +34,7 @@
             </ul>
         </nav>
     </div>
+    <!-- Récupération et envoie de l'id de la chambre à insert_book.php -->
     <form action="insert_book.php?id=<?php echo $_GET["id"]?>" name="contact" class="contact-inform form" method="post">
         <section class="cartContainer">
 
@@ -111,6 +112,7 @@
                             </div>
                             <div class="formLine">
                                 <div class="form-control">
+                                    <!-- Attribution d'une date minimum à l'aide de la date d'aujourd"hui en php -->
                                     <input type="date" name="start-date" class="form-input" placeholder="none" min="<?= date('Y-m-d') ?>" required>
                                     <label for="start-date" class="form-label">Start Date<sup class="supRequired">*</sup></label>
                                 </div>
@@ -187,6 +189,7 @@
 <script>
     var maplocation = 0;
 
+    // Fonction permettant d'afficher ou de cacher les pages de réservation
     function selectMap(maplocation) {
         document.querySelector(".mapViewer").classList.add("hide");
         document.querySelector(".mapViewer").classList.remove("show");

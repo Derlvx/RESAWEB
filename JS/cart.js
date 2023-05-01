@@ -88,7 +88,7 @@ const popCart = () => {
     `);
 
     }
-    else { // Sinon affichage d'un message d'erreur
+    else { // Si panier vide affichage du message d'erreur
         $("main .callout").html(`
     <div class="alert">
         <p>Ooooppsss..... </p>
@@ -150,11 +150,11 @@ $('#formClose').click(function () {
     document.querySelector('body').classList.toggle('overflow')
 });
 
+// Au click sur le bouton "send", récupération et insertion des données dans l'attribut action du form
 $('.container .full-rounded').click(function () {
     var my_array = cart;
     jsonString = JSON.stringify(my_array);
     var url = "insert_extra.php?my_json=" + jsonString + "&clock=" + clock;
-    console.log(url);
     document.querySelector('#extra_form').action = url;
 });
 

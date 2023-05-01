@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    // Code du slider présent en fin de page principal " coming soon "
+
     var photosWrapper = document.querySelector('.js-photos');
         var photos = document.querySelectorAll('.js-photo');
         var photoWidth = 100

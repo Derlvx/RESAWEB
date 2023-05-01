@@ -1,4 +1,7 @@
 import Letterize from "https://cdn.skypack.dev/letterizejs@2.0.0";
+
+// Fichier JS pour l'animation des lettres sur la page principale
+
 const test = new Letterize({
     targets: ".animate-me"
 });

@@ -2,15 +2,15 @@
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
 
-        loop: true,
         // Paramètre loop
+        loop: true,
 
+        // Paramètre autoplay
         autoplay: {
 
             delay: 4000,
 
         },
-        // Paramètre autoplay
 
         margin: 10,
 
@@ -18,6 +18,7 @@ $(document).ready(function () {
 
         dots: false,
 
+        // Responsive
         responsive: {
 
             0: {
@@ -43,7 +44,6 @@ $(document).ready(function () {
             }
 
         }
-        // Responsive
 
     })
 });

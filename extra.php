@@ -86,20 +86,16 @@ fclose($fp);
             <div class="filterbc">
                 <form action="extra.php" method="GET">
 
-                    <div class='filter-checkbox'>
-                        <input class='box' id='checkbox_0' type='checkbox' name='all' checked>
-                        <label for='checkbox_0'>All</label>
-                    </div>
-
                     <?php
+                    // Création des checkboxs de filtre a partir des catégories dans la BDD
                     $requete = ('SELECT * FROM Etype');
                     $stmt = $db->query($requete);
                     $result = $stmt->fetchall(PDO::FETCH_ASSOC);
-                    foreach ($result as $room) {
+                    foreach ($result as $filter) {
                         echo "
                         <div class='filter-checkbox'>
-                            <input onclick='save()' class='box' id='{$room["id_type"]}' type='checkbox' name='{$room["nom_type"]}'>
-                            <label for='{$room["id_type"]}'>{$room["nom_type"]}</label>
+                            <input onclick='save()' class='box' id='{$filter["id_type"]}' type='checkbox' name='{$filter["nom_type"]}'>
+                            <label for='{$filter["id_type"]}'>{$filter["nom_type"]}</label>
                         </div>
                         ";
                     }
@@ -189,6 +185,8 @@ fclose($fp);
     <script defer type="text/javascript" src="JS/cart.js"></script>
 
     <script>
+
+        // Fonctions permettant de sauvegarder les checkboxs pour les filtres ( en local storage )
         let boxes = document.getElementsByClassName('box').length;
 
         function save() {
@@ -198,7 +196,6 @@ fclose($fp);
             }
         }
 
-        //for loading
         for (let i = 1; i <= boxes; i++) {
             if (localStorage.length > 0) {
                 var checked = JSON.parse(localStorage.getItem("checkbox" + String(i)));
