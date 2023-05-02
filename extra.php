@@ -100,7 +100,7 @@ fclose($fp);
                         ";
                     }
                     ?>
-                    <input type="submit" value="">
+                    <input type="submit" value="" style="background-image: url(ICONES/NIGHT/search.svg);">
                 </form>
             </div>
 

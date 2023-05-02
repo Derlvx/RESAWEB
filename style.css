@@ -1868,8 +1868,25 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 2rem;
     margin: 0;
+}
+
+.filterbc form input[type=submit] {
+    border: none;
+    background: none;
+    background-image: url(ICONES/NIGHT/search.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 1rem;
+    width: 25px;
+    height: 25px;
+}
+
+.filterbc form input[type=submit]:hover {
+    cursor: pointer;
 }
 
 .filter-checkbox {
