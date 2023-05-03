@@ -358,8 +358,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
 
     </footer>
 
-    <script defer type="text/javascript" src="js/script.js"></script>
-    <script defer type="text/javascript" src="js/carrousel.js"></script>
+    <script defer type="text/javascript" src="JS/script.js"></script>
+    <script defer type="text/javascript" src="JS/carrousel.js"></script>
 
 </body>
 

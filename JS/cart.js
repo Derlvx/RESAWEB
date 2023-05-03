@@ -154,7 +154,10 @@ $('#formClose').click(function () {
 $('.container .full-rounded').click(function () {
     var my_array = cart;
     jsonString = JSON.stringify(my_array);
-    var url = "insert_extra.php?my_json=" + jsonString + "&clock=" + clock;
+    var totalCart = document.getElementById("popupBillAmount").innerHTML;
+    totalCart = totalCart.substring(0, totalCart.length - 1);
+    var url = "insert_extra.php?my_json=" + jsonString + "&total=" + totalCart;
+    console.log(url);
     document.querySelector('#extra_form').action = url;
 });
 
