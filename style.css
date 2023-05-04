@@ -450,9 +450,10 @@ header {
 }
 
 .aboutUs p {
-    width: 40%;
+    width: 70%;
     text-align: center;
     margin: 0 auto 0 auto;
+    line-height: 2rem;
 }
 
 /* ==================================================== COMMENT ============================================== */
@@ -573,14 +574,15 @@ header {
 }
 
 .serviceContent {
+    height: 20rem;
     background-color: var(--color-secondbackground);
     border-radius: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     margin: 2rem;
-    padding: 2rem;
+    padding: 1.5rem;
     width: 18%;
 }
 
@@ -589,9 +591,10 @@ header {
 }
 
 .serviceContent p {
+    font-size: 1rem;
     margin-top: 0.75rem;
     text-align: center;
-    width: 80%;
+    width: 100%;
 }
 
 /* ==================================================== Our Product ============================================== */
@@ -2455,6 +2458,10 @@ main .callout.open {
         width: 50%;
         margin: 1.5rem;
         padding: 2rem;
+    }
+
+    .aboutUs p {
+        line-height: 1rem;
     }
 
     /* PRODUCT */

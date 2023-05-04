@@ -6,14 +6,22 @@ document.querySelector('#extra_form').addEventListener('submit', () => {
     location.reload();
 })
 
-// Connexion du JSON pour le panier
+// Connexion des JSON pour le panier
+
+// Le premier JSON sert au panier pour qu'il dispose de tout les items a afficher quoi qu'il arrive
 let request = new XMLHttpRequest();
-request.open("GET", "./JS/data.json", false);
+request.open("GET", "./JS/start.json", false);
 request.send(null);
 var product = JSON.parse(request.responseText);
 
+// Le deuxieme JSON sert a afficher selon les filtres les différents objets
+let request2 = new XMLHttpRequest();
+request2.open("GET", "./JS/data.json", false);
+request2.send(null);
+var product2 = JSON.parse(request2.responseText);
+
 // Affichage des produits contenu dans le JSON sous la forme HTML
-product.forEach((item, i) => {
+product2.forEach((item, i) => {
     $('main .container').append(`
     <div class="card">
         <div class="imgContainer" style="background-image : url(${item.photo})" alt="${item.name}"></div>
@@ -41,10 +49,10 @@ const popCart = () => {
             $("main .callout .row").append(`
             <div class="card">
                     <section class="card_left">
-                    <img src="${product[item.id - 1].photo}" alt="${product[item.id - 1].name}">
+                    <img src="${product.filter(id => id.id == item.id)[0].photo}" alt="${product.filter(id => id.id == item.id)[0].photo.name}">
                         <span>
-                            <h4>${product[item.id - 1].name}</h4>
-                            <p>${product[item.id - 1].rate}$</p>
+                            <h4>${product.filter(id => id.id == item.id)[0].name}</h4>
+                            <p>${product.filter(id => id.id == item.id)[0].rate}$</p>
                         </span>
                     </section>
 
@@ -62,7 +70,7 @@ const popCart = () => {
                         TOTAL
                         </p>
                         <p>
-                        ${item.qty * product[item.id - 1].rate}$
+                        ${item.qty * product.filter(id => id.id == item.id)[0].rate}$
                         </p>
                         </section>
                     </section>
@@ -71,14 +79,14 @@ const popCart = () => {
             `);
         });
         // Partie basse du panier
-        var popupBillAmount = cart.reduce((accu, item, i) => accu += item.qty * product[item.id - 1].rate, 0);
+        var popupBillAmount = cart.reduce((accu, item, i) => accu += item.qty * product.filter(id => id.id == item.id)[0].rate, 0);
         document.getElementById('popupBillAmount').innerHTML = popupBillAmount + "$";
         $("main .callout").append(`
         </div>
         <div class="row">
             <section>
                     <h4>Total Bill :</h4>
-                    <p class="billAmount">${cart.reduce((accu, item, i) => accu += item.qty * product[item.id - 1].rate, 0)}$</p>
+                    <p class="billAmount">${cart.reduce((accu, item, i) => accu += item.qty * product.filter(id => id.id == item.id)[0].rate, 0)}$</p>
             </section>
             <section>
                 <button class="resetCart" onclick="resetCart()"><p>Clear</p></button>

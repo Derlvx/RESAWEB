@@ -5,15 +5,25 @@ include("connexion.php");
 
 //Récupération de TOUTE les données
 
+$requeteBase = ('SELECT * FROM food');
+$stmtBase = $db->query($requeteBase);
+$resultBase = $stmtBase->fetchall(PDO::FETCH_ASSOC);
+
+$fp = fopen('JS/start.json', 'w');
+fwrite($fp, json_encode($resultBase));
+fclose($fp);
+
 $requete2 = ('SELECT * FROM Etype');
 $stmt2 = $db->query($requete2);
 $result2 = $stmt2->fetchall(PDO::FETCH_ASSOC);
+
 foreach ($result2 as $type) {
     if (isset($_GET["{$type["nom_type"]}"])) {
         $clock = 1;
         $condition = $condition . "ext_type = " . $type["id_type"] . " OR ";
     }
 }
+
 if (isset($condition)) {
     $condition = substr($condition, 0, -3);
 }
@@ -33,6 +43,8 @@ $result = $stmt->fetchall(PDO::FETCH_ASSOC);
 $fp = fopen('JS/data.json', 'w');
 fwrite($fp, json_encode($result));
 fclose($fp);
+
+
 
 ?>
 
