@@ -65,7 +65,7 @@ fclose($fp);
 <body>
     <div class="nav-wrapper">
         <nav class="navbar">
-            <a href="index.html"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Company Logo">
+            <a href="index.php"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Company Logo">
             </a>
 
             <div class="menu-toggle" id="mobile-menu">
@@ -75,9 +75,9 @@ fclose($fp);
             </div>
 
             <ul class="nav no-search">
-                <li class="nav-item"><a href="index.html#aboutUs">Overview</a></li>
+                <li class="nav-item"><a href="index.php#aboutUs">Overview</a></li>
                 <li class="nav-item"><a href="#">About us</a></li>
-                <li class="nav-item"><a href="catalog.html">Our product</a></li>
+                <li class="nav-item"><a href="catalog.php">Our product</a></li>
                 <li class="nav-item"><a href="extra.php">Extra</a></li>
             </ul>
         </nav>
@@ -173,18 +173,18 @@ fclose($fp);
     <footer>
 
         <p>
-            <a href="">Terms</a>
+            <a href="terms.php">Terms</a>
         </p>
         <p>
             <a href="">Privacy</a>
         </p>
 
         <div class="bottomBrandLogo">
-            <a href="index.html"><img src="ICONES/NIGHT/LOGO.svg" alt="Go Top"></a>
+            <a href="index.php"><img src="ICONES/NIGHT/LOGO.svg" alt="Go Top"></a>
         </div>
 
         <p>
-            <a href="FAQ.html">FAQ</a>
+            <a href="FAQ.php">FAQ</a>
         </p>
         <p>
             <a href="">Contact us</a>

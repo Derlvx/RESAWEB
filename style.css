@@ -2428,6 +2428,31 @@ main .callout.open {
     font-size: 10rem;
 }
 
+/* ================================================================================================================ */
+/* ==================================================== Terms PAGE ============================================== */
+/* ================================================================================================================ */
+
+.contentTerms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem;
+    gap: 5rem;
+}
+
+.contentTerms h2 {
+    margin-top: 7.5vh;
+}
+
+.catTerms {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 /* ==================================================== Responsive ============================================== */
 
 @media screen and (max-width:1024px) {
