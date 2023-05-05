@@ -187,7 +187,7 @@ fclose($fp);
             <a href="FAQ.php">FAQ</a>
         </p>
         <p>
-            <a href="">Contact us</a>
+            <a href="contact.php">Contact us</a>
         </p>
 
     </footer>
