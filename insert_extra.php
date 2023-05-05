@@ -928,3 +928,5 @@ mail($to, $subject, $message, $headers);
 
 
 header('Location: thanks.php');
+
+?>

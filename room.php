@@ -342,7 +342,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
             <a href="terms.php">Terms</a>
         </p>
         <p>
-            <a href="">Privacy</a>
+            <a href="privacy.php">Privacy</a>
         </p>
 
         <div class="bottomBrandLogo">

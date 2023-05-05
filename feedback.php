@@ -31,8 +31,7 @@
     </div>
 
     <div class="acknowledgement">
-        <span>🎉</span>
-        <h2>Thank you for your order</h2>
+        <h2>Thank you for your feedback</h2>
         <p>You will receive a mail with all details. Please don't forget to check your spam !</p>
     </div>
 
