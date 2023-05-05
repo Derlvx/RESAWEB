@@ -34,6 +34,7 @@
         <span>🎉</span>
         <h2>Thank you for your order</h2>
         <p>You will receive a mail with all details. Please don't forget to check your spam !</p>
+        <p>The paiement will be made upon check in</p>
     </div>
 
     <footer>
