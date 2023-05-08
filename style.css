@@ -2,7 +2,7 @@
 *::after,
 *::before {
     box-sizing: border-box;
-
+    /*border:red 1px solid !important;*/
 }
 
 html {
@@ -426,11 +426,10 @@ header {
 }
 
 .scroll {
-    width: 100%;
     height: 4rem;
     position: absolute;
     bottom: 4rem;
-    margin: 0 auto;
+    left: 50%;
     transform: translateY(-10%);
     animation: floater 2s infinite;
     transition: all ease 2s;
@@ -438,7 +437,7 @@ header {
 
 .backgroundHome {
     height: 100%;
-    width: 100%;
+    width: 99%;
     object-fit: cover;
     position: absolute;
     z-index: -1;
@@ -734,14 +733,18 @@ header {
 
 /* ==================================================== COMING SOON ============================================== */
 
+.coming-soon .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .diapo-title {
     color: white;
     z-index: 1;
     position: absolute;
     text-align: center;
     height: calc(100vh - 7rem);
-    width: 100vw;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -751,7 +754,7 @@ header {
 
 .js-slider {
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 7rem);
     overflow: hidden;
 }
@@ -782,9 +785,8 @@ header {
     position: absolute;
     display: flex;
     align-items: center;
+    width: 90%;
     justify-content: space-between;
-    padding: 0 2rem;
-    width: 100vw;
     height: calc(100vh - 7rem);
 }
 
@@ -2355,8 +2357,8 @@ main .callout.open {
 }
 
 .faq {
-    margin-top: calc(7.5vh + 3rem);
     width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -2503,7 +2505,7 @@ main .callout.open {
     width: 100%;
 }
 
-.line-container{
+.line-container {
     gap: 3rem;
     display: flex;
     align-items: center;
@@ -2608,7 +2610,6 @@ main .callout.open {
 
     /* SERVICE */
     .service {
-        margin: 3rem;
         width: 90%;
     }
 
