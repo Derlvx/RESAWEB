@@ -61,7 +61,7 @@ fclose($fp);
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>CART SYSTEME</title>
+    <title>Extra - Horizon</title>
 </head>
 
 <body>

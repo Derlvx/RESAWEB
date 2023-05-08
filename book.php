@@ -14,7 +14,7 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <title>Horizon</title>
+    <title>Book - Horizon</title>
 </head>
 
 <body>
