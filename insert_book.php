@@ -895,7 +895,7 @@ $message = $message . '</p>
         visited our site or asked us about the
         regular newsletter. Make sure our messages get
         to your Inbox (and not your bulk or
-        junk folders).<br><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-decoration:underline;color:#333333;font-size:12px" href="https://viewstripo.email">Privacy
+        junk folders).<br><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-decoration:underline;color:#333333;font-size:12px" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1s&ab_channel=RickAstley">Privacy
             policy</a> | <a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-decoration:underline;color:#333333;font-size:12px" href="">Unsubscribe</a></p>
 </td>
 </tr>

@@ -830,7 +830,7 @@ $message = $message . '</p>
 <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="border-collapse:collapse;border-spacing:0px">
 <tr>
 <td align="center" style="padding:0;Margin:0;padding-top:10px;padding-bottom:10px">
-    <span class="es-button-border" style="border-style:solid;border-color:#2CB543;background:#666666;border-width:0px;display:block;border-radius:30px;width:auto;"><a href="https://viewstripo.email" class="es-button" target="_blank" style="text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;color:#FFFFFF;font-size:18px;padding:10px 20px 10px 20px;display:block;background:#666666;border-radius:30px;font-family:arial, helvetica neue, helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;padding-left:20px;padding-right:20px">FAQ</a></span>
+    <span class="es-button-border" style="border-style:solid;border-color:#2CB543;background:#666666;border-width:0px;display:block;border-radius:30px;width:auto;"><a href="https://dphan-nguyen.butmmi.o2switch.site/resaweb/FAQ.php" class="es-button" target="_blank" style="text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;color:#FFFFFF;font-size:18px;padding:10px 20px 10px 20px;display:block;background:#666666;border-radius:30px;font-family:arial, helvetica neue, helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;padding-left:20px;padding-right:20px">FAQ</a></span>
 </td>
 </tr>
 </table>
@@ -844,7 +844,7 @@ $message = $message . '</p>
 <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="border-collapse:collapse;border-spacing:0px">
 <tr>
 <td align="center" style="padding:0;Margin:0;padding-top:10px;padding-bottom:10px">
-    <span class="es-button-border" style="border-style:solid;border-color:#2CB543;background:#666666;border-width:0px;display:block;border-radius:30px;width:auto;"><a href="https://viewstripo.email" class="es-button" target="_blank" style="text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;color:#FFFFFF;font-size:18px;padding:10px 20px 10px 20px;display:block;background:#666666;border-radius:30px;font-family:arial, helvetica neue, helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;padding-left:20px;padding-right:20px">Contact
+    <span class="es-button-border" style="border-style:solid;border-color:#2CB543;background:#666666;border-width:0px;display:block;border-radius:30px;width:auto;"><a href="https://dphan-nguyen.butmmi.o2switch.site/resaweb/contact.php" class="es-button" target="_blank" style="text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;color:#FFFFFF;font-size:18px;padding:10px 20px 10px 20px;display:block;background:#666666;border-radius:30px;font-family:arial, helvetica neue, helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;padding-left:20px;padding-right:20px">Contact
             Us</a></span>
 </td>
 </tr>
@@ -894,7 +894,7 @@ $message = $message . '</p>
         visited our site or asked us about the
         regular newsletter. Make sure our messages get
         to your Inbox (and not your bulk or
-        junk folders).<br><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-decoration:underline;color:#333333;font-size:12px" href="https://viewstripo.email">Privacy
+        junk folders).<br><a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-decoration:underline;color:#333333;font-size:12px" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1s&ab_channel=RickAstley">Privacy
             policy</a> | <a target="_blank" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-decoration:underline;color:#333333;font-size:12px" href="">Unsubscribe</a></p>
 </td>
 </tr>
