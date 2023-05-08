@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Horizon</title>
 </head>
 
@@ -13,9 +16,8 @@
 
     <div class="nav-wrapper">
         <nav class="navbar">
-            <a href="index.php"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Company Logo">
+            <a data-aos="fade-down" data-aos-duration="750" href="index.php"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Company Logo">
             </a>
-
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -23,10 +25,10 @@
             </div>
 
             <ul class="nav no-search">
-                <li class="nav-item"><a href="index.php#aboutUs">Overview</a></li>
-                <li class="nav-item"><a href="#">About us</a></li>
-                <li class="nav-item"><a href="catalog.php">Our product</a></li>
-                <li class="nav-item"><a href="extra.php">Extra</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.php#aboutUs">Overview</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.php">About us</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.php">Our product</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php">Extra</a></li>
             </ul>
         </nav>
     </div>
@@ -225,7 +227,7 @@
                 <img src="ICONES/NIGHT/group.svg" alt="">
                 <h3>lot of space</h3>
                 <p>
-                    Horizon has plenty of space and facilities to accommodate large groups of gamers, for 
+                    Horizon has plenty of space and facilities to accommodate large groups of gamers, for
                     gaming tournament or just a casual gaming night with friends
                 </p>
             </div>
@@ -273,8 +275,7 @@
                     <a href="room.php?id=1">
                         See more &rarr;
                         <svg viewBox="0 0 70 36">
-                            <path
-                                d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                            <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
                         </svg>
                     </a>
                 </p>
@@ -311,8 +312,7 @@
                     <a href="room.php?id=2">
                         See more &rarr;
                         <svg viewBox="0 0 70 36">
-                            <path
-                                d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                            <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
                         </svg>
                     </a>
                 </p>
@@ -415,8 +415,7 @@
                     <a href="room.php?id=3">
                         See more &rarr;
                         <svg viewBox="0 0 70 36">
-                            <path
-                                d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
+                            <path d="M6.9739 30.8153H63.0244C65.5269 30.8152 75.5358 -3.68471 35.4998 2.81531C-16.1598 11.2025 0.894099 33.9766 26.9922 34.3153C104.062 35.3153 54.5169 -6.68469 23.489 9.31527" />
                         </svg>
                     </a>
                 </p>
@@ -497,6 +496,10 @@
 
     <script defer type="text/javascript" src="JS/script.js"></script>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

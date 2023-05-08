@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Horizon</title>
 </head>
 
 <body>
     <div class="nav-wrapper">
         <nav class="navbar">
-            <a href="index.php"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Company Logo">
+            <a data-aos="fade-down" data-aos-duration="750" href="index.php"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Company Logo">
             </a>
-
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -22,10 +24,10 @@
             </div>
 
             <ul class="nav no-search">
-                <li class="nav-item"><a href="index.php#aboutUs">Overview</a></li>
-                <li class="nav-item"><a href="#">About us</a></li>
-                <li class="nav-item"><a href="catalog.php">Our product</a></li>
-                <li class="nav-item"><a href="extra.php">Extra</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.php#aboutUs">Overview</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.php">About us</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.php">Our product</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php">Extra</a></li>
             </ul>
         </nav>
     </div>
@@ -93,6 +95,10 @@
     </footer>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script defer type="text/javascript" src="JS/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

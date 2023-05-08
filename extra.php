@@ -59,15 +59,16 @@ fclose($fp);
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>CART SYSTEME</title>
 </head>
 
 <body>
     <div class="nav-wrapper">
         <nav class="navbar">
-            <a href="index.php"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Company Logo">
+            <a data-aos="fade-down" data-aos-duration="750" href="index.php"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Company Logo">
             </a>
-
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -75,10 +76,10 @@ fclose($fp);
             </div>
 
             <ul class="nav no-search">
-                <li class="nav-item"><a href="index.php#aboutUs">Overview</a></li>
-                <li class="nav-item"><a href="#">About us</a></li>
-                <li class="nav-item"><a href="catalog.php">Our product</a></li>
-                <li class="nav-item"><a href="extra.php">Extra</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.php#aboutUs">Overview</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.php">About us</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.php">Our product</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php">Extra</a></li>
             </ul>
         </nav>
     </div>
@@ -195,9 +196,12 @@ fclose($fp);
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script defer type="text/javascript" src="JS/data.json"></script>
     <script defer type="text/javascript" src="JS/cart.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script>
-
         // Fonctions permettant de sauvegarder les checkboxs pour les filtres ( en local storage )
         let boxes = document.getElementsByClassName('box').length;
 
@@ -215,7 +219,6 @@ fclose($fp);
             }
         }
         window.addEventListener('change', save);
-        
     </script>
 
 </body>

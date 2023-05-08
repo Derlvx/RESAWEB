@@ -26,22 +26,15 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
 
 
     <!-- Import Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
     <!-- Import OWL Carrousel Librairies -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <title>Horizon</title>
@@ -50,9 +43,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
 <body>
     <div class="nav-wrapper">
         <nav class="navbar">
-            <a href="index.php"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Company Logo">
+            <a data-aos="fade-down" data-aos-duration="750" href="index.php"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Company Logo">
             </a>
-
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -60,10 +52,10 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
             </div>
 
             <ul class="nav no-search">
-                <li class="nav-item"><a href="index.php#aboutUs">Overview</a></li>
-                <li class="nav-item"><a href="#">About us</a></li>
-                <li class="nav-item"><a href="catalog.php">Our Product</a></li>
-                <li class="nav-item"><a href="extra.php">Extra</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.php#aboutUs">Overview</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.php">About us</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.php">Our product</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php">Extra</a></li>
             </ul>
         </nav>
     </div>
@@ -75,7 +67,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
         <div class="titleHome">
             <h1><?php foreach ($resultat as $room) echo "{$room["nom_room"]}" ?></h1>
             <!-- Le href avec du php sert a faire passer l'id de la chambre qui va être réservé -->
-            <a href="book.php?id=<?php echo $_GET["id"]?>">
+            <a href="book.php?id=<?php echo $_GET["id"] ?>">
                 <button class="full-rounded button">
                     <h4>Book Now</h4>
                     <div class="border full-rounded"></div>
@@ -189,7 +181,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-two dnone" id="two"> 
+            <div class="modal modal-two dnone" id="two">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-cg-teamSuite.png);">
                     </div>
@@ -204,7 +196,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-three dnone" id="three"> 
+            <div class="modal modal-three dnone" id="three">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-ram-teamSuite.png);">
                     </div>
@@ -219,7 +211,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-four dnone" id="four"> 
+            <div class="modal modal-four dnone" id="four">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-gchair-teamSuite.png);">
                     </div>
@@ -234,7 +226,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-five dnone" id="five"> 
+            <div class="modal modal-five dnone" id="five">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-kb-teamSuite.png);">
                     </div>
@@ -249,7 +241,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-six dnone" id="six"> 
+            <div class="modal modal-six dnone" id="six">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-screen-teamSuite.png);">
                     </div>
@@ -264,7 +256,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-seven dnone" id="seven"> 
+            <div class="modal modal-seven dnone" id="seven">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-cam-teamSuite.png);">
                         <!-- <img src="IMG/modal-processor-teamSuite.png" alt=""> -->
@@ -280,7 +272,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-eight dnone" id="eight"> 
+            <div class="modal modal-eight dnone" id="eight">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-controller-teamSuite.png);">
                         <!-- <img src="IMG/modal-processor-teamSuite.png" alt=""> -->
@@ -360,6 +352,10 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
 
     <script defer type="text/javascript" src="JS/script.js"></script>
     <script defer type="text/javascript" src="JS/carrousel.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
