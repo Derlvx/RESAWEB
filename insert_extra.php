@@ -478,7 +478,7 @@ $message = '
                                                     <td class="es-m-p0r" valign="top" align="center" style="padding:0;Margin:0;width:560px">
                                                         <table cellpadding="0" cellspacing="0" width="100%" role="presentation" style="border-collapse:collapse;border-spacing:0px">
                                                             <tr>
-                                                                <td align="left" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="https://dphan-nguyen.butmmi.o2switch.site/resaweb/index.php" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-decoration:underline;color:#926B4A;font-size:14px"><img src="https://dzuktc.stripocdn.email/content/guids/70e58a58-7a03-4064-8d07-4e5f7deebff8/images/logo.png" alt="Logo" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="120" title="Logo" height="23"></a>
+                                                                <td align="left" style="padding:0;Margin:0;font-size:0px"><a target="_blank" href="https://dphan-nguyen.butmmi.o2switch.site/resaweb/index.html" style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-decoration:underline;color:#926B4A;font-size:14px"><img src="https://dzuktc.stripocdn.email/content/guids/70e58a58-7a03-4064-8d07-4e5f7deebff8/images/logo.png" alt="Logo" style="display:block;border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic" width="120" title="Logo" height="23"></a>
                                                                 </td>
                                                             </tr>
                                                         </table>

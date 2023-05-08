@@ -467,7 +467,7 @@ $message = '
                               style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;border-spacing:0px">
                               <tr>
                                 <td align="left" style="padding:0;Margin:0;font-size:0px"><a target="_blank"
-                                    href="https://dphan-nguyen.butmmi.o2switch.site/resaweb/index.php"
+                                    href="https://dphan-nguyen.butmmi.o2switch.site/resaweb/index.html"
                                     style="-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:underline;color:#926B4A;font-size:14px"><img
                                       src="https://gdchug.stripocdn.email/content/guids/CABINET_de4388277d9f2e30d27946544b50f162d963778775923c865be4b28cd0accdbd/images/logo.png"
                                       alt="Logo"
@@ -727,6 +727,6 @@ $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
 mail($to, $subject, $message, $headers);
 
-header('Location: feedback.php');
+header('Location: feedback.html');
 
 ?>
