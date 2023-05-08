@@ -78,37 +78,42 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
     </header>
 
     <section class="sub">
-        <h2>subscription</h2>
+        <h2 data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">subscription</h2>
         <div class="offer">
-            <div class="offerContent">
+
+            <div class="offerContent" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100" data-aos-anchor-placement="top" data-aos-once="true">
                 <h3>4 guests</h3>
                 <!-- Affichage du prix de la chambre en PHP -->
                 <p><?php foreach ($resultat as $room) echo "{$room["prix_4"]}" ?>$<span>/ day</span></p>
             </div>
-            <span class="vertical-line"></span>
-            <div class="offerContent">
+
+            <span class="vertical-line" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" data-aos-anchor-placement="top" data-aos-once="true"></span>
+
+            <div class="offerContent" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" data-aos-anchor-placement="top" data-aos-once="true">
                 <h3>6 guests</h3>
                 <p><?php foreach ($resultat as $room) echo "{$room["prix_6"]}" ?>$<span>/ day</span></p>
             </div>
-            <span class="vertical-line"></span>
-            <div class="offerContent">
+
+            <span class="vertical-line" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400" data-aos-anchor-placement="top" data-aos-once="true"></span>
+
+            <div class="offerContent" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" data-aos-anchor-placement="top" data-aos-once="true">
                 <h3>8 guests</h3>
                 <p><?php foreach ($resultat as $room) echo "{$room["prix_8"]}" ?>$<span>/ day</span></p>
             </div>
         </div>
-        <div class="terms">
+        <div class="terms" class="vertical-line" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top" data-aos-once="true">
             <p>Food is not included*</p>
         </div>
     </section>
 
-    <section class="productInformation">
+    <section class="productInformation" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
         <h2>information</h2>
         <!-- Description de la chambre en PHP -->
         <p><?php foreach ($resultat as $room) echo "{$room["description_room"]}" ?></p>
     </section>
 
     <!-- Les images et noms des jeux sont insérées dans le carousel -->
-    <section class="carousel">
+    <section class="carousel" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
         <h2>showcase games</h2>
         <div class="owl-carousel owl-theme">
             <div>
@@ -291,7 +296,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
         </div>
     </div>
 
-    <section class="configuration">
+    <section class="configuration" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
 
         <h2>components & peripheral</h2>
 

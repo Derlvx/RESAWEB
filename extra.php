@@ -86,9 +86,9 @@ fclose($fp);
 
     <section class="extra">
 
-        <h2>A BREAK FOR YOUR GAMING session ? 🍕🥤</h2>
+        <h2 data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">A BREAK FOR YOUR GAMING session ? 🍕🥤</h2>
 
-        <div class="cartButton">
+        <div class="cartButton" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
             <a href="#" class="cartCount button" onclick="$('main .callout').toggleClass('open');"><img src="ICONES/NIGHT/cart.svg" alt=""><sup></sup>
                 <div class="border full-rounded"></div>
             </a>
@@ -96,7 +96,7 @@ fclose($fp);
 
         <main>
 
-            <div class="filterbc">
+            <div class="filterbc" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="200" data-aos-anchor-placement="top" data-aos-once="true">
                 <form action="extra.php" method="GET">
 
                     <?php
@@ -117,9 +117,10 @@ fclose($fp);
                 </form>
             </div>
 
-            <div class="container">
+            <div class="container" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="400" data-aos-anchor-placement="top" data-aos-once="true">
 
             </div>
+
             <div class="callout"></div>
 
         </main>

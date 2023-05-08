@@ -34,7 +34,7 @@
     </div>
 
     <form action="insert_contact.php" method="POST">
-        <section class="contactForm">
+        <section class="contactForm" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
             <div class="formBackground">
                 <h3>Contact Us</h3>
                 <div class="container contact-column">

@@ -34,36 +34,36 @@
 
     <section class="faq">
         <!-- <div class="navbarSpace"></div> -->
-        <h2>FAQ</h2>
-        <div class="questions">
+        <h2 data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">FAQ</h2>
+        <div class="questions" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
             <button class="accordion">How do I make a reservation for a gaming room ?</button>
             <div class="panel">
                 <p> To make a reservation for a gaming room, simply visit our website and select the gaming room you would like to reserve. You will then be prompted to choose the date you would like to reserve and provide information.</p>
             </div>
         </div>
 
-        <div class="questions">
+        <div class="questions" data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
             <button class="accordion">What types of gaming rooms are available for reservation ?</button>
             <div class="panel">
                 <p> We offer a variety of gaming rooms to choose from, including rooms equipped with consoles, PCs, and virtual reality systems. Each room is designed to provide a unique gaming experience.</p>
             </div>
         </div>
 
-        <div class="questions">
+        <div class="questions" data-aos="fade-right" data-aos-delay="400" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
             <button class="accordion">Can I bring my own gaming equipment to the room ?</button>
             <div class="panel">
                 <p>Yes, you are welcome to bring your own gaming equipment to the room. However, please note that we are not responsible for any damage or loss of personal equipment.</p>
             </div>
         </div>
 
-        <div class="questions">
+        <div class="questions" data-aos="fade-right" data-aos-delay="600" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
             <button class="accordion">Is there a time limit for how long I can reserve a gaming room ?</button>
             <div class="panel">
                 <p>The length of time you can reserve a gaming room varies depending on the room you choose and availability. Most rooms can be reserved for a minimum of one day.</p>
             </div>
         </div>
 
-        <div class="questions">
+        <div class="questions" data-aos="fade-right" data-aos-delay="800" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
             <button class="accordion">What is the cancellation policy for gaming room reservations ?</button>
             <div class="panel">
                 <p>Our cancellation policy allows for a full refund if you cancel your reservation at least 24 hours in advance. If you cancel within 24 hours of your reservation, you will be charged a cancellation fee. Please refer to our website for more information on our cancellation policy.</p>

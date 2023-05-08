@@ -32,7 +32,7 @@
         </nav>
     </div>
 
-    <div class="acknowledgement">
+    <div class="acknowledgement" data-aos="fade-up" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
         <span>🎉</span>
         <h2>Thank you for your order</h2>
         <p>You will receive a mail with all details. Please don't forget to check your spam !</p>

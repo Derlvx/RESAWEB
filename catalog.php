@@ -34,17 +34,17 @@
     </div>
 
     <section class="ourProduct">
-        <a href="room.php?id=1" class="productDisplay">
+        <a href="room.php?id=1" class="productDisplay" data-aos="fade-in" data-aos-delay="200" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
             <h3>team suite</h3>
             <div style="background-image: url('IMG/team.webp');">
             </div>
         </a>
-        <a href="room.php?id=2" class="productDisplay">
+        <a href="room.php?id=2" class="productDisplay" data-aos="fade-in" data-aos-delay="400" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
             <h3>lounge suite</h3>
             <div style="background-image: url('IMG/lounge.webp');">
             </div>
         </a>
-        <a href="room.php?id=3" class="productDisplay">
+        <a href="room.php?id=3" class="productDisplay" data-aos="fade-in" data-aos-delay="600" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
             <h3>stream suite</h3>
             <div style="background-image: url('IMG/stream.webp');">
             </div>

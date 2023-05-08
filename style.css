@@ -1198,9 +1198,19 @@ body.modal-active {
 }
 
 .modal-close {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(58, 58, 58, 0.5);
+    border: none;
+    color: var(--color-text);
+    border-radius: 50%;
     position: absolute;
     right: 1rem;
     top: 1rem;
+}
+
+.modal-close:hover {
+    background: rgba(58, 58, 58, 1);
 }
 
 

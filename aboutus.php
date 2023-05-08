@@ -48,7 +48,7 @@
 
             <div class="about-line">
                 <div class="line-container">
-                    <div class="container-item item-one" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="container-item item-one" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <p>Horizon was founded in 2023 with a vision to create a new kind of gaming experience. Our founders, who were avid gamers themselves, saw an opportunity to provide a unique and immersive gaming experience for customers.</p>
                     </div>
                     <div class="about-dots container-item">
@@ -62,10 +62,10 @@
             <div class="about-line">
                 <div class="line-container">
                     <div class="container-item item-one"></div>
-                    <div class="about-dots container-item" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="about-dots container-item" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <div></div>
                     </div>
-                    <div class="container-item item-three" data-aos="fade-left" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="container-item item-three" data-aos="fade-left" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <p>At the beginning, we started with just one gaming suite, but word quickly spread about our innovative concept, and we soon expanded to multiple locations.</p>
                     </div>
                 </div>
@@ -73,10 +73,10 @@
 
             <div class="about-line">
                 <div class="line-container">
-                    <div class="container-item item-one" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="container-item item-one" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <p>Our focus has always been on providing exceptional service and creating a welcoming and inclusive environment for all customers. We believe that gaming is for everyone, regardless of their background or skill level.</p>
                     </div>
-                    <div class="about-dots container-item" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="about-dots container-item" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <div></div>
                     </div>
                     <div class="container-item item-three"></div>
@@ -86,10 +86,10 @@
             <div class="about-line">
                 <div class="line-container">
                     <div class="container-item item-one"></div>
-                    <div class="about-dots container-item" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="about-dots container-item" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <div></div>
                     </div>
-                    <div class="container-item item-three" data-aos="fade-left" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="container-item item-three" data-aos="fade-left" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <p>Over the years, we have continued to innovate and evolve, introducing new technologies and games to keep our customers engaged and entertained. We have also expanded our services to include virtual reality experiences and esports tournaments.</p>
                     </div>
                 </div>
@@ -97,10 +97,10 @@
 
             <div class="about-line">
                 <div class="line-container">
-                    <div class="container-item item-one" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="container-item item-one" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <p>Despite our growth, we have never lost sight of our core values. We are committed to transparency, respect, and inclusivity, and we strive to embody these values in everything we do.</p>
                     </div>
-                    <div class="about-dots container-item" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="about-dots container-item" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <div></div>
                     </div>
                     <div class="container-item item-three"></div>
@@ -110,10 +110,10 @@
             <div class="about-line">
                 <div class="line-container">
                     <div class="container-item item-one"></div>
-                    <div class="about-dots container-item" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="about-dots container-item" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <div></div>
                     </div>
-                    <div class="container-item item-three" data-aos="fade-left" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="container-item item-three" data-aos="fade-left" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <p>Looking to the future, we are excited to continue pushing the boundaries of gaming and entertainment. We plan to expand our reach to new locations, introduce new games and technologies, and explore new partnerships and collaborations.</p>
                     </div>
                 </div>
@@ -121,7 +121,7 @@
 
             <div class="about-line">
                 <div class="line-container">
-                    <div class="container-item item-one" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="top-center">
+                    <div class="container-item item-one" data-aos="fade-right" data-aos-duration="2000" data-aos-anchor-placement="top-center" data-aos-once="true">
                         <p>At Horizon, we are more than just a gaming company, we are a community. We are grateful for the support of our customers and look forward to continuing to provide exceptional service and experiences for many years to come.</p>
                     </div>
                     <div class="about-dots container-item">
@@ -136,7 +136,7 @@
     </section>
 
     <section class="about-footer" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top-center">
-        <div class="footer-container">
+        <div class="footer-container" data-aos-once="true">
             <img class="footer-img" src="IMG/dan1.JPG" alt="">
             <p>This reservation website was made entirely by Dan
                 Phan Nguyen in the case of a scholar project. All

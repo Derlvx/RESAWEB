@@ -44,7 +44,7 @@
         <img src="ICONES/NIGHT/SCROLL.svg" alt="SCROLL" class="scroll">
     </header>
 
-    <section class="aboutUs" id="aboutUs">
+    <section class="aboutUs" id="aboutUs" data-aos="fade-up" data-aos-duration="1500" data-aos-once="true">
         <h2>book a room</h2>
         <h2>for all your events</h2>
         <p>Welcome to Horizon, where gamers of all ages can enjoy a wide range of gaming options, from classic arcade
@@ -55,7 +55,7 @@
             your gaming adventure at Horizon!</p>
     </section>
 
-    <section class="comment">
+    <section class="comment" data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
         <div class="slider">
             <div class="slide-track">
                 <div class="slide">
@@ -196,7 +196,7 @@
     <section class="service">
 
         <div class="line">
-            <div class="serviceContent">
+            <div class="serviceContent" data-aos="fade-in" data-aos-duration="1750" data-aos-anchor-placement="top-center" data-aos-once="true">
                 <img src="ICONES/NIGHT/Pizza.svg" alt="">
                 <h3>food service</h3>
                 <p>
@@ -204,7 +204,7 @@
                     variety of snacks and drinks without ever leaving your gaming chair !
                 </p>
             </div>
-            <div class="serviceContent">
+            <div class="serviceContent" data-aos="fade-in" data-aos-duration="1750" data-aos-delay="200" data-aos-anchor-placement="top-center" data-aos-once="true">
                 <img src="ICONES/NIGHT/bell.svg" alt="">
                 <h3>Our Staff</h3>
                 <p>
@@ -212,7 +212,7 @@
                     ensuring an unforgettable gaming experience at our facility.
                 </p>
             </div>
-            <div class="serviceContent">
+            <div class="serviceContent" data-aos="fade-in" data-aos-duration="1750" data-aos-delay="400" data-aos-anchor-placement="top-center" data-aos-once="true">
                 <img src="ICONES/NIGHT/moon.svg" alt="">
                 <h3>Night Service</h3>
                 <p>
@@ -223,7 +223,7 @@
         </div>
 
         <div class="line">
-            <div class="serviceContent">
+            <div class="serviceContent" data-aos="fade-in" data-aos-duration="1750" data-aos-delay="600" data-aos-anchor-placement="top" data-aos-once="true">
                 <img src="ICONES/NIGHT/group.svg" alt="">
                 <h3>lot of space</h3>
                 <p>
@@ -231,14 +231,14 @@
                     gaming tournament or just a casual gaming night with friends
                 </p>
             </div>
-            <div class="serviceContent">
+            <div class="serviceContent" data-aos="fade-in" data-aos-duration="1750" data-aos-delay="800" data-aos-anchor-placement="top" data-aos-once="true">
                 <img src="ICONES/NIGHT/game.svg" alt="">
                 <h3>Game service</h3>
                 <p>
                     Discover a vast and diverse gaming catalogue at Horizon, with our knowledgeable staff available to help you find new and exciting games to enjoy.
                 </p>
             </div>
-            <div class="serviceContent">
+            <div class="serviceContent" data-aos="fade-in" data-aos-duration="1750" data-aos-delay="1000" data-aos-anchor-placement="top" data-aos-once="true">
                 <img src="ICONES/NIGHT/time.svg" alt="">
                 <h3>soundproof</h3>
                 <p>
@@ -257,7 +257,7 @@
 
     </section>
 
-    <section class="productPresentation">
+    <section class="productPresentation" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-once="true">
 
         <div class="productText">
             <div class=productTextTitle>
@@ -290,7 +290,7 @@
 
 
 
-    <section class="productPresentation">
+    <section class="productPresentation" data-aos="fade-left" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-once="true">
 
         <div class="product">
             <img src="IMG/lounge.webp" alt="">
@@ -396,7 +396,7 @@
 
 
 
-    <section class="productPresentation">
+    <section class="productPresentation" data-aos="fade-right" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-once="true">
 
         <div class="productText">
             <div class=productTextTitle>
@@ -429,7 +429,7 @@
 
     </section>
 
-    <section class="coming-soon">
+    <section class="coming-soon" data-aos="fade-in" data-aos-duration="1500" data-aos-anchor-placement="top data-aos-once="true">
 
         <div class="container">
             <div class="nav-slider">
