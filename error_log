@@ -1,0 +1,232 @@
+[08-May-2023 18:15:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES) in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:18:30 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dphannguyen_resaweb.room' doesn't exist in /home/dphannguyen/public_html/resaweb/room.php:8
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/room.php(8): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/room.php on line 8
+[08-May-2023 18:18:33 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dphannguyen_resaweb.room' doesn't exist in /home/dphannguyen/public_html/resaweb/room.php:8
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/room.php(8): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/room.php on line 8
+[08-May-2023 18:18:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dphannguyen_resaweb.room' doesn't exist in /home/dphannguyen/public_html/resaweb/room.php:8
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/room.php(8): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/room.php on line 8
+[08-May-2023 18:18:56 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:18:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:19:36 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:19:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:19:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:40 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:42 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:20:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:21:20 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dphannguyen_resaweb.room' doesn't exist in /home/dphannguyen/public_html/resaweb/room.php:8
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/room.php(8): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/room.php on line 8
+[08-May-2023 18:21:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dphannguyen_resaweb.room' doesn't exist in /home/dphannguyen/public_html/resaweb/room.php:8
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/room.php(8): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/room.php on line 8
+[08-May-2023 18:21:57 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:22:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'Resaweb123'@'localhost' (using password: YES) in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:22:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'resaweb' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:24:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000] [1044] Access denied for user 'dphannguyen_resaweb'@'localhost' to database 'dphannguyen_wpsem2' in /home/dphannguyen/public_html/resaweb/connexion.php:2
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/connexion.php(2): PDO->__construct()
+#1 /home/dphannguyen/public_html/resaweb/room.php(2): include('/home/dphannguy...')
+#2 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/connexion.php on line 2
+[08-May-2023 18:24:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dphannguyen_resaweb.room' doesn't exist in /home/dphannguyen/public_html/resaweb/room.php:8
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/room.php(8): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/room.php on line 8
+[08-May-2023 18:25:14 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dphannguyen_resaweb.room' doesn't exist in /home/dphannguyen/public_html/resaweb/room.php:8
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/room.php(8): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/room.php on line 8
+[08-May-2023 18:25:15 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dphannguyen_resaweb.room' doesn't exist in /home/dphannguyen/public_html/resaweb/room.php:8
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/room.php(8): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/room.php on line 8
+[08-May-2023 18:30:13 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dphannguyen_resaweb.food' doesn't exist in /home/dphannguyen/public_html/resaweb/extra.php:9
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/extra.php(9): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/extra.php on line 9
+[08-May-2023 18:30:47 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[08-May-2023 18:30:52 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[08-May-2023 18:30:57 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[08-May-2023 18:49:17 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[09-May-2023 09:17:21 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[09-May-2023 09:17:29 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[09-May-2023 09:39:17 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[09-May-2023 14:07:43 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[09-May-2023 14:08:55 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[09-May-2023 14:08:55 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[09-May-2023 14:09:30 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[09-May-2023 15:41:39 UTC] PHP Warning:  Undefined array key "id" in /home/dphannguyen/public_html/resaweb/room.php on line 6
+[09-May-2023 15:41:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/dphannguyen/public_html/resaweb/room.php:8
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/room.php(8): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/room.php on line 8
+[09-May-2023 15:41:43 UTC] PHP Warning:  Undefined array key "id" in /home/dphannguyen/public_html/resaweb/room.php on line 6
+[09-May-2023 15:41:43 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/dphannguyen/public_html/resaweb/room.php:8
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/room.php(8): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/room.php on line 8
+[09-May-2023 15:41:44 UTC] PHP Warning:  Undefined array key "id" in /home/dphannguyen/public_html/resaweb/room.php on line 6
+[09-May-2023 15:41:44 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in /home/dphannguyen/public_html/resaweb/room.php:8
+Stack trace:
+#0 /home/dphannguyen/public_html/resaweb/room.php(8): PDO->query()
+#1 {main}
+  thrown in /home/dphannguyen/public_html/resaweb/room.php on line 8
+[10-May-2023 19:16:44 UTC] PHP Warning:  Undefined variable $resultat in /home/dphannguyen/public_html/resaweb/book.php on line 62
+[10-May-2023 19:16:44 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/dphannguyen/public_html/resaweb/book.php on line 62
+[10-May-2023 19:16:44 UTC] PHP Warning:  Undefined variable $resultat in /home/dphannguyen/public_html/resaweb/book.php on line 74
+[10-May-2023 19:16:44 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/dphannguyen/public_html/resaweb/book.php on line 74
+[10-May-2023 19:16:44 UTC] PHP Warning:  Undefined variable $resultat in /home/dphannguyen/public_html/resaweb/book.php on line 86
+[10-May-2023 19:16:44 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/dphannguyen/public_html/resaweb/book.php on line 86
+[11-May-2023 14:16:35 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23
+[11-May-2023 15:20:53 UTC] PHP Warning:  Undefined variable $condition in /home/dphannguyen/public_html/resaweb/extra.php on line 23

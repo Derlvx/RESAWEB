@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+
+<?php
+include("connexion.php");
+
+// Ici le PHP sert a récupérer l'id dans l'url et afficher les bonnes informations liées à l'id de la chambre
+
+$requete = "SELECT * FROM room WHERE id_room = " . $_GET["id"];
+
+$stmt = $db->query($requete);
+
+$resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
+
+?>
+
 <html lang="en">
 
 <head>
@@ -32,7 +46,7 @@
             <ul class="nav no-search">
                 <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.html#aboutUs">Overview</a></li>
                 <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.html">About us</a></li>
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.html">Our product</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.html">Catalog</a></li>
                 <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php">Extra</a></li>
             </ul>
         </nav>
@@ -59,7 +73,7 @@
                             <img src="ICONES/NIGHT/one.svg" alt="">
                             <div class="offerContent">
                                 <h3>4 guests</h3>
-                                <p>400$ <span>/ day</span></p>
+                                <p><?php foreach ($resultat as $room) echo "{$room["prix_4"]}" ?>$ <span>/ day</span></p>
                             </div>
                             <div class="selectButton guestButton">
                                 <input class="radio" type="radio" name="number" id="radio2-1" value="4" onclick="selectGuest()" required>
@@ -71,7 +85,7 @@
                             <img src="ICONES/NIGHT/two.svg" alt="">
                             <div class="offerContent">
                                 <h3>6 guests</h3>
-                                <p>500$ <span>/ day</span></p>
+                                <p><?php foreach ($resultat as $room) echo "{$room["prix_6"]}" ?>$ <span>/ day</span></p>
                             </div>
                             <div class="selectButton guestButton">
                                 <input class="radio" type="radio" name="number" id="radio2-2" value="6" onclick="selectGuest()" required>
@@ -83,7 +97,7 @@
                             <img src="ICONES/NIGHT/three.svg" alt="">
                             <div class="offerContent">
                                 <h3>8 guests</h3>
-                                <p>600$ <span>/ day</span></p>
+                                <p><?php foreach ($resultat as $room) echo "{$room["prix_8"]}" ?>$ <span>/ day</span></p>
                             </div>
                             <div class="selectButton guestButton">
                                 <input class="radio" type="radio" name="number" id="radio2-3" value="8" onclick="selectGuest()" required>
@@ -179,7 +193,6 @@
         <p>
             <a href="contact.html">Contact us</a>
         </p>
-
 
         <span><p>All rights reserved, Horizon © 2023</p></span>
     </footer>

@@ -870,6 +870,7 @@ footer span p {
     opacity: 0.5;
 }
 
+
 .bottomBrandLogo {
     height: 100%;
     width: 3rem;
@@ -2589,6 +2590,7 @@ main .callout.open {
 }
 
 .catTerms {
+    width: 80%;
     display: flex;
     align-items: start;
     justify-content: start;
@@ -2724,6 +2726,7 @@ main .callout.open {
     footer span {
         display: none;
     }
+
 }
 
 
