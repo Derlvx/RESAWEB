@@ -860,7 +860,15 @@ footer p>a:hover:after {
     transition: transform .3s;
 }
 
+footer span {
+    position: absolute;
+    right: 5%;
+}
 
+footer span p {
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
 
 .bottomBrandLogo {
     height: 100%;
@@ -2713,6 +2721,9 @@ main .callout.open {
         width: fit-content;
     }
 
+    footer span {
+        display: none;
+    }
 }
 
 

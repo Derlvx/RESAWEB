@@ -192,6 +192,7 @@ fclose($fp);
             <a href="contact.html">Contact us</a>
         </p>
 
+        <span><p>All rights reserved, Horizon © 2023</p></span>
     </footer>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>

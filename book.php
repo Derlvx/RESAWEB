@@ -180,6 +180,8 @@
             <a href="contact.html">Contact us</a>
         </p>
 
+
+        <span><p>All rights reserved, Horizon © 2023</p></span>
     </footer>
 
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>

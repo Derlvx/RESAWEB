@@ -353,6 +353,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
             <a href="contact.html">Contact us</a>
         </p>
 
+        <span><p>All rights reserved, Horizon © 2023</p></span>
     </footer>
 
     <script defer type="text/javascript" src="JS/script.js"></script>
