@@ -177,6 +177,99 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                     </div>
                     <div class="modal-text">
                         <h2>INTEL CORE I7</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
+                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
+                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
+                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                    </div>
+                    <button class="modal-close">×</button>
+                </div>
+            </div>
+
+            <div class="modal modal-two dnone" id="two">
+                <div class="modal-content">
+                    <div class="modal-img" style="background-image: url(IMG/modal-cg-teamSuite.png);">
+                    </div>
+                    <div class="modal-text">
+                        <h2>RTX 3080 TI</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
+                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
+                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
+                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                    </div>
+                    <button class="modal-close">×</button>
+                </div>
+            </div>
+
+            <div class="modal modal-three dnone" id="three">
+                <div class="modal-content">
+                    <div class="modal-img" style="background-image: url(IMG/modal-ram-teamSuite.png);">
+                    </div>
+                    <div class="modal-text">
+                        <h2>THREE</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
+                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
+                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
+                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                    </div>
+                    <button class="modal-close">×</button>
+                </div>
+            </div>
+
+            <div class="modal modal-four dnone" id="four">
+                <div class="modal-content">
+                    <div class="modal-img" style="background-image: url(IMG/modal-gchair-teamSuite.png);">
+                    </div>
+                    <div class="modal-text">
+                        <h2>FOUR</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
+                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
+                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
+                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                    </div>
+                    <button class="modal-close">×</button>
+                </div>
+            </div>
+
+            <div class="modal modal-five dnone" id="five">
+                <div class="modal-content">
+                    <div class="modal-img" style="background-image: url(IMG/modal-kb-teamSuite.png);">
+                    </div>
+                    <div class="modal-text">
+                        <h2>FIVE</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
+                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
+                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
+                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                    </div>
+                    <button class="modal-close">×</button>
+                </div>
+            </div>
+
+            <div class="modal modal-six dnone" id="six">
+                <div class="modal-content">
+                    <div class="modal-img" style="background-image: url(IMG/modal-screen-teamSuite.png);">
+                    </div>
+                    <div class="modal-text">
+                        <h2>SIX</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
+                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
+                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
+                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                    </div>
+                    <button class="modal-close">×</button>
+                </div>
+            </div>
+
+            <div id="modal-container">
+        <div class="modal-background">
+
+            <div class="modal modal-one dnone" id="one">
+                <div class="modal-content">
+                    <div class="modal-img" style="background-image: url(IMG/modal-processor-teamSuite.png);">
+                    </div>
+                    <div class="modal-text">
+                        <h2>INTEL CORE I7</h2>
                         <p>
                             The Intel Core i7 13900K is a high-performance computer part that works well for playing games, making videos or other intensive applications. i7 intergrates a high clock speed, multiple cores, and support for hyper-threading technology. 13th Gen Intel® Core™ processors deliver highly flexible architecture and industry-leading tools for the ultimate in performance customization.</p>
                     </div>
@@ -273,6 +366,26 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
         </div>
     </div>
 
+
+            <div class="modal modal-eight dnone" id="eight">
+                <div class="modal-content">
+                    <div class="modal-img" style="background-image: url(IMG/modal-controller-teamSuite.png);">
+                        <!-- <img src="IMG/modal-processor-teamSuite.png" alt=""> -->
+                    </div>
+                    <div class="modal-text">
+                        <h2>EIGHT</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
+                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
+                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
+                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                    </div>
+                    <button class="modal-close">×</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <section class="configuration" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
 
         <h2>components & peripheral</h2>
@@ -330,9 +443,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
             <a href="contact.html">Contact us</a>
         </p>
 
-        <span>
-            <p>All rights reserved, Horizon © 2023</p>
-        </span>
+        <span><p>All rights reserved, Horizon © 2023</p></span>
     </footer>
 
     <script defer type="text/javascript" src="JS/script.js"></script>
