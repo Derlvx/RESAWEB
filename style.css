@@ -417,6 +417,11 @@ header {
     text-align: center;
 }
 
+.categoryTitle {
+    text-align: center;
+    margin-top: 8rem;
+}
+
 .titleHome h1 {
     color: white;
 }
@@ -462,9 +467,9 @@ header {
 /* ==================================================== COMMENT ============================================== */
 
 .comment {
-    margin-top: 6rem;
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .slider {
@@ -562,7 +567,7 @@ header {
 /* ==================================================== Our service ============================================== */
 
 .service {
-    margin-top: 6rem;
+    margin-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
