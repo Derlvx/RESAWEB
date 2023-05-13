@@ -177,10 +177,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                     </div>
                     <div class="modal-text">
                         <h2>INTEL CORE I7</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
-                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
-                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
-                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                        <p>
+                            The Intel Core i7 13900K is a high-performance computer part that works well for playing games, making videos or other intensive applications. i7 intergrates a high clock speed, multiple cores, and support for hyper-threading technology. 13th Gen Intel® Core™ processors deliver highly flexible architecture and industry-leading tools for the ultimate in performance customization.</p>
                     </div>
                     <button class="modal-close">×</button>
                 </div>
@@ -191,11 +189,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                     <div class="modal-img" style="background-image: url(IMG/modal-cg-teamSuite.png);">
                     </div>
                     <div class="modal-text">
-                        <h2>RTX 3080 TI</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
-                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
-                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
-                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                        <h2>RTX 4090 TI</h2>
+                        <p>NVIDIA® GeForce RTX™ 40 Series GPUs deliver extreme speed to gamers and creators. Based on the high-efficiency NVIDIA Ada Lovelace architecture, these GPUs are a breakthrough in AI-optimized performance and graphics capabilities. Dive into ultra-realistic virtual worlds with ray tracing and extremely high frame rate with very low latency graphic rendering. Discover revolutionary new ways to create content and accelerate your workflows in new ways.</p>
                     </div>
                     <button class="modal-close">×</button>
                 </div>
@@ -206,11 +201,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                     <div class="modal-img" style="background-image: url(IMG/modal-ram-teamSuite.png);">
                     </div>
                     <div class="modal-text">
-                        <h2>THREE</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
-                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
-                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
-                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                        <h2> Fury Beast DDR4</h2>
+                        <p>Kingston FURY™ Beast DDR4 RGB1 delivers a boost of performance and style with speeds of up to 3733MT/s*, aggressive styling and RGB lighting that runs the length of the module for smooth and stunning effects. Customise the RGB lighting effects by using Kingston FURY CTRL software and its patented Infrared Sync Technology. 100% tested at speed and backed by a lifetime warranty, it’s an easy, worry-free upgrade for your Intel or AMD-based system.</p>
                     </div>
                     <button class="modal-close">×</button>
                 </div>
@@ -221,11 +213,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                     <div class="modal-img" style="background-image: url(IMG/modal-gchair-teamSuite.png);">
                     </div>
                     <div class="modal-text">
-                        <h2>FOUR</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
-                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
-                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
-                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                        <h2>Secretlabb Classic Chair</h2>
+                        <p>More comfort. More customization. Exceptional durability. With design innovations developed through many hours of research, the Secretlab Classic is the first gaming chair in its class. Improve your game with optimized ergonomics - trust Secretab as well as the pro gamers around the world.</p>
                     </div>
                     <button class="modal-close">×</button>
                 </div>
@@ -236,11 +225,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                     <div class="modal-img" style="background-image: url(IMG/modal-kb-teamSuite.png);">
                     </div>
                     <div class="modal-text">
-                        <h2>FIVE</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
-                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
-                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
-                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                        <h2>APEX PRO TKL WIRELESS</h2>
+                        <p>World's fastest OmniPoint 2.0 adjustable switches with 11x quicker response and 10x swifter actuation. Customize the sensitivity of every key from a speedy 0.2mm to a deliberate 3.8mm. Program two different actions to the same key for powerful gaming shortcuts. Esports-ready tenkeyless design. Lag-free Quantum 2.0 Dual Wireless with a 2.4GHz connection and Bluetooth 5.0. OLED Smart Display delivers information at a glance from games and apps</p>
                     </div>
                     <button class="modal-close">×</button>
                 </div>
@@ -251,11 +237,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                     <div class="modal-img" style="background-image: url(IMG/modal-screen-teamSuite.png);">
                     </div>
                     <div class="modal-text">
-                        <h2>SIX</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
-                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
-                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
-                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                        <h2>AOC Q27G2E/BK</h2>
+                        <p>The AOC Q27G2E/BK offers a 27” VA panel with QHD resolution, ShadowControl and super contrast ratio of 3000:1. Enjoy the most responsive gameplay and fastest battles with its stutter-free Adaptive Sync, 144 Hz overclocked to 155 Hz refresh rate, 1ms MPRT and low input lag to decrease motion blur and input-output delay. Gaming has never been so fun and intense.</p>
                     </div>
                     <button class="modal-close">×</button>
                 </div>
@@ -267,11 +250,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                         <!-- <img src="IMG/modal-processor-teamSuite.png" alt=""> -->
                     </div>
                     <div class="modal-text">
-                        <h2>SEVEN</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
-                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
-                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
-                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                        <h2>Logitech Brio 500</h2>
+                        <p>The Logitech BRIO 500 webcam allows you to record and stream video using Full HD 1080p resolution. Thanks to it, you get a quality image for your phone calls, your videos or your recordings. With many features such as automatic exposure, automatic framing or show mode, you will be able to provide your audience with the best possible image.</p>
                     </div>
                     <button class="modal-close">×</button>
                 </div>
@@ -283,11 +263,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                         <!-- <img src="IMG/modal-processor-teamSuite.png" alt=""> -->
                     </div>
                     <div class="modal-text">
-                        <h2>EIGHT</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies porta nisi, vel
-                            dignissim nibh. Ut quis magna tincidunt arcu facilisis aliquet. Nulla at tellus vel tortor
-                            tempor ullamcorper. Nulla pharetra diam ac neque tristique aliquet. Curabitur leo orci,
-                            tincidunt vel magna ac, rutrum blandit massa. Nam ut turpis pulvinar, aliquet odio et</p>
+                        <h2>DualSense Wireless Controller</h2>
+                        <p>The DualSense wireless controller for PS5 offers immersive haptic feedback, dynamic adaptive triggers and a built-in microphone, all integrated into an iconic design.</p>
                     </div>
                     <button class="modal-close">×</button>
                 </div>
@@ -353,7 +330,9 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
             <a href="contact.html">Contact us</a>
         </p>
 
-        <span><p>All rights reserved, Horizon © 2023</p></span>
+        <span>
+            <p>All rights reserved, Horizon © 2023</p>
+        </span>
     </footer>
 
     <script defer type="text/javascript" src="JS/script.js"></script>

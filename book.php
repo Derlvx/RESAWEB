@@ -247,3 +247,4 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
 </body>
 
 </html>
+

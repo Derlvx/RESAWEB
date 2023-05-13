@@ -545,14 +545,14 @@ $message = '
                               <tr>
                                 <td align="left" style="padding:0;Margin:0;padding-top:10px">
                                   <h2
-                                    style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:arial, "helvetica neue", helvetica, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#333333">
+                                    style="Margin:0;line-height:29px;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;font-size:24px;font-style:normal;font-weight:bold;color:#333333">
                                     <b>Any Questions?</b></h2>
                                 </td>
                               </tr>
                               <tr>
                                 <td align="left" style="padding:0;Margin:0;padding-top:5px;padding-bottom:5px">
                                   <p
-                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, "helvetica neue", helvetica, sans-serif;line-height:21px;color:#666666;font-size:14px">
+                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:21px;color:#666666;font-size:14px">
                                     For everything else you want to know…</p>
                                 </td>
                               </tr>
@@ -583,7 +583,7 @@ $message = '
                                     style="border-style:solid;border-color:#2CB543;background:#333333;border-width:0px;display:block;border-radius:30px;width:auto;mso-border-alt:10px;mso-hide:all"><a
                                       href="https://dphan-nguyen.butmmi.o2switch.site/resaweb/FAQ.html"
                                       class="es-button msohide" target="_blank"
-                                      style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:18px;padding:10px 20px 10px 20px;display:block;background:#333333;border-radius:30px;font-family:arial, "helvetica neue", helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;mso-hide:all;padding-left:20px;padding-right:20px;border-color:#333333">FAQ</a></span><!--<![endif]-->
+                                      style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:18px;padding:10px 20px 10px 20px;display:block;background:#333333;border-radius:30px;font-family:arial, helvetica neue, helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;mso-hide:all;padding-left:20px;padding-right:20px;border-color:#333333">FAQ</a></span><!--<![endif]-->
                                 </td>
                               </tr>
                             </table>
@@ -608,7 +608,7 @@ $message = '
                                     style="border-style:solid;border-color:#2CB543;background:#333333;border-width:0px;display:block;border-radius:30px;width:auto;mso-border-alt:10px;mso-hide:all"><a
                                       href="https://dphan-nguyen.butmmi.o2switch.site/resaweb/contact.html"
                                       class="es-button msohide" target="_blank"
-                                      style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:18px;padding:10px 20px 10px 20px;display:block;background:#333333;border-radius:30px;font-family:arial, "helvetica neue", helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;mso-hide:all;padding-left:20px;padding-right:20px;border-color:#333333">Contact
+                                      style="mso-style-priority:100 !important;text-decoration:none;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;color:#FFFFFF;font-size:18px;padding:10px 20px 10px 20px;display:block;background:#333333;border-radius:30px;font-family:arial, helvetica neue, helvetica, sans-serif;font-weight:normal;font-style:normal;line-height:22px;width:auto;text-align:center;mso-hide:all;padding-left:20px;padding-right:20px;border-color:#333333">Contact
                                       Us</a></span><!--<![endif]--></td>
                               </tr>
                             </table>
@@ -685,7 +685,7 @@ $message = '
                               <tr>
                                 <td align="center" style="padding:0;Margin:0;padding-top:10px;padding-bottom:10px">
                                   <p
-                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, "helvetica neue", helvetica, sans-serif;line-height:18px;color:#666666;font-size:12px">
+                                    style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:18px;color:#666666;font-size:12px">
                                     You are receiving this email because you have visited our site or asked us about the
                                     regular newsletter. Make sure our messages get to your Inbox (and not your bulk or
                                     junk folders).<br><a target="_blank"
