@@ -2,6 +2,7 @@ var buttonId = "test";
 
 document.addEventListener("DOMContentLoaded", function () {
 
+    // Animation pour les ronds derrières le " our services "
     var acc = document.getElementsByClassName("accordion");
     var i;
 

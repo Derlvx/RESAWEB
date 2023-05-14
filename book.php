@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 
 <?php
-include("connexion.php");
-
 // Ici le PHP sert a récupérer l'id dans l'url et afficher les bonnes informations liées à l'id de la chambre
+include("connexion.php");
 
 $requete = "SELECT * FROM room WHERE id_room = " . $_GET["id"];
 
@@ -211,7 +210,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
     <script>
         var maplocation = 0;
 
-        // Fonction permettant d'afficher ou de cacher les pages de réservation
+        // Fonctions permettant d'afficher ou de cacher les pages de réservation
         function selectMap(maplocation) {
             document.querySelector(".mapViewer").classList.add("hide");
             document.querySelector(".mapViewer").classList.remove("show");

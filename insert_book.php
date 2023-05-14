@@ -18,7 +18,7 @@ $requete = "INSERT INTO Reservation (date_reservation,ext_room,nb_de_personne,da
 $db->query($requete);
 
 
-
+// Creation du corps du mail en HTML
 $message = '
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office">
@@ -917,6 +917,7 @@ $message = $message . '</p>
 
 </html>';
 
+// Creations des headers du mail
 $to = $guest_mail;
 
 $subject = 'Horizon Room Reservation';
@@ -925,9 +926,10 @@ $headers  = "From: horizon-reservation@gmail.com";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
+// Znvoi du mail
 mail($to, $subject, $message, $headers);
 
-
+// Redirection vers thanks.html
 header('Location: thanks.html');
 
 ?>

@@ -9,9 +9,11 @@ $guest_mail = $_POST["email"];
 $issue = $_POST["issue"];
 $date = date('Y-m-d H:i:s');
 
+// Insertion dans la BDD
 $requete = "INSERT INTO contact (date_contact,prenom_contact,nom_contact,mail_contact,text_contact) VALUES ('$date','$guest_firstname','$guest_lastname','$guest_mail','$issue')";
 $db->query($requete);
 
+// Creation du corps du mail en HTML
 $message = '
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -716,7 +718,7 @@ $message = '
 </html>
 ';
 
-
+// Creation des headers
 $to = $guest_mail;
 
 $subject = 'Horizon Feedback';
@@ -725,8 +727,10 @@ $headers  = "From: horizon-reservation@gmail.com";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
+// envoi du mail
 mail($to, $subject, $message, $headers);
 
+// redirection vers feedback.html
 header('Location: feedback.html');
 
 ?>

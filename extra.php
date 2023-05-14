@@ -3,20 +3,25 @@
 // Connection à la base de donnée
 include("connexion.php");
 
-//Récupération de TOUTE les données
-
+//Récupération de TOUTE les données de la table food
 $requeteBase = ('SELECT * FROM food');
 $stmtBase = $db->query($requeteBase);
 $resultBase = $stmtBase->fetchall(PDO::FETCH_ASSOC);
 
+// Création du JSON start contenant toute la BDD
 $fp = fopen('JS/start.json', 'w');
 fwrite($fp, json_encode($resultBase));
 fclose($fp);
 
+// Récupération de toute les données de la table Etype
 $requete2 = ('SELECT * FROM Etype');
 $stmt2 = $db->query($requete2);
 $result2 = $stmt2->fetchall(PDO::FETCH_ASSOC);
 
+// Pour chaque résultat on vérifie si elle est attribuée en $_GET dans l'url
+//  Si oui cela créer une condition du type ext_type = 1 OR 
+//  Et rajoute cette forme pour chaque correspondance dans l'url
+// Ce qui donnerait ext_type = 1 OR ext_type = 3 OR
 foreach ($result2 as $type) {
     if (isset($_GET["{$type["nom_type"]}"])) {
         $clock = 1;
@@ -24,27 +29,31 @@ foreach ($result2 as $type) {
     }
 }
 
+// Ici si $condition est attribuée on retire les 3 derniers charactères du string $condition
+// Ce qui donnerait ext_type = 1 OR ext_type = 2
 if (isset($condition)) {
     $condition = substr($condition, 0, -3);
 }
+// LA ligne en dessous permet de faire un console.log de la recette obtenu
 // echo "<script>console.log('$condition')</script>";
 
+// Création de la requete de base
 $requete = ('SELECT * FROM food');
 
+// si $clock est defini on rajoute " WHERE " + $condition
 if (isset($clock)) {
     $requete = $requete . " WHERE " . $condition;
-    // echo "<script>console.log('$requete BONSOIR')</script>";
+    // la ligne du dessous fait un console.log de la requete entière !
+    // echo "<script>console.log('$requete')</script>";
 }
 
 $stmt = $db->query($requete);
 $result = $stmt->fetchall(PDO::FETCH_ASSOC);
 
-//Création du fichier JSON servant pour le panier
+//Création du fichier JSON servant pour l'affichage des extras
 $fp = fopen('JS/data.json', 'w');
 fwrite($fp, json_encode($result));
 fclose($fp);
-
-
 
 ?>
 

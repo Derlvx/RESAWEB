@@ -1,6 +1,8 @@
 import Letterize from "https://cdn.skypack.dev/letterizejs@2.0.0";
 
 // Fichier JS pour l'animation des lettres sur la page principale
+//  Lien vers le code pen original https://codepen.io/WojciechWKROPCE/pen/VwLePLy
+// Auteur du codepen https://codepen.io/WojciechWKROPCE
 
 const test = new Letterize({
     targets: ".animate-me"

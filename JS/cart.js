@@ -2,7 +2,7 @@
 document.querySelector('#extra_form').addEventListener('submit', () => {
     cart.splice(0, cart.length);
     localStorage.setItem('cart', JSON.stringify(cart));
-    popCart(); // Remise a 0 du panier ( avec les deux lignes au dessus)
+    popCart(); // Remise a 0 du panier ( avec les deux lignes au dessus )
     location.reload();
 })
 
@@ -149,6 +149,7 @@ const Checkout = () => {
     // console.log('test')
 }
 
+// Affichage du Form checkout
 $('#formClose').click(function () {
     const popupEl = document.querySelector(`.js_success-popup`);
     popupEl.classList.toggle('popup--visible');
