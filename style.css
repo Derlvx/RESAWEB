@@ -434,7 +434,7 @@ header {
     height: 4rem;
     position: absolute;
     bottom: 4rem;
-    left: 50%;
+    width: 100%;
     transform: translateY(-10%);
     animation: floater 2s infinite;
     transition: all ease 2s;
@@ -1131,6 +1131,11 @@ footer span p {
 
 .componentsButton:hover {
     opacity: 1;
+}
+
+.componentsButton img {
+    width: 4rem;
+    height: 4rem;
 }
 
 html.modal-active,

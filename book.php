@@ -131,11 +131,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                             <div class="form-control">
                                 <!-- Attribution d'une date minimum à l'aide de la date d'aujourd"hui en php -->
                                 <input type="date" name="start-date" class="form-input" placeholder="none" min="<?= date('Y-m-d') ?>" required>
-                                <label for="start-date" class="form-label">Start Date<sup class="supRequired">*</sup></label>
-                            </div>
-                            <div class="form-control">
-                                <input type="date" name="end-date" class="form-input" placeholder="none" min="<?= date('Y-m-d') ?>" required>
-                                <label for="end-date" class="form-label">End Date<sup class="supRequired">*</sup></label>
+                                <label for="start-date" class="form-label">Choose a date<sup class="supRequired">*</sup></label>
                             </div>
                         </div>
                         <button class="full-rounded">

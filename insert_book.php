@@ -5,7 +5,6 @@ include("connexion.php");
 // Récupération de toute les informations du FORM
 $nb_de_personne = $_POST["number"];
 $date_debut = $_POST["start-date"];
-$date_fin = $_POST["end-date"];
 $location = $_POST["location"];
 $guest_firstname = $_POST["first-name"];
 $guest_lastname = $_POST["last-name"];
@@ -14,7 +13,7 @@ $room = $_GET["id"];
 $date = date('Y-m-d H:i:s');
 
 // Insertion dans la BDD
-$requete = "INSERT INTO Reservation (date_reservation,ext_room,nb_de_personne,date_debut,date_fin,lieu,prenom_reservation,nom_reservation,mail) VALUES ('$date','$room','$nb_de_personne','$date_debut','$date_fin','$location','$guest_firstname','$guest_lastname','$guest_mail')";
+$requete = "INSERT INTO Reservation (date_reservation,ext_room,nb_de_personne,date_debut,lieu,prenom_reservation,nom_reservation,mail) VALUES ('$date','$room','$nb_de_personne','$date_debut','$location','$guest_firstname','$guest_lastname','$guest_mail')";
 $db->query($requete);
 
 
@@ -498,7 +497,7 @@ $message = '
 
 $message = $message . rand(1000000, 99999999) . "</h2>";
 
-$message = $message . '<p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:21px;color:#666666;font-size:14px">' . $date_debut . ' to ' . $date_fin . '</p>';
+$message = $message . '<p style="Margin:0;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;font-family:arial, helvetica neue, helvetica, sans-serif;line-height:21px;color:#666666;font-size:14px">' . $date_debut . '</p>';
 
 $message = $message . '</td>
 </tr>
