@@ -26,6 +26,7 @@ h6,
 p {
     margin: 0;
     color: var(--color-text);
+    font-family: "Eveleth";
 }
 
 h1 {
@@ -48,6 +49,7 @@ h4 {
 p {
     font-size: 1.2rem;
     font-family: "Satoshi";
+    color: var(--color-text);
 }
 
 a,
@@ -68,6 +70,7 @@ a:focus {
 
     font-weight: 900;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -76,21 +79,7 @@ a:focus {
         url("FONT/Satoshi-Medium.woff") format("woff");
     font-weight: 500;
     font-style: normal;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Eveleth";
-    color: var(--color-text);
-}
-
-p {
-    font-family: "Satoshi";
-    color: var(--color-text);
+    font-display: swap;
 }
 
 /* ===================================================== COLOR ============================================= */
@@ -428,6 +417,7 @@ header {
 
 .titleHome img {
     height: 4rem;
+    width: auto;
 }
 
 .scroll {
@@ -533,6 +523,7 @@ header {
 
 .lineOne img {
     height: 3rem;
+    width: auto;
     border-radius: 50%;
 }
 
@@ -541,7 +532,12 @@ header {
     flex-direction: column;
 }
 
-.lineOne div h5 {
+.lineOne div h3 {
+    font-size: 1rem;
+}
+
+.lineOne div h4 {
+    font-size: 0.75rem;
     opacity: 0.85;
     font-family: 'satoshi';
 }
