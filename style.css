@@ -5,6 +5,10 @@
     /*border:red 1px solid !important;*/
 }
 
+*:focus-visible {
+    outline: 2px red solid;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -168,9 +172,12 @@ a:focus {
 }
 
 .radio {
-    visibility: hidden;
-    margin: 0;
-    width: 0;
+    position: absolute;
+}
+
+.selectButton:focus-within {
+    outline: 2px red solid;
+    border-radius: 2rem;
 }
 
 .selectButton {
@@ -636,12 +643,14 @@ header {
 .product {
     height: 60%;
     width: 50%;
+    border-radius: 2rem;
+    background-size: cover;
+    background-position: center;
 }
 
 .product img {
     height: 100%;
     width: 100%;
-    border-radius: 2rem;
 }
 
 .seeMore {
