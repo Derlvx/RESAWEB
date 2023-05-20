@@ -171,7 +171,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
     <div id="modal-container">
         <div class="modal-background">
 
-            <div class="modal modal-one dnone" id="one">
+            <div class="modal modal-one dnone">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-processor-teamSuite.png);">
                     </div>
@@ -184,7 +184,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-two dnone" id="two">
+            <div class="modal modal-two dnone">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-cg-teamSuite.png);">
                     </div>
@@ -196,7 +196,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-three dnone" id="three">
+            <div class="modal modal-three dnone">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-ram-teamSuite.png);">
                     </div>
@@ -208,7 +208,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-four dnone" id="four">
+            <div class="modal modal-four dnone">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-gchair-teamSuite.png);">
                     </div>
@@ -220,7 +220,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-five dnone" id="five">
+            <div class="modal modal-five dnone">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-kb-teamSuite.png);">
                     </div>
@@ -232,7 +232,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-six dnone" id="six">
+            <div class="modal modal-six dnone">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-screen-teamSuite.png);">
                     </div>
@@ -244,7 +244,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-seven dnone" id="seven">
+            <div class="modal modal-seven dnone">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-cam-teamSuite.png);">
                         <!-- <img src="IMG/modal-processor-teamSuite.png" alt=""> -->
@@ -257,7 +257,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
 
-            <div class="modal modal-eight dnone" id="eight">
+            <div class="modal modal-eight dnone">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-controller-teamSuite.png);">
                         <!-- <img src="IMG/modal-processor-teamSuite.png" alt=""> -->
@@ -282,27 +282,35 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
             <div class="componentsNav">
                 <button class="componentsButton components" id="one">
                     <img src="ICONES/NIGHT/processor.svg" alt="">
+                    <p class="sr-only">Processor Informations</p>
                 </button>
                 <button class="componentsButton components" id="two">
                     <img src="ICONES/NIGHT/graphic-card.svg" alt="">
+                    <p class="sr-only">Graphic Card Informations</p>
                 </button>
                 <button class="componentsButton components" id="three">
                     <img src="ICONES/NIGHT/ram.svg" alt="">
+                    <p class="sr-only">Ram Informations</p>
                 </button>
                 <button class="componentsButton components" id="four">
                     <img src="ICONES/NIGHT/gaming chair.svg" alt="">
+                    <p class="sr-only">Gaming Chair Informations</p>
                 </button>
                 <button class="componentsButton components" id="five">
                     <img src="ICONES/NIGHT/keyboard.svg" alt="">
+                    <p class="sr-only">Keyboard Informations</p>
                 </button>
                 <button class="componentsButton components" id="six">
                     <img src="ICONES/NIGHT/screen.svg" alt="">
+                    <p class="sr-only">Screen Informations</p>
                 </button>
                 <button class="componentsButton components" id="seven">
                     <img src="ICONES/NIGHT/webcam.svg" alt="">
+                    <p class="sr-only">Webcam Informations</p>
                 </button>
                 <button class="componentsButton components" id="eight">
                     <img src="ICONES/NIGHT/controller.svg" alt="">
+                    <p class="sr-only">Controller Informations</p>
                 </button>
             </div>
 
