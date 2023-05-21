@@ -147,16 +147,16 @@ fclose($fp);
                     <div class="container contact-column">
                         <div class="formLine">
                             <div class="form-control">
-                                <input type="text" name="first-name" class="form-input" placeholder="none" id="first-name" required>
+                                <input type="text" name="first-name" class="form-input" placeholder="none" id="first-name" maxlength="50" required>
                                 <label for="first-name" class="form-label">First Name<sup class="supRequired">*</sup></label>
                             </div>
                             <div class="form-control">
-                                <input type="text" name="last-name" class="form-input" placeholder="none" id="last-name" required>
+                                <input type="text" name="last-name" class="form-input" placeholder="none" id="last-name" maxlength="50" required>
                                 <label for="last-name" class="form-label">Last Name<sup class="supRequired">*</sup></label>
                             </div>
                         </div>
                         <div class="form-control">
-                            <input type="email" name="email" class="form-input" placeholder="none" id="email" required>
+                            <input type="email" name="email" class="form-input" placeholder="none" id="email" maxlength="50" required>
                             <label for="email" class="form-label">Email<sup class="supRequired">*</sup></label>
                         </div>
                         <div class="recap">
