@@ -1672,6 +1672,18 @@ body.modal-active {
     color: var(--color-secondtext);
 }
 
+.contactContainer {
+    margin-top: 1rem;
+    padding: 0.7em 1em;
+}
+
+.formContainerButton {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .container .button {
     margin-bottom: 0;
 }
@@ -2625,6 +2637,71 @@ main .callout.open {
     flex-direction: column;
     gap: 0.5rem;
 }
+
+/* ================================================================================================================ */
+/* ==================================================== Recap PAGE ============================================== */
+/* ================================================================================================================ */
+
+.recapBackground {
+    width: 50%;
+}
+
+.recapContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.buttonLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonLine button {
+    margin: 0;
+}
+
+.horizontalLine {
+    border: 1px var(--color-text) solid;
+}
+
+.recapRoom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+}
+
+.roomImage {
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.recapRoomName {
+    font-family: 'Eveleth';
+}
+
+.recapCancel {
+    background-color: #A90202 !important;
+}
+
+.recapCancel:hover {
+    opacity: 0.75;
+}
+
+.recapCancel:hover svg {
+    transform: none !important;
+}
+
+.recapCancel:hover span {
+    transform: none !important;
+}
+
 
 /* ==================================================== Responsive ============================================== */
 
