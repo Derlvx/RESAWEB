@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("dots3").setAttribute("disabled", "");
     });
 
-    
+
     // Affichage des fiches de composants selon l'id du button cliquer
     $('.components').click(function () {
         buttonId = $(this).attr('id');
