@@ -887,13 +887,11 @@ footer p>a:hover:after {
 footer span {
     position: absolute;
     right: 5%;
-}
-
-footer span p {
     font-size: 0.8rem;
     opacity: 0.5;
+    font-family: 'Satoshi';
+    color: var(--color-text);
 }
-
 
 .bottomBrandLogo {
     height: 100%;

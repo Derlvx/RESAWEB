@@ -30,7 +30,7 @@ product2.forEach((item, i) => {
             <p>${item.description}</p>
         </section>
         <h4 class="itemPrice">${item.rate}<span>$</span></h4>
-        <button class="addToCart" onclick="addToCart(${item.id})">+</button>
+        <button class="addToCart" aria-label="Add to Cart" onclick="addToCart(${item.id})">+</button>
     </div>
     `);
 })
@@ -74,7 +74,7 @@ const popCart = () => {
                         </p>
                         </section>
                     </section>
-                <button class="removeCartItem" onclick="removeCartItem(${item.id})">&times</button>
+                <button class="removeCartItem" aria-label="Remove from Cart" onclick="removeCartItem(${item.id})">&times</button>
             </div>
             `);
         });
@@ -89,8 +89,8 @@ const popCart = () => {
                     <p class="billAmount">${cart.reduce((accu, item, i) => accu += item.qty * product.filter(id => id.id == item.id)[0].rate, 0)}$</p>
             </section>
             <section>
-                <button class="resetCart" onclick="resetCart()"><p>Clear</p></button>
-                <button class="Checkout button--success" data-for="js_success-popup" onclick="Checkout()"><p>Checkout</p></button>
+                <button class="resetCart" aria-label="Clear Cart" onclick="resetCart()"><p>Clear</p></button>
+                <button class="Checkout button--success" aria-label="Checkout" data-for="js_success-popup" onclick="Checkout()"><p>Checkout</p></button>
             </section>
         </div>
     `);

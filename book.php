@@ -192,7 +192,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
         </p>
 
         <span>
-            <p>All rights reserved, Horizon © 2023</p>
+            All rights reserved, Horizon © 2023
         </span>
     </footer>
 

@@ -98,7 +98,7 @@ fclose($fp);
         <h2 data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">A BREAK FOR YOUR GAMING session ? 🍕🥤</h2>
 
         <div class="cartButton" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
-            <a href="#" class="cartCount button" onclick="$('main .callout').toggleClass('open');"><img src="ICONES/NIGHT/cart.svg" alt=""><sup></sup>
+            <a href="#" class="cartCount button" onclick="$('main .callout').toggleClass('open');"><img src="ICONES/NIGHT/cart.svg" title="Open/Close Cart"><sup></sup>
                 <div class="border full-rounded"></div>
             </a>
         </div>
@@ -142,7 +142,7 @@ fclose($fp);
         <div class="formViewer hide">
             <form id="extra_form" action="insert_extra.php" method="POST">
                 <div class="formBackground">
-                    <button id="formClose" class="closeButton">x</button>
+                    <button id="formClose" class="closeButton" aria-label="Close button" >x</button>
                     <h3>Checkout Information</h3>
                     <div class="container contact-column">
                         <div class="formLine">
@@ -163,7 +163,7 @@ fclose($fp);
                             <p>Your Total Order :</p>
                             <p id="popupBillAmount"></p>
                         </div>
-                        <button class="full-rounded button--success">
+                        <button class="full-rounded button--success" aria-label="Make a reservation" >
                             <div class="svg-wrapper-1">
                                 <div class="svg-wrapper">
                                     <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +201,7 @@ fclose($fp);
             <a href="contact.html" title="Go to Contact page">Contact us</a>
         </p>
 
-        <span><p>All rights reserved, Horizon © 2023</p></span>
+        <span>All rights reserved, Horizon © 2023</span>
     </footer>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
