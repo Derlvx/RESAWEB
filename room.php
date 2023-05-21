@@ -101,7 +101,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 <p><?php foreach ($resultat as $room) echo "{$room["prix_8"]}" ?>$<span>/ day</span></p>
             </div>
         </div>
-        <div class="terms" class="vertical-line" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top" data-aos-once="true">
+        <div class="terms vertical-line"  data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top" data-aos-once="true">
             <p>Food is not included*</p>
         </div>
     </section>
@@ -293,7 +293,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                     <p class="sr-only">Ram Informations</p>
                 </button>
                 <button class="componentsButton components" id="four">
-                    <img src="ICONES/NIGHT/gaming chair.svg" alt="">
+                    <img src="ICONES/NIGHT/gaming_chair.svg" alt="">
                     <p class="sr-only">Gaming Chair Informations</p>
                 </button>
                 <button class="componentsButton components" id="five">
