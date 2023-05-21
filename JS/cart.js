@@ -29,7 +29,7 @@ product2.forEach((item, i) => {
             <h4>${item.name}</h4>
             <p>${item.description}</p>
         </section>
-        <p class="itemPrice">${item.rate}<span>$</span></p>
+        <h4 class="itemPrice">${item.rate}<span>$</span></h4>
         <button class="addToCart" onclick="addToCart(${item.id})">+</button>
     </div>
     `);

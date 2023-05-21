@@ -74,9 +74,9 @@ fclose($fp);
 </head>
 
 <body>
-    <div class="nav-wrapper">
+<div class="nav-wrapper">
         <nav class="navbar">
-            <a data-aos="fade-down" data-aos-duration="750" href="index.html"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Company Logo">
+            <a data-aos="fade-down" data-aos-duration="750" href="index.html"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Go to home page">
             </a>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -85,10 +85,10 @@ fclose($fp);
             </div>
 
             <ul class="nav no-search">
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.html#aboutUs">Overview</a></li>
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.html">About us</a></li>
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.html">Catalog</a></li>
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php">Extra</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.html#aboutUs" title="Go to Overview">Overview</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.html" title="Go to About us page">About us</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.html" title="Go to Catalog page">Catalog</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php" title="Go to Extra page">Extra</a></li>
             </ul>
         </nav>
     </div>
@@ -122,7 +122,7 @@ fclose($fp);
                         ";
                     }
                     ?>
-                    <input type="submit" value="" style="background-image: url(ICONES/NIGHT/search.svg);">
+                    <input type="submit" value="" style="background-image: url(ICONES/NIGHT/search.svg);" aria-label="Search filter">
                 </form>
             </div>
 
@@ -147,16 +147,16 @@ fclose($fp);
                     <div class="container contact-column">
                         <div class="formLine">
                             <div class="form-control">
-                                <input type="text" name="first-name" class="form-input" placeholder="none" required>
+                                <input type="text" name="first-name" class="form-input" placeholder="none" id="first-name" required>
                                 <label for="first-name" class="form-label">First Name<sup class="supRequired">*</sup></label>
                             </div>
                             <div class="form-control">
-                                <input type="text" name="last-name" class="form-input" placeholder="none" required>
+                                <input type="text" name="last-name" class="form-input" placeholder="none" id="last-name" required>
                                 <label for="last-name" class="form-label">Last Name<sup class="supRequired">*</sup></label>
                             </div>
                         </div>
                         <div class="form-control">
-                            <input type="email" name="email" class="form-input" placeholder="none" required>
+                            <input type="email" name="email" class="form-input" placeholder="none" id="email" required>
                             <label for="email" class="form-label">Email<sup class="supRequired">*</sup></label>
                         </div>
                         <div class="recap">
@@ -184,21 +184,21 @@ fclose($fp);
     <footer>
 
         <p>
-            <a href="terms.html">Terms</a>
+            <a href="terms.html" title="Go to Terms page">Terms</a>
         </p>
         <p>
-            <a href="privacy.html">Privacy</a>
+            <a href="privacy.html" title="Go to Privacy page">Privacy</a>
         </p>
 
         <div class="bottomBrandLogo">
-            <a href="index.html"><img src="ICONES/NIGHT/LOGO.svg" alt="Go Top"></a>
+            <a href="index.html"><img src="ICONES/NIGHT/LOGO.svg" alt="Go to home page"></a>
         </div>
 
         <p>
-            <a href="FAQ.html">FAQ</a>
+            <a href="FAQ.html" title="Go to FAQ page">FAQ</a>
         </p>
         <p>
-            <a href="contact.html">Contact us</a>
+            <a href="contact.html" title="Go to Contact page">Contact us</a>
         </p>
 
         <span><p>All rights reserved, Horizon © 2023</p></span>

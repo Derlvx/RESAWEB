@@ -2038,6 +2038,7 @@ main .container .card section {
 }
 
 .itemPrice {
+    font-family: 'Satoshi';
     font-size: 2rem;
     width: 100%;
     padding: 1rem;
@@ -2185,7 +2186,7 @@ main .callout .row:first-child .card button.removeCartItem:hover {
 }
 
 main .callout .alert {
-    background: rgb(255, 60, 60);
+    background: #A90202;
     color: white;
     padding: 1.3rem;
     text-align: center;
