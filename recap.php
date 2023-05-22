@@ -157,6 +157,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
         <span>All rights reserved, Horizon © 2023</span>
     </footer>
     <script defer src="JS/script.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 </body>
 
 </html>

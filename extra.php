@@ -47,6 +47,15 @@ if (isset($clock)) {
     // echo "<script>console.log('$requete')</script>";
 }
 
+$requete = $requete . " ORDER BY id DESC LIMIT 8";
+
+if (isset($_GET["all"])) {
+    $requete = substr($requete, 0, -24);
+        echo "<script>console.log('$requete')</script>";
+}
+
+echo "<script>console.log('$requete')</script>";
+
 $stmt = $db->query($requete);
 $result = $stmt->fetchall(PDO::FETCH_ASSOC);
 
@@ -74,7 +83,7 @@ fclose($fp);
 </head>
 
 <body>
-<div class="nav-wrapper">
+    <div class="nav-wrapper">
         <nav class="navbar">
             <a data-aos="fade-down" data-aos-duration="750" href="index.html"><img class="brandLogo" src="ICONES/NIGHT/LOGO.svg" alt="Go to home page">
             </a>
@@ -122,6 +131,12 @@ fclose($fp);
                         ";
                     }
                     ?>
+
+                    <div class='filter-checkbox'>
+                        <input onclick='save()' class='box' id='6' type='checkbox' name='all'>
+                        <label for='6'>View All</label>
+                    </div>
+
                     <input type="submit" onclick="window.location.reload()" value="" style="background-image: url(ICONES/NIGHT/search.svg);" aria-label="Search filter">
                 </form>
             </div>
@@ -142,7 +157,7 @@ fclose($fp);
         <div class="formViewer hide">
             <form id="extra_form" action="insert_extra.php" method="POST">
                 <div class="formBackground">
-                    <button id="formClose" class="closeButton" aria-label="Close button" >x</button>
+                    <button id="formClose" class="closeButton" aria-label="Close button">x</button>
                     <h3>Checkout Information</h3>
                     <div class="container contact-column">
                         <div class="formLine">
@@ -163,7 +178,7 @@ fclose($fp);
                             <p>Your Total Order :</p>
                             <p id="popupBillAmount"></p>
                         </div>
-                        <button class="full-rounded button--success" aria-label="Make a reservation" >
+                        <button class="full-rounded button--success" aria-label="Make a reservation">
                             <div class="svg-wrapper-1">
                                 <div class="svg-wrapper">
                                     <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
