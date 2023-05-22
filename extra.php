@@ -26,6 +26,7 @@ foreach ($result2 as $type) {
     if (isset($_GET["{$type["nom_type"]}"])) {
         $clock = 1;
         $condition = $condition . "ext_type = " . $type["id_type"] . " OR ";
+        $lien = $lien . "test";
     }
 }
 
@@ -51,7 +52,7 @@ $requete = $requete . " ORDER BY id DESC LIMIT 8";
 
 if (isset($_GET["all"])) {
     $requete = substr($requete, 0, -24);
-        echo "<script>console.log('$requete')</script>";
+    echo "<script>console.log('$requete')</script>";
 }
 
 echo "<script>console.log('$requete')</script>";
@@ -194,6 +195,16 @@ fclose($fp);
                 </div>
             </form>
         </div>
+    </div>
+
+    <div class="viewMoreContainer">
+        <!-- $_SERVER['QUERY_STRING'] sert à récuprer toute les variables du $_GET -->
+        <a href="extra.php?<?php echo $_SERVER['QUERY_STRING'] . "&all=on" ?>">
+            <button class="full-rounded button">
+                <h4>View More</h4>
+                <div class="border full-rounded"></div>
+            </button>
+        </a>
     </div>
 
     <footer>

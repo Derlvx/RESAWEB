@@ -2277,6 +2277,14 @@ main .callout.open {
     background-color: rgba(13, 13, 13, 0.75);
 }
 
+.viewMoreContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
 /**
    * Popup animations.
    * Based on Sweet Alert: "https://t4t5.github.io/sweetalert/"
