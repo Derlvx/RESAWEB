@@ -17,6 +17,9 @@ var product = JSON.parse(request.responseText);
 // Le deuxieme JSON sert a afficher selon les filtres les différents objets
 let request2 = new XMLHttpRequest();
 request2.open("GET", "./JS/data.json", false);
+request2.setRequestHeader('Cache-Control', 'no-cache, no-store, max-age=0');
+request2.setRequestHeader('Expires', 'Thu, 1 Jan 1970 00:00:00 GMT');
+request2.setRequestHeader('Pragma', 'no-cache');
 request2.send(null);
 var product2 = JSON.parse(request2.responseText);
 

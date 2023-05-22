@@ -122,7 +122,7 @@ fclose($fp);
                         ";
                     }
                     ?>
-                    <input type="submit" value="" style="background-image: url(ICONES/NIGHT/search.svg);" aria-label="Search filter">
+                    <input type="submit" onclick="window.location.reload()" value="" style="background-image: url(ICONES/NIGHT/search.svg);" aria-label="Search filter">
                 </form>
             </div>
 
@@ -206,7 +206,7 @@ fclose($fp);
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <!-- Le php sert a empecher le stockage du fichier en cache -->
-    <script defer src="JS/data.json?random=<?= uniqid() ?>"></script>
+    <script src="JS/data.json?random=<?= uniqid() ?>"></script>
     <script defer src="JS/start.json"></script>
     <script defer src="JS/cart.js"></script>
     <script defer src="JS/back.js"></script>
