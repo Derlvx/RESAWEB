@@ -98,7 +98,7 @@ fclose($fp);
                 <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.html#aboutUs" alt="Go to Overview">Overview</a></li>
                 <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.html" alt="Go to About us page">About us</a></li>
                 <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.html" alt="Go to Catalog page">Catalog</a></li>
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php" alt="Go to Extra page">Extra</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php" alt="Go to Extra page" class="hover">Extra</a></li>
             </ul>
         </nav>
     </div>

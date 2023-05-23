@@ -346,6 +346,24 @@ a:focus {
     font-size: 1.1rem;
 }
 
+.hover {
+    opacity: 1 !important;
+}
+
+.hover:after {
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: var(--color-text);
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+.hover:after {
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+
 nav li a:hover {
     opacity: 1;
 }
