@@ -1108,6 +1108,28 @@ footer span {
     transform: scale(1.1);
 }
 
+/* ==================================================== CallToAction ============================================== */
+
+.callToAction {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    background-color: var(--color-secondbackground);
+    border-radius: 2rem;
+    gap: 1rem;
+    margin: 0 auto;
+    padding: 3rem 3rem;
+}
+
+.callToAction div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
 /* ==================================================== CONFIGURATION ============================================== */
 
 .configuration {

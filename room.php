@@ -101,7 +101,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 <p><?php foreach ($resultat as $room) echo "{$room["prix_8"]}" ?>$<span>/ day</span></p>
             </div>
         </div>
-        <div class="terms vertical-line"  data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top" data-aos-once="true">
+        <div class="terms" data-aos="fade-right" data-aos-duration="1000" data-aos-anchor-placement="top" data-aos-once="true">
             <p>Food is not included*</p>
         </div>
     </section>
@@ -166,6 +166,19 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="callToAction">
+        <div>
+            <span class="vertical-line" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" data-aos-anchor-placement="top" data-aos-once="true"></span>
+            <h3>Don't wait to have fun ! 🕹️</h3>
+        </div>
+        <a href="book.php?id=<?php echo $_GET["id"] ?>">
+            <button class="full-rounded button">
+                <h4>Book Now</h4>
+                <div class="border full-rounded"></div>
+            </button>
+        </a>
     </section>
 
     <div id="modal-container">
@@ -346,7 +359,6 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
     <script defer src="JS/script.js"></script>
     <script defer src="JS/carrousel.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script>
         AOS.init();
     </script>
