@@ -52,10 +52,10 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
             </div>
 
             <ul class="nav no-search">
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.html#aboutUs" title="Go to Overview">Overview</a></li>
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.html" title="Go to About us page">About us</a></li>
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.html" title="Go to Catalog page">Catalog</a></li>
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php" title="Go to Extra page">Extra</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.html#aboutUs" alt="Go to Overview">Overview</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.html" alt="Go to About us page">About us</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.html" alt="Go to Catalog page">Catalog</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php" alt="Go to Extra page">Extra</a></li>
             </ul>
         </nav>
     </div>
@@ -67,7 +67,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
         <div class="titleHome">
             <h1><?php foreach ($resultat as $room) echo "{$room["nom_room"]}" ?></h1>
             <!-- Le href avec du php sert a faire passer l'id de la chambre qui va être réservé -->
-            <a href="book.php?id=<?php echo $_GET["id"] ?>">
+            <a alt="Book a room" href="book.php?id=<?php echo $_GET["id"] ?>">
                 <button class="full-rounded button">
                     <h4>Book Now</h4>
                     <div class="border full-rounded"></div>
@@ -335,10 +335,10 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
     <footer>
 
         <p>
-            <a href="terms.html" title="Go to Terms page">Terms</a>
+            <a href="terms.html" alt="Go to Terms page">Terms</a>
         </p>
         <p>
-            <a href="privacy.html" title="Go to Privacy page">Privacy</a>
+            <a href="privacy.html" alt="Go to Privacy page">Privacy</a>
         </p>
 
         <div class="bottomBrandLogo">
@@ -346,10 +346,10 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
         </div>
 
         <p>
-            <a href="FAQ.html" title="Go to FAQ page">FAQ</a>
+            <a href="FAQ.html" alt="Go to FAQ page">FAQ</a>
         </p>
         <p>
-            <a href="contact.html" title="Go to Contact page">Contact us</a>
+            <a href="contact.html" alt="Go to Contact page">Contact us</a>
         </p>
 
         <span>

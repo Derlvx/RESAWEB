@@ -95,10 +95,10 @@ fclose($fp);
             </div>
 
             <ul class="nav no-search">
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.html#aboutUs" title="Go to Overview">Overview</a></li>
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.html" title="Go to About us page">About us</a></li>
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.html" title="Go to Catalog page">Catalog</a></li>
-                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php" title="Go to Extra page">Extra</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="100" class="nav-item"><a href="index.html#aboutUs" alt="Go to Overview">Overview</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="200" class="nav-item"><a href="aboutus.html" alt="Go to About us page">About us</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="300" class="nav-item"><a href="catalog.html" alt="Go to Catalog page">Catalog</a></li>
+                <li data-aos="fade-down" data-aos-duration="750" data-aos-delay="400" class="nav-item"><a href="extra.php" alt="Go to Extra page">Extra</a></li>
             </ul>
         </nav>
     </div>
@@ -108,7 +108,7 @@ fclose($fp);
         <h2 data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">A BREAK FOR YOUR GAMING session ? 🍕🥤</h2>
 
         <div class="cartButton" data-aos="fade-in" data-aos-duration="2000" data-aos-anchor-placement="top" data-aos-once="true">
-            <a href="#" class="cartCount button" onclick="$('main .callout').toggleClass('open');"><img src="ICONES/NIGHT/cart.svg" title="Open/Close Cart"><sup></sup>
+            <a href="#" class="cartCount button" onclick="$('main .callout').toggleClass('open');"><img src="ICONES/NIGHT/cart.svg" alt="Open/Close Cart"><sup></sup>
                 <div class="border full-rounded"></div>
             </a>
         </div>
@@ -199,7 +199,7 @@ fclose($fp);
 
     <div class="viewMoreContainer">
         <!-- $_SERVER['QUERY_STRING'] sert à récuprer toute les variables du $_GET -->
-        <a href="extra.php?<?php echo $_SERVER['QUERY_STRING'] . "&all=on" ?>">
+        <a alt="Book a room" href="extra.php?<?php echo $_SERVER['QUERY_STRING'] . "&all=on" ?>">
             <button class="full-rounded button">
                 <h4>View More</h4>
                 <div class="border full-rounded"></div>
@@ -210,10 +210,10 @@ fclose($fp);
     <footer>
 
         <p>
-            <a href="terms.html" title="Go to Terms page">Terms</a>
+            <a href="terms.html" alt="Go to Terms page">Terms</a>
         </p>
         <p>
-            <a href="privacy.html" title="Go to Privacy page">Privacy</a>
+            <a href="privacy.html" alt="Go to Privacy page">Privacy</a>
         </p>
 
         <div class="bottomBrandLogo">
@@ -221,10 +221,10 @@ fclose($fp);
         </div>
 
         <p>
-            <a href="FAQ.html" title="Go to FAQ page">FAQ</a>
+            <a href="FAQ.html" alt="Go to FAQ page">FAQ</a>
         </p>
         <p>
-            <a href="contact.html" title="Go to Contact page">Contact us</a>
+            <a href="contact.html" alt="Go to Contact page">Contact us</a>
         </p>
 
         <span>All rights reserved, Horizon © 2023</span>
