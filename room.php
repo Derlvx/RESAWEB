@@ -74,7 +74,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 </button>
             </a>
         </div>
-        <img src="ICONES/NIGHT/SCROLL.svg" alt="SCROLL" class="scroll">
+        <img src="ICONES/NIGHT/SCROLL.svg" alt="" class="scroll">
     </header>
 
     <section class="sub">
@@ -171,12 +171,12 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
     <section class="callToAction">
         <div>
             <span class="vertical-line" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" data-aos-anchor-placement="top" data-aos-once="true"></span>
-            <div>
+            <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="400" data-aos-anchor-placement="top" data-aos-once="true">
                 <h3>Don't wait to have fun ! <span>🕹️</span></h3>
                 <p>Join us at Horizon</p>
             </div>
         </div>
-        <a href="book.php?id=<?php echo $_GET["id"] ?>">
+        <a href="book.php?id=<?php echo $_GET["id"] ?>" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="600" data-aos-anchor-placement="top" data-aos-once="true">
             <button class="full-rounded button">
                 <h4>Book Now</h4>
                 <div class="border full-rounded"></div>
@@ -263,7 +263,6 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
             <div class="modal modal-seven dnone">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-cam-teamSuite.png);">
-                        <!-- <img src="IMG/modal-processor-teamSuite.png" alt=""> -->
                     </div>
                     <div class="modal-text">
                         <h2>Logitech Brio 500</h2>
@@ -276,7 +275,6 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
             <div class="modal modal-eight dnone">
                 <div class="modal-content">
                     <div class="modal-img" style="background-image: url(IMG/modal-controller-teamSuite.png);">
-                        <!-- <img src="IMG/modal-processor-teamSuite.png" alt=""> -->
                     </div>
                     <div class="modal-text">
                         <h2>DualSense Wireless Controller</h2>
