@@ -124,17 +124,20 @@ a:focus {
 }
 
 .sr-only {
-	border: 0 !important;
-	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
-	-webkit-clip-path: inset(50%) !important;
-		clip-path: inset(50%) !important;  /* 2 */
-	height: 1px !important;
-	margin: -1px !important;
-	overflow: hidden !important;
-	padding: 0 !important;
-	position: absolute !important;
-	width: 1px !important;
-	white-space: nowrap !important;            /* 3 */
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    /* 1 */
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    /* 2 */
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+    /* 3 */
 }
 
 /* ================================================ ANIMATION ================================================== */
@@ -1121,6 +1124,7 @@ footer span {
     gap: 1rem;
     margin: 0 auto;
     padding: 3rem 3rem;
+    margin-top: 3rem;
 }
 
 .callToAction div {
@@ -1128,6 +1132,14 @@ footer span {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+}
+
+.callToAction div div {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0rem;
 }
 
 /* ==================================================== CONFIGURATION ============================================== */

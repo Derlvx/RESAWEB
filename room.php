@@ -171,7 +171,10 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
     <section class="callToAction">
         <div>
             <span class="vertical-line" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" data-aos-anchor-placement="top" data-aos-once="true"></span>
-            <h3>Don't wait to have fun ! 🕹️</h3>
+            <div>
+                <h3>Don't wait to have fun ! <span>🕹️</span></h3>
+                <p>Join us at Horizon</p>
+            </div>
         </div>
         <a href="book.php?id=<?php echo $_GET["id"] ?>">
             <button class="full-rounded button">
