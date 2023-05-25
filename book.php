@@ -117,12 +117,12 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
 
                         <div class="formLine">
                             <div class="form-control">
-                                <input type="text" name="first-name" class="form-input" placeholder="none" id="first-name" maxlength="50" required>
-                                <label for="first-name" class="form-label">First Name<sup class="supRequired">*</sup></label>
+                                <input type="text" name="firstname" class="form-input" placeholder="none" id="firstname" maxlength="50" required>
+                                <label for="firstname" class="form-label">First Name<sup class="supRequired">*</sup></label>
                             </div>
                             <div class="form-control">
-                                <input type="text" name="last-name" class="form-input" placeholder="none" id="last-name" maxlength="50" required>
-                                <label for="last-name" class="form-label">Last Name<sup class="supRequired">*</sup></label>
+                                <input type="text" name="lastname" class="form-input" placeholder="none" id="lastname" maxlength="50" required>
+                                <label for="lastname" class="form-label">Last Name<sup class="supRequired">*</sup></label>
                             </div>
                         </div>
                         <div class="form-control">

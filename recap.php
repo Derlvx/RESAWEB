@@ -5,8 +5,8 @@ include("connexion.php");
 $nb_de_personne = $_POST["number"];
 $date_debut = $_POST["start-date"];
 $location = $_POST["location"];
-$guest_firstname = $_POST["first-name"];
-$guest_lastname = $_POST["last-name"];
+$guest_firstname = $_POST["firstname"];
+$guest_lastname = $_POST["lastname"];
 $guest_mail = $_POST["email"];
 $room = $_GET["id"];
 
@@ -55,8 +55,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
                 <h3>Your Recap</h3>
 
                 <div class="dnone">
-                <input type="text" name="first-name" value="<?php echo $guest_firstname ?>">
-                <input type="text" name="last-name" value="<?php echo $guest_firstname ?>">
+                <input type="text" name="firstname" value="<?php echo $guest_firstname ?>">
+                <input type="text" name="lastname" value="<?php echo $guest_lastname ?>">
                 <input type="text" name="email" value="<?php echo $guest_mail ?>">
                 <input type="date" name="start-date" value="<?php echo $date_debut ?>">
                 <input type="text" name="number" value="<?php echo $nb_de_personne ?>">
