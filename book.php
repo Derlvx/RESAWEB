@@ -57,95 +57,95 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
 
 
             <!-- Label non modifiable pour l'input de recherche ! -->
-            <div class="mapViewer">
-                <div class="mapBackground">
-                    <section class="mapContainer">
-                        <h3>CHOOSE A LOCATION</h3>
-                        <div id="map"></div>
-                    </section>
+            <div class="containerWBar">
+                <div class="mapViewer">
+                    <div class="mapBackground">
+                        <section class="mapContainer">
+                            <h3>CHOOSE A LOCATION</h3>
+                            <div id="map"></div>
+                        </section>
+                    </div>
                 </div>
-            </div>
-
-            <div class="guestViewer hide">
-                <div class="guestBackground">
-                    <h3>CHOOSE NUMBER OF GUEST</h3>
-                    <div class="offerContainer">
-                        <div class="guestCard">
-                            <img src="ICONES/NIGHT/one.svg" alt="">
-                            <div class="offerContent">
-                                <h3>4 guests</h3>
-                                <p><?php foreach ($resultat as $room) echo "{$room["prix_4"]}" ?>$ <span>/ day</span></p>
+                <div class="guestViewer hide">
+                    <div class="guestBackground">
+                        <h3>CHOOSE NUMBER OF GUEST</h3>
+                        <div class="offerContainer">
+                            <div class="guestCard">
+                                <img src="ICONES/NIGHT/one.svg" alt="">
+                                <div class="offerContent">
+                                    <h3>4 guests</h3>
+                                    <p><?php foreach ($resultat as $room) echo "{$room["prix_4"]}" ?>$ <span>/ day</span></p>
+                                </div>
+                                <div class="selectButton guestButton">
+                                    <input class="radio" type="radio" name="number" id="radio2-1" value="4" onclick="selectGuest()" required>
+                                    <label for="radio2-1">select</label>
+                                    <div class="border full-rounded"></div>
+                                </div>
                             </div>
-                            <div class="selectButton guestButton">
-                                <input class="radio" type="radio" name="number" id="radio2-1" value="4" onclick="selectGuest()" required>
-                                <label for="radio2-1">select</label>
-                                <div class="border full-rounded"></div>
+                            <div class="guestCard">
+                                <img src="ICONES/NIGHT/two.svg" alt="">
+                                <div class="offerContent">
+                                    <h3>6 guests</h3>
+                                    <p><?php foreach ($resultat as $room) echo "{$room["prix_6"]}" ?>$ <span>/ day</span></p>
+                                </div>
+                                <div class="selectButton guestButton">
+                                    <input class="radio" type="radio" name="number" id="radio2-2" value="6" onclick="selectGuest()" required>
+                                    <label for="radio2-2">select</label>
+                                    <div class="border full-rounded"></div>
+                                </div>
+                            </div>
+                            <div class="guestCard">
+                                <img src="ICONES/NIGHT/three.svg" alt="">
+                                <div class="offerContent">
+                                    <h3>8 guests</h3>
+                                    <p><?php foreach ($resultat as $room) echo "{$room["prix_8"]}" ?>$ <span>/ day</span></p>
+                                </div>
+                                <div class="selectButton guestButton">
+                                    <input class="radio" type="radio" name="number" id="radio2-3" value="8" onclick="selectGuest()" required>
+                                    <label for="radio2-3">select</label>
+                                    <div class="border full-rounded"></div>
+                                </div>
                             </div>
                         </div>
-                        <div class="guestCard">
-                            <img src="ICONES/NIGHT/two.svg" alt="">
-                            <div class="offerContent">
-                                <h3>6 guests</h3>
-                                <p><?php foreach ($resultat as $room) echo "{$room["prix_6"]}" ?>$ <span>/ day</span></p>
+                    </div>
+                </div>
+                <div class="formViewer hide">
+                    <div class="formBackground">
+                        <h3>Book a room</h3>
+                        <div class="contactContainer contact-column">
+                            <div class="formLine">
+                                <div class="form-control">
+                                    <input type="text" name="firstname" class="form-input" placeholder="none" id="firstname" maxlength="50" required>
+                                    <label for="firstname" class="form-label">First Name<sup class="supRequired">*</sup></label>
+                                </div>
+                                <div class="form-control">
+                                    <input type="text" name="lastname" class="form-input" placeholder="none" id="lastname" maxlength="50" required>
+                                    <label for="lastname" class="form-label">Last Name<sup class="supRequired">*</sup></label>
+                                </div>
                             </div>
-                            <div class="selectButton guestButton">
-                                <input class="radio" type="radio" name="number" id="radio2-2" value="6" onclick="selectGuest()" required>
-                                <label for="radio2-2">select</label>
-                                <div class="border full-rounded"></div>
+                            <div class="form-control">
+                                <input type="email" name="email" class="form-input" placeholder="none" id="email" maxlength="50" required>
+                                <label for="email" class="form-label">Email<sup class="supRequired">*</sup></label>
                             </div>
-                        </div>
-                        <div class="guestCard">
-                            <img src="ICONES/NIGHT/three.svg" alt="">
-                            <div class="offerContent">
-                                <h3>8 guests</h3>
-                                <p><?php foreach ($resultat as $room) echo "{$room["prix_8"]}" ?>$ <span>/ day</span></p>
+                            <div class="formLine">
+                                <div class="form-control">
+                                    <!-- Attribution d'une date minimum à l'aide de la date d'aujourd"hui en php -->
+                                    <input type="date" name="start-date" class="form-input" min="<?= date('Y-m-d') ?>" id="start-date" required>
+                                    <label for="start-date" class="form-label">Choose a date<sup class="supRequired">*</sup></label>
+                                </div>
                             </div>
-                            <div class="selectButton guestButton">
-                                <input class="radio" type="radio" name="number" id="radio2-3" value="8" onclick="selectGuest()" required>
-                                <label for="radio2-3">select</label>
-                                <div class="border full-rounded"></div>
+                            <div class="formContainerButton">
+                                <button class="full-rounded button">
+                                    <h4>Continue</h4>
+                                    <div class="border full-rounded"></div>
+                                </button>
                             </div>
+                            <p class="calloutSubtext">Required Informations<sup class="supRequired">*</sup></p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="formViewer hide">
-                <div class="formBackground">
-                    <h3>Book a room</h3>
-                    <div class="contactContainer contact-column">
-
-                        <div class="formLine">
-                            <div class="form-control">
-                                <input type="text" name="firstname" class="form-input" placeholder="none" id="firstname" maxlength="50" required>
-                                <label for="firstname" class="form-label">First Name<sup class="supRequired">*</sup></label>
-                            </div>
-                            <div class="form-control">
-                                <input type="text" name="lastname" class="form-input" placeholder="none" id="lastname" maxlength="50" required>
-                                <label for="lastname" class="form-label">Last Name<sup class="supRequired">*</sup></label>
-                            </div>
-                        </div>
-                        <div class="form-control">
-                            <input type="email" name="email" class="form-input" placeholder="none" id="email" maxlength="50" required>
-                            <label for="email" class="form-label">Email<sup class="supRequired">*</sup></label>
-                        </div>
-                        <div class="formLine">
-                            <div class="form-control">
-                                <!-- Attribution d'une date minimum à l'aide de la date d'aujourd"hui en php -->
-                                <input type="date" name="start-date" class="form-input" min="<?= date('Y-m-d') ?>" id="start-date" required>
-                                <label for="start-date" class="form-label">Choose a date<sup class="supRequired">*</sup></label>
-                            </div>
-                        </div>
-                        <div class="formContainerButton">
-                            <button class="full-rounded button">
-                                <h4>Continue</h4>
-                                <div class="border full-rounded"></div>
-                            </button>
-                        </div>
-                        <p class="calloutSubtext">Required Informations<sup class="supRequired">*</sup></p>
-                    </div>
-                </div>
-            </div>
             <ul class="checkoutBar">
                 <button id="dots1" disabled="true" aria-label="Go to place selection">
                     <li class="progressDots">

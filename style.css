@@ -620,7 +620,7 @@ header {
 }
 
 .serviceContent {
-    height: 20rem;
+    min-height: 20rem;
     background-color: var(--color-secondbackground);
     border-radius: 2rem;
     display: flex;
@@ -1403,6 +1403,7 @@ body.modal-active {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 /* map */
@@ -1520,6 +1521,15 @@ body.modal-active {
 
 /* form */
 
+.containerWBar {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .mapViewer {
     transition: all 1s ease;
     position: absolute;
@@ -1528,7 +1538,7 @@ body.modal-active {
 .guestViewer {
     transition: all 1s ease;
     position: relative;
-    /* position: absolute; */
+    position: absolute;
 }
 
 .formViewer {
@@ -1831,10 +1841,10 @@ body.modal-active {
 }
 
 .checkoutBar {
-    margin-right: 1%;
-    position: absolute;
-    bottom: 6rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
     gap: 1rem;
 }
 
