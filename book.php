@@ -22,6 +22,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <link rel="stylesheet" href="leaflet-search.css">
+    <link rel="icon" href="ICONES/NIGHT/FavIconDark.png" id="light-scheme-icon">
+    <link rel="icon" href="ICONES/NIGHT/FavIconLight.png" id="dark-scheme-icon">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
 
@@ -199,6 +201,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script defer src="JS/script.js"></script>
+    <script defer src="JS/fav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

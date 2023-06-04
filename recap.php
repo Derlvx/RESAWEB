@@ -24,6 +24,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ICONES/NIGHT/FavIconDark.png" id="light-scheme-icon">
+    <link rel="icon" href="ICONES/NIGHT/FavIconLight.png" id="dark-scheme-icon">
     <title>Recap - Horizon</title>
 </head>
 
@@ -157,6 +159,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
         <span>All rights reserved, Horizon © 2023</span>
     </footer>
     <script defer src="JS/script.js"></script>
+    <script defer src="JS/fav.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 </body>
 

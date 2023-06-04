@@ -19,6 +19,8 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ICONES/NIGHT/FavIconDark.png" id="light-scheme-icon">
+    <link rel="icon" href="ICONES/NIGHT/FavIconLight.png" id="dark-scheme-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -359,6 +361,7 @@ $resultat = $stmt->fetchall(PDO::FETCH_ASSOC);
 
     <script defer src="JS/script.js"></script>
     <script defer src="JS/carrousel.js"></script>
+    <script defer src="JS/fav.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

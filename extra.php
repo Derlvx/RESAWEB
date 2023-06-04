@@ -75,6 +75,8 @@ fclose($fp);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="ICONES/NIGHT/FavIconDark.png" id="light-scheme-icon">
+    <link rel="icon" href="ICONES/NIGHT/FavIconLight.png" id="dark-scheme-icon">
 
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 
@@ -238,6 +240,7 @@ fclose($fp);
     <script defer src="JS/back.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="JS/script.js"></script>
+    <script defer src="JS/fav.js"></script>
     <script>
         AOS.init();
     </script>

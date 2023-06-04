@@ -65,6 +65,10 @@ a:focus {
     color: inherit;
 }
 
+
+@media all and (prefers-color-scheme: dark) {
+    
+}
 /* ================================================= FONT ================================================= */
 
 @font-face {
